@@ -1,10 +1,10 @@
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: 'Contact – Wholesalify',
-  description: 'Get in touch with the Wholesalify team.',
-}
+  title: "Contact – Wholesalify",
+  description: "Get in touch with the Wholesalify team.",
+};
 
 export default function ContactPage() {
   return (
@@ -20,7 +20,10 @@ export default function ContactPage() {
           </p>
           <form className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-primary mb-2"
+              >
                 Name
               </label>
               <input
@@ -31,7 +34,10 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-primary mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-primary mb-2"
+              >
                 Email
               </label>
               <input
@@ -42,7 +48,10 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-primary mb-2"
+              >
                 Message
               </label>
               <textarea
@@ -61,9 +70,12 @@ export default function ContactPage() {
           </form>
           <div className="mt-12 pt-8 border-t">
             <p className="text-secondary">
-              Or email us directly at{' '}
-              <a href="mailto:hello@wholesalify.com" className="text-cta hover:underline cursor-pointer">
-                hello@wholesalify.com
+              Or email us directly at{" "}
+              <a
+                href="mailto:wholesalify@hotmail.com"
+                className="text-cta hover:underline cursor-pointer"
+              >
+                wholesalify@hotmail.com
               </a>
             </p>
           </div>
@@ -71,5 +83,5 @@ export default function ContactPage() {
       </div>
       <Footer />
     </main>
-  )
+  );
 }
