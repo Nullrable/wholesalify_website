@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://wholesalify.com
+
+# Sitemaps
+Sitemap: https://wholesalify.com/sitemap.xml

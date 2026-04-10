@@ -1,5 +1,25 @@
-import { setRequestLocale } from 'next-intl/server'
-import { getTranslations } from 'next-intl/server'
+import { setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import { generatePageMetadata } from "@/components/SEO";
+import { locales, type Locale } from "@/lib/i18n";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  if (!locales.includes(locale as Locale)) {
+    return {};
+  }
+
+  return generatePageMetadata(locale as Locale, {
+    title: "Privacy Policy",
+    description:
+      "Read the Wholesalify privacy policy covering data handling, customer information, and platform communications.",
+    pathname: "/privacy",
+  });
+}
 
 export default async function PrivacyPage({
   params: { locale }

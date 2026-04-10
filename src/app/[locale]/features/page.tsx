@@ -1,7 +1,27 @@
-import { setRequestLocale } from 'next-intl/server'
-import { getTranslations } from 'next-intl/server'
-import Features from '@/components/Features'
-import CTASection from '@/components/CTASection'
+import { setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import Features from "@/components/Features";
+import CTASection from "@/components/CTASection";
+import { generatePageMetadata } from "@/components/SEO";
+import { locales, type Locale } from "@/lib/i18n";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  if (!locales.includes(locale as Locale)) {
+    return {};
+  }
+
+  return generatePageMetadata(locale as Locale, {
+    title: "Wholesale Software Features",
+    description:
+      "Explore Wholesalify features for catalog management, inventory visibility, order capture, and wholesale customer workflows.",
+    pathname: "/features",
+  });
+}
 
 export default async function FeaturesPage({
   params: { locale }

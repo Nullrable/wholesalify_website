@@ -1,13 +1,14 @@
-import './globals.css'
+import "./globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://wholesalify.com"),
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return (
-    <html>
-      <body>{children}</body>
-    </html>
-  )
+  return children;
 }
