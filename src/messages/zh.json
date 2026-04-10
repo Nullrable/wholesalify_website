@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "features": "功能",
+    "about": "关于",
+    "contact": "联系我们",
+    "getEarlyAccess": "获取早期访问"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "现代化 B2B 批发订货平台",
+    "description": "在一个简单的系统中管理批发订单、库存和采购。",
+    "cta": "申请早期访问",
+    "emailPlaceholder": "输入您的邮箱",
+    "joinList": "加入早期访问列表。"
+  },
+  "problem": {
+    "title": "批发企业仍在手动管理订单。",
+    "whatsapp": "通过 WhatsApp 接单",
+    "whatsappDesc": "对话混乱、订单丢失、无历史记录。",
+    "spreadsheets": "手动使用电子表格",
+    "spreadsheetsDesc": "容易出错、难以跟踪、无协作功能。",
+    "inventory": "库存错误",
+    "inventoryDesc": "超卖、断货、客户不满。",
+    "purchasing": "采购流程缓慢",
+    "purchasingDesc": "补货延迟、错失销售机会。"
+  },
+  "solution": {
+    "title": "Wholesalify 简化批发运营。",
+    "subtitle": "高效运营批发业务所需的一切。"
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "批发订货门户",
+      "description": "客户在线下批发订单。",
+      "items": ["B2B 目录", "批量订货", "客户账户", "订单历史"]
+    },
+    "orderManagement": {
+      "title": "订单管理",
+      "description": "在一个仪表板中管理所有订单。",
+      "items": ["订单追踪", "状态更新", "客户记录"]
+    },
+    "inventory": {
+      "title": "库存管理",
+      "description": "实时库存追踪。",
+      "items": ["库存水平", "低库存提醒", "库存报告"]
+    },
+    "purchasing": {
+      "title": "采购管理",
+      "description": "管理供应商和采购订单。",
+      "items": ["采购订单", "供应商追踪", "库存补货"]
+    },
+    "admin": {
+      "title": "管理后台",
+      "description": "完整的批发管理。",
+      "items": ["订单概览", "库存洞察", "客户分析"]
+    },
+    "mobile": {
+      "title": "移动管理",
+      "description": "随时随地管理业务。",
+      "items": ["iOS 应用", "Android 应用"]
+    }
+  },
+  "preview": {
+    "title": "产品概览",
+    "subtitle": "管理批发业务所需的一切。",
+    "orders": "订单",
+    "inventory": "库存",
+    "purchasing": "采购",
+    "customers": "客户"
+  },
+  "cta": {
+    "title": "开始使用 Wholesalify",
+    "subtitle": "加入早期访问，改变您的批发业务。"
+  },
+  "footer": {
+    "tagline": "面向批发商和分销商的现代化 B2B 批发订货平台。",
+    "product": "产品",
+    "features": "功能",
+    "pricing": "价格",
+    "about": "关于",
+    "company": "公司",
+    "contact": "联系我们",
+    "blog": "博客",
+    "legal": "法律",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "copyright": "© {year} Wholesalify. 保留所有权利。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "对早期访问感兴趣或有疑问？请联系我们。",
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "email": "邮箱",
+    "emailPlaceholder": "your@email.com",
+    "message": "留言",
+    "messagePlaceholder": "我们能帮您什么？",
+    "send": "发送消息",
+    "orEmail": "或直接发送邮件至"
+  },
+  "about": {
+    "title": "关于 Wholesalify",
+    "description": "Wholesalify 是一个现代化的 B2B 批发订货平台，专为批发商、分销商和贸易公司设计。",
+    "mission": "我们的使命是通过提供一个管理订单、库存和采购的一体化平台来简化批发运营。",
+    "vision": "我们设想一个无论规模大小的批发企业都能通过现代技术高效运营的世界。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新：{date}",
+    "section1Title": "1. 我们收集的信息",
+    "section1Desc": "我们直接收集您提供的信息，包括注册早期访问或联系我们时的姓名、邮箱和业务信息。",
+    "section2Title": "2. 我们如何使用信息",
+    "section2Desc": "我们使用这些信息来提供和改进我们的服务、与您沟通，并向您发送关于 Wholesalify 的更新。",
+    "section3Title": "3. 数据安全",
+    "section3Desc": "我们实施适当的安全措施来保护您的个人信息。",
+    "section4Title": "4. 联系",
+    "section4Desc": "如果您对本隐私政策有疑问，请联系我们。"
+  },
+  "terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新：{date}",
+    "section1Title": "1. 条款接受",
+    "section1Desc": "访问或使用 Wholesalify 即表示您同意受本服务条款的约束。",
+    "section2Title": "2. 服务使用",
+    "section2Desc": "Wholesalify 提供 B2B 批发订货平台。您同意仅将服务用于合法目的，并遵守本条款。",
+    "section3Title": "3. 知识产权",
+    "section3Desc": "Wholesalify 上所有可用的内容和材料均为 Wholesalify 或其许可方的财产。",
+    "section4Title": "4. 联系",
+    "section4Desc": "如果您对本条款有疑问，请联系我们。"
+  },
+  "featuresPage": {
+    "title": "产品功能",
+    "subtitle": "高效运营批发业务所需的一切。"
+  },
+  "form": {
+    "submitting": "提交中...",
+    "success": "谢谢！我们会尽快联系您。",
+    "error": "提交失败。请重试。"
+  }
+}

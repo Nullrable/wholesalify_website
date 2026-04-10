@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact",
+    "getEarlyAccess": "Get Early Access"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Modern B2B Wholesale Ordering Platform",
+    "description": "Manage wholesale orders, inventory, and purchasing in one simple system.",
+    "cta": "Request Early Access",
+    "emailPlaceholder": "Enter your email",
+    "joinList": "Join the early access list."
+  },
+  "problem": {
+    "title": "Wholesale businesses still manage orders manually.",
+    "whatsapp": "Orders through WhatsApp",
+    "whatsappDesc": "Messy conversations, lost orders, no history.",
+    "spreadsheets": "Manual spreadsheets",
+    "spreadsheetsDesc": "Error-prone, hard to track, no collaboration.",
+    "inventory": "Inventory mistakes",
+    "inventoryDesc": "Overselling, stockouts, unhappy customers.",
+    "purchasing": "Slow purchasing workflows",
+    "purchasingDesc": "Delayed restocking, lost sales opportunities."
+  },
+  "solution": {
+    "title": "Wholesalify simplifies wholesale operations.",
+    "subtitle": "Everything you need to run your wholesale business efficiently."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Wholesale Ordering Portal",
+      "description": "Customers place wholesale orders online.",
+      "items": ["B2B catalog", "Bulk ordering", "Customer accounts", "Order history"]
+    },
+    "orderManagement": {
+      "title": "Order Management",
+      "description": "Manage all orders in one dashboard.",
+      "items": ["Order tracking", "Status updates", "Customer records"]
+    },
+    "inventory": {
+      "title": "Inventory Management",
+      "description": "Real‑time inventory tracking.",
+      "items": ["Inventory levels", "Low stock alerts", "Stock reports"]
+    },
+    "purchasing": {
+      "title": "Purchasing Management",
+      "description": "Manage suppliers and purchase orders.",
+      "items": ["Purchase orders", "Supplier tracking", "Stock replenishment"]
+    },
+    "admin": {
+      "title": "Admin Dashboard",
+      "description": "Complete wholesale management.",
+      "items": ["Orders overview", "Inventory insights", "Customer analytics"]
+    },
+    "mobile": {
+      "title": "Mobile Admin",
+      "description": "Manage business anywhere.",
+      "items": ["iOS App", "Android App"]
+    }
+  },
+  "preview": {
+    "title": "Product Overview",
+    "subtitle": "Everything you need to manage your wholesale business.",
+    "orders": "Orders",
+    "inventory": "Inventory",
+    "purchasing": "Purchasing",
+    "customers": "Customers"
+  },
+  "cta": {
+    "title": "Start using Wholesalify",
+    "subtitle": "Join early access and transform your wholesale business."
+  },
+  "footer": {
+    "tagline": "Modern B2B Wholesale Ordering Platform for wholesalers and distributors.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About",
+    "company": "Company",
+    "contact": "Contact",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "copyright": "© {year} Wholesalify. All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Interested in early access or have questions? Reach out to us.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "message": "Message",
+    "messagePlaceholder": "How can we help?",
+    "send": "Send Message",
+    "orEmail": "Or email us directly at"
+  },
+  "about": {
+    "title": "About Wholesalify",
+    "description": "Wholesalify is a modern B2B wholesale ordering platform designed for wholesalers, distributors, and trade companies.",
+    "mission": "Our mission is to simplify wholesale operations by providing an all-in-one platform for managing orders, inventory, and purchasing.",
+    "vision": "We envision a world where every wholesale business, regardless of size, can operate efficiently with modern technology."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: {date}",
+    "section1Title": "1. Information We Collect",
+    "section1Desc": "We collect information you provide directly, including name, email, and business information when you sign up for early access or contact us.",
+    "section2Title": "2. How We Use Information",
+    "section2Desc": "We use the information to provide and improve our services, communicate with you, and send you updates about Wholesalify.",
+    "section3Title": "3. Data Security",
+    "section3Desc": "We implement appropriate security measures to protect your personal information.",
+    "section4Title": "4. Contact",
+    "section4Desc": "If you have questions about this Privacy Policy, please contact us."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: {date}",
+    "section1Title": "1. Acceptance of Terms",
+    "section1Desc": "By accessing or using Wholesalify, you agree to be bound by these Terms of Service.",
+    "section2Title": "2. Use of Service",
+    "section2Desc": "Wholesalify provides a B2B wholesale ordering platform. You agree to use it only for lawful purposes and in accordance with these Terms.",
+    "section3Title": "3. Intellectual Property",
+    "section3Desc": "All content and materials available on Wholesalify are the property of Wholesalify or its licensors.",
+    "section4Title": "4. Contact",
+    "section4Desc": "If you have questions about these Terms, please contact us."
+  },
+  "featuresPage": {
+    "title": "Product Features",
+    "subtitle": "Everything you need to run your wholesale business efficiently."
+  },
+  "form": {
+    "submitting": "Submitting...",
+    "success": "Thanks! We'll contact you soon.",
+    "error": "Failed to submit. Please try again."
+  }
+}
