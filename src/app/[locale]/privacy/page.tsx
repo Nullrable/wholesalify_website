@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
-import { generatePageMetadata } from "@/components/SEO";
+import { generateTranslatedPageMetadata } from "@/components/SEO";
 import { locales, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 
@@ -13,10 +13,10 @@ export async function generateMetadata({
     return {};
   }
 
-  return generatePageMetadata(locale as Locale, {
-    title: "Privacy Policy",
-    description:
-      "Read the Wholesalify privacy policy covering data handling, customer information, and platform communications.",
+  return generateTranslatedPageMetadata(locale as Locale, {
+    namespace: "privacy",
+    titleKey: "title",
+    descriptionKey: "section2Desc",
     pathname: "/privacy",
   });
 }

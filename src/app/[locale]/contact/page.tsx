@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
-import { generatePageMetadata } from "@/components/SEO";
+import { generateTranslatedPageMetadata } from "@/components/SEO";
 import { locales, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 
@@ -13,10 +13,10 @@ export async function generateMetadata({
     return {};
   }
 
-  return generatePageMetadata(locale as Locale, {
-    title: "Contact Wholesalify",
-    description:
-      "Contact Wholesalify to discuss wholesale ordering workflows, early access, partnerships, or product questions.",
+  return generateTranslatedPageMetadata(locale as Locale, {
+    namespace: "contact",
+    titleKey: "title",
+    descriptionKey: "subtitle",
     pathname: "/contact",
   });
 }

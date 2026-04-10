@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { locales } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -12,15 +13,29 @@ interface SEOProps {
 
 const BASE_URL = "https://wholesalify.com";
 const DEFAULT_OG_IMAGE = "/og-image.svg";
+const DEFAULT_LOCALE: Locale = "en";
 
-function buildLocalizedAlternates(pathname: string) {
-  const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
+function normalizePathname(pathname: string) {
+  if (!pathname || pathname === "/") {
+    return "";
+  }
+
+  return pathname.startsWith("/") ? pathname : `/${pathname}`;
+}
+
+function buildLocalizedAlternates(locale: Locale, pathname: string) {
+  const normalizedPath = normalizePathname(pathname);
 
   return {
-    canonical: normalizedPath,
+    canonical: `/${locale}${normalizedPath}`,
     languages: {
-      "x-default": "/en",
-      ...Object.fromEntries(locales.map((locale) => [locale, `/${locale}${normalizedPath}`])),
+      "x-default": `/${DEFAULT_LOCALE}${normalizedPath}`,
+      ...Object.fromEntries(
+        locales.map((supportedLocale) => [
+          supportedLocale,
+          `/${supportedLocale}${normalizedPath}`,
+        ]),
+      ),
     },
   };
 }
@@ -32,7 +47,7 @@ export function generateMetadata({
   pathname = "",
   image = DEFAULT_OG_IMAGE,
 }: SEOProps): Metadata {
-  const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  const normalizedPath = normalizePathname(pathname);
   const canonical = `${BASE_URL}/${locale}${normalizedPath}`;
   const fullTitle = title === "Wholesalify" ? title : `${title} | Wholesalify`;
 
@@ -48,7 +63,7 @@ export function generateMetadata({
       "wholesale software",
     ],
     alternates: {
-      ...buildLocalizedAlternates(normalizedPath),
+      ...buildLocalizedAlternates(locale, normalizedPath),
     },
     openGraph: {
       type: "website",
@@ -85,20 +100,6 @@ export function generateMetadata({
       },
     },
   };
-}
-
-export function generateHreflangTags(): string {
-  const tags = locales.map((locale) => {
-    const hreflang = locale === "en" ? "en" : locale;
-    return `<link rel="alternate" hreflang="${hreflang}" href="${BASE_URL}/${locale}" />`;
-  });
-
-  // Add x-default
-  tags.push(
-    `<link rel="alternate" hreflang="x-default" href="${BASE_URL}/en" />`,
-  );
-
-  return tags.join("\n");
 }
 
 export const organizationSchema = {
@@ -166,6 +167,29 @@ export function generatePageMetadata(
     locale,
     title: page.title,
     description: page.description,
+    pathname: page.pathname,
+    image: page.image,
+  });
+}
+
+export async function generateTranslatedPageMetadata(
+  locale: Locale,
+  page: {
+    namespace: string;
+    titleKey: string;
+    descriptionKey: string;
+    pathname?: string;
+    image?: string;
+  },
+): Promise<Metadata> {
+  const t = await getTranslations({
+    locale,
+    namespace: page.namespace,
+  });
+
+  return generatePageMetadata(locale, {
+    title: t(page.titleKey),
+    description: t(page.descriptionKey),
     pathname: page.pathname,
     image: page.image,
   });

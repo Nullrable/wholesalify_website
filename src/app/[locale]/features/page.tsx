@@ -2,7 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
-import { generatePageMetadata } from "@/components/SEO";
+import { generateTranslatedPageMetadata } from "@/components/SEO";
 import { locales, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 
@@ -15,10 +15,10 @@ export async function generateMetadata({
     return {};
   }
 
-  return generatePageMetadata(locale as Locale, {
-    title: "Wholesale Software Features",
-    description:
-      "Explore Wholesalify features for catalog management, inventory visibility, order capture, and wholesale customer workflows.",
+  return generateTranslatedPageMetadata(locale as Locale, {
+    namespace: "featuresPage",
+    titleKey: "title",
+    descriptionKey: "subtitle",
     pathname: "/features",
   });
 }

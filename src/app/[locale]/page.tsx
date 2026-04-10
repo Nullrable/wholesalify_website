@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Features from "@/components/Features";
 import CTASection from "@/components/CTASection";
-import { generatePageMetadata } from "@/components/SEO";
+import { generateTranslatedPageMetadata } from "@/components/SEO";
 import { locales, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 
@@ -16,11 +16,10 @@ export async function generateMetadata({
     return {};
   }
 
-  return generatePageMetadata(locale as Locale, {
-    title: "B2B Wholesale Ordering Platform",
-    description:
-      "Wholesalify helps wholesalers manage catalogs, inventory, and repeat orders in one streamlined B2B ordering system.",
-    pathname: "",
+  return generateTranslatedPageMetadata(locale as Locale, {
+    namespace: "hero",
+    titleKey: "subtitle",
+    descriptionKey: "description",
   });
 }
 
