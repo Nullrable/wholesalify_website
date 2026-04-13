@@ -1,16 +1,192 @@
 {
-  "nav": { "features": "Özellikler", "about": "Hakkında", "contact": "İletişim", "getEarlyAccess": "Erken Erişim" },
-  "hero": { "title": "Wholesalify", "subtitle": "Modern B2B Toptan Sipariş Platformu", "description": "Toptan siparişleri, envanteri ve satın alma işlemlerini tek bir basit sistemde yönetin.", "cta": "Erken Erişim İste", "emailPlaceholder": "E-posta adresinizi girin", "joinList": "Erken erişim listesine katılın." },
-  "problem": { "title": "Toptancılık işletmeleri siparişleri hâlâ manuel olarak yönetiyor.", "whatsapp": "WhatsApp üzerinden siparişler", "whatsappDesc": "Dağınık görüşmeler, kayıp siparişler, geçmiş yok.", "spreadsheets": "Manuel elektronik tablolar", "spreadsheetsDesc": "Hataya açık, takibi zor, işbirliği yok.", "inventory": "Envanter hataları", "inventoryDesc": "Aşırı satış, stok tükenmesi, mutlu olmayan müşteriler.", "purchasing": "Yavaş satın alma iş akışları", "purchasingDesc": "Geç stok yenileme, kaybedilen satış fırsatları." },
-  "solution": { "title": "Wholesalify toptan operasyonlarını basitleştirir.", "subtitle": "Toptan işletmenizi verimli bir şekilde çalıştırmak için ihtiyacınız olan her şey." },
-  "features": { "orderingPortal": { "title": "Toptan Sipariş Portalı", "description": "Müşteriler toptan siparişlerini online verir.", "items": ["B2B kataloğu", "Toplu sipariş", "Müşteri hesapları", "Sipariş geçmişi"] }, "orderManagement": { "title": "Sipariş Yönetimi", "description": "Tüm siparişleri tek bir panelde yönetin.", "items": ["Sipariş takibi", "Durum güncellemeleri", "Müşteri kayıtları"] }, "inventory": { "title": "Envanter Yönetimi", "description": "Gerçek zamanlı envanter takibi.", "items": ["Envanter seviyeleri", "Düşük stok uyarıları", "Stok raporları"] }, "purchasing": { "title": "Satın Alma Yönetimi", "description": "Tedarikçileri ve satın alma siparişlerini yönetin.", "items": ["Satın alma siparişleri", "Tedarikçi takibi", "Stok yenileme"] }, "admin": { "title": "Admin Paneli", "description": "Tam toptan yönetimi.", "items": ["Siparişlere genel bakış", "Envanter içgörüleri", "Müşteri analitiği"] }, "mobile": { "title": "Mobil Admin", "description": "İşinizi her yerden yönetin.", "items": ["iOS Uygulaması", "Android Uygulaması"] } },
-  "preview": { "title": "Ürün Özeti", "subtitle": "Toptan işletmenizi yönetmek için ihtiyacınız olan her şey.", "orders": "Siparişler", "inventory": "Envanter", "purchasing": "Satın Alma", "customers": "Müşteriler" },
-  "cta": { "title": "Wholesalify'i kullanmaya başlayın", "subtitle": "Erken erişime katılın ve toptan işinizi dönüştürün." },
-  "footer": { "tagline": "Toptancılar ve distribütörler için modern B2B sipariş platformu.", "product": "Ürün", "features": "Özellikler", "pricing": "Fiyatlandırma", "about": "Hakkında", "company": "Şirket", "contact": "İletişim", "blog": "Blog", "legal": "Yasal", "privacy": "Gizlilik", "terms": "Şartlar", "copyright": "© {year} Wholesalify. Tüm hakları saklıdır." },
-  "contact": { "title": "Bize Ulaşın", "subtitle": "Erken erişimle ilgileniyor veya sorularınız mı var? Bize ulaşın.", "name": "İsim", "namePlaceholder": "Adınız", "email": "E-posta", "emailPlaceholder": "your@email.com", "message": "Mesaj", "messagePlaceholder": "Nasıl yardımcı olabiliriz?", "send": "Mesaj Gönder", "orEmail": "Veya doğrudan bize e-posta gönderin" },
-  "about": { "title": "Wholesalify Hakkında", "description": "Wholesalify, toptancılar, distribütörler ve ticaret şirketleri için tasarlanmış modern bir B2B toptan sipariş platformudur.", "mission": "Misyonumuz, siparişleri, envanteri ve satın alma işlemlerini yönetmek için hepsi bir arada bir platform sağlayarak toptan operasyonlarını basitleştirmektir.", "vision": "Her boyuttaki toptan işletmesinin modern teknolojiyle verimli bir şekilde çalışabildiği bir dünya hayal ediyoruz." },
-  "privacy": { "title": "Gizlilik Politikası", "lastUpdated": "Son güncelleme: {date}", "section1Title": "1. Topladığımız Bilgiler", "section1Desc": "Erken erişim için kaydolduğunuzda veya bizimle iletişime geçtiğinizde, adınız, e-posta adresiniz ve iş bilgileriniz dahil olmak üzere doğrudan sağladığınız bilgileri toplarız.", "section2Title": "2. Bilgileri Nasıl Kullanıyoruz", "section2Desc": "Hizmetlerimizi sağlamak ve geliştirmek, sizinle iletişim kurmak ve Wholesalify hakkında güncellemeler göndermek için bilgileri kullanırız.", "section3Title": "3. Veri Güvenliği", "section3Desc": "Kişisel bilgilerinizi korumak için uygun güvenlik önlemleri uyguluyoruz.", "section4Title": "4. İletişim", "section4Desc": "Bu Gizlilik Politikası hakkında sorularınız varsa lütfen bizimle iletişime geçin." },
-  "terms": { "title": "Kullanım Koşulları", "lastUpdated": "Son güncelleme: {date}", "section1Title": "1. Koşulların Kabulü", "section1Desc": "Wholesalify'e erişerek veya kullanarak, bu Kullanım Koşulları'na bağlı kalmayı kabul edersiniz.", "section2Title": "2. Hizmet Kullanımı", "section2Desc": "Wholesalify bir B2B toptan sipariş platformu sağlar. Yalnızca yasal amaçlar için ve bu Koşullara uygun olarak kullanmayı kabul edersiniz.", "section3Title": "3. Fikri Mülkiyet", "section3Desc": "Wholesalify'de mevcut olan tüm içerik ve materyaller Wholesalify'in veya lisans verenlerinin mülkiyetindedir.", "section4Title": "4. İletişim", "section4Desc": "Bu Koşullar hakkında sorularınız varsa lütfen bizimle iletişime geçin." },
-  "featuresPage": { "title": "Ürün Özellikleri", "subtitle": "Toptan işletmenizi verimli bir şekilde çalıştırmak için ihtiyacınız olan her şey." },
-  "form": { "submitting": "Gönderiliyor...", "success": "Teşekkürler! Yakında sizinle iletişime geçeceğiz.", "error": "Gönderme başarısız. Lütfen tekrar deneyin." }
+  "nav": {
+    "features": "Özellikler",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "getEarlyAccess": "Erken Erişim"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Modern B2B Toptan Sipariş Platformu",
+    "description": "Toptan siparişleri, envanteri ve satın alma işlemlerini tek bir basit sistemde yönetin.",
+    "cta": "Erken Erişim İste",
+    "emailPlaceholder": "E-posta adresinizi girin",
+    "joinList": "Erken erişim listesine katılın."
+  },
+  "problem": {
+    "title": "Toptancılık işletmeleri siparişleri hâlâ manuel olarak yönetiyor.",
+    "whatsapp": "WhatsApp üzerinden siparişler",
+    "whatsappDesc": "Dağınık görüşmeler, kayıp siparişler, geçmiş yok.",
+    "spreadsheets": "Manuel elektronik tablolar",
+    "spreadsheetsDesc": "Hataya açık, takibi zor, işbirliği yok.",
+    "inventory": "Envanter hataları",
+    "inventoryDesc": "Aşırı satış, stok tükenmesi, mutlu olmayan müşteriler.",
+    "purchasing": "Yavaş satın alma iş akışları",
+    "purchasingDesc": "Geç stok yenileme, kaybedilen satış fırsatları."
+  },
+  "solution": {
+    "title": "Wholesalify toptan operasyonlarını basitleştirir.",
+    "subtitle": "Toptan işletmenizi verimli bir şekilde çalıştırmak için ihtiyacınız olan her şey."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Toptan Sipariş Portalı",
+      "description": "Müşteriler toptan siparişlerini online verir.",
+      "items": [
+        "B2B kataloğu",
+        "Toplu sipariş",
+        "Müşteri hesapları",
+        "Sipariş geçmişi"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Tartılı Ürün Siparişi",
+      "description": "Standart dışı ürünleri hassas miktar işleme ile ağırlığa göre satın.",
+      "items": [
+        "Ağırlık tabanlı fiyatlandırma",
+        "Dinamik miktar girişi",
+        "Esnek birim dönüşümü"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Meyve Çok Kademeli Fiyatlandırma",
+      "description": "Birden fazla satış birimi desteğiyle meyveler için kademeli fiyatlandırma.",
+      "items": [
+        "Grade tabanlı fiyatlandırma",
+        "Çoklu birim desteği (kg/koli/ad)",
+        "Hacim indirimleri"
+      ]
+    },
+    "multiSpec": {
+      "title": "Çok Spesifikasyonlu Ürünler",
+      "description": "Birden fazla spesifikasyon ve varyasyona sahip standart ürünler satın.",
+      "items": [
+        "Boyut varyasyonları",
+        "Renk seçenekleri",
+        "Lezzet kombinasyonları"
+      ]
+    },
+    "orderManagement": {
+      "title": "Sipariş Yönetimi",
+      "description": "Tüm siparişleri tek bir panelde yönetin.",
+      "items": [
+        "Sipariş takibi",
+        "Durum güncellemeleri",
+        "Müşteri kayıtları"
+      ]
+    },
+    "inventory": {
+      "title": "Envanter Yönetimi",
+      "description": "Gerçek zamanlı envanter takibi.",
+      "items": [
+        "Envanter seviyeleri",
+        "Düşük stok uyarıları",
+        "Stok raporları"
+      ]
+    },
+    "purchasing": {
+      "title": "Satın Alma Yönetimi",
+      "description": "Tedarikçileri ve satın alma siparişlerini yönetin.",
+      "items": [
+        "Satın alma siparişleri",
+        "Tedarikçi takibi",
+        "Stok yenileme"
+      ]
+    },
+    "admin": {
+      "title": "Admin Paneli",
+      "description": "Tam toptan yönetimi.",
+      "items": [
+        "Siparişlere genel bakış",
+        "Envanter içgörüleri",
+        "Müşteri analitiği"
+      ]
+    },
+    "mobile": {
+      "title": "Mobil Admin",
+      "description": "İşinizi her yerden yönetin.",
+      "items": [
+        "iOS Uygulaması",
+        "Android Uygulaması"
+      ]
+    }
+  },
+  "preview": {
+    "title": "Ürün Özeti",
+    "subtitle": "Toptan işletmenizi yönetmek için ihtiyacınız olan her şey.",
+    "orders": "Siparişler",
+    "inventory": "Envanter",
+    "purchasing": "Satın Alma",
+    "customers": "Müşteriler"
+  },
+  "cta": {
+    "title": "Wholesalify'i kullanmaya başlayın",
+    "subtitle": "Erken erişime katılın ve toptan işinizi dönüştürün."
+  },
+  "footer": {
+    "tagline": "Toptancılar ve distribütörler için modern B2B sipariş platformu.",
+    "product": "Ürün",
+    "features": "Özellikler",
+    "pricing": "Fiyatlandırma",
+    "about": "Hakkında",
+    "company": "Şirket",
+    "contact": "İletişim",
+    "blog": "Blog",
+    "legal": "Yasal",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "copyright": "© {year} Wholesalify. Tüm hakları saklıdır."
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Erken erişimle ilgileniyor veya sorularınız mı var? Bize ulaşın.",
+    "name": "İsim",
+    "namePlaceholder": "Adınız",
+    "email": "E-posta",
+    "emailPlaceholder": "your@email.com",
+    "message": "Mesaj",
+    "messagePlaceholder": "Nasıl yardımcı olabiliriz?",
+    "send": "Mesaj Gönder",
+    "orEmail": "Veya doğrudan bize e-posta gönderin"
+  },
+  "about": {
+    "title": "Wholesalify Hakkında",
+    "description": "Wholesalify, toptancılar, distribütörler ve ticaret şirketleri için tasarlanmış modern bir B2B toptan sipariş platformudur.",
+    "mission": "Misyonumuz, siparişleri, envanteri ve satın alma işlemlerini yönetmek için hepsi bir arada bir platform sağlayarak toptan operasyonlarını basitleştirmektir.",
+    "vision": "Her boyuttaki toptan işletmesinin modern teknolojiyle verimli bir şekilde çalışabildiği bir dünya hayal ediyoruz.",
+    "visionTitle": "Vizyonumuz"
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme: {date}",
+    "section1Title": "1. Topladığımız Bilgiler",
+    "section1Desc": "Erken erişim için kaydolduğunuzda veya bizimle iletişime geçtiğinizde, adınız, e-posta adresiniz ve iş bilgileriniz dahil olmak üzere doğrudan sağladığınız bilgileri toplarız.",
+    "section2Title": "2. Bilgileri Nasıl Kullanıyoruz",
+    "section2Desc": "Hizmetlerimizi sağlamak ve geliştirmek, sizinle iletişim kurmak ve Wholesalify hakkında güncellemeler göndermek için bilgileri kullanırız.",
+    "section3Title": "3. Veri Güvenliği",
+    "section3Desc": "Kişisel bilgilerinizi korumak için uygun güvenlik önlemleri uyguluyoruz.",
+    "section4Title": "4. İletişim",
+    "section4Desc": "Bu Gizlilik Politikası hakkında sorularınız varsa lütfen bizimle iletişime geçin."
+  },
+  "terms": {
+    "title": "Kullanım Koşulları",
+    "lastUpdated": "Son güncelleme: {date}",
+    "section1Title": "1. Koşulların Kabulü",
+    "section1Desc": "Wholesalify'e erişerek veya kullanarak, bu Kullanım Koşulları'na bağlı kalmayı kabul edersiniz.",
+    "section2Title": "2. Hizmet Kullanımı",
+    "section2Desc": "Wholesalify bir B2B toptan sipariş platformu sağlar. Yalnızca yasal amaçlar için ve bu Koşullara uygun olarak kullanmayı kabul edersiniz.",
+    "section3Title": "3. Fikri Mülkiyet",
+    "section3Desc": "Wholesalify'de mevcut olan tüm içerik ve materyaller Wholesalify'in veya lisans verenlerinin mülkiyetindedir.",
+    "section4Title": "4. İletişim",
+    "section4Desc": "Bu Koşullar hakkında sorularınız varsa lütfen bizimle iletişime geçin."
+  },
+  "featuresPage": {
+    "title": "Ürün Özellikleri",
+    "subtitle": "Toptan işletmenizi verimli bir şekilde çalıştırmak için ihtiyacınız olan her şey."
+  },
+  "form": {
+    "submitting": "Gönderiliyor...",
+    "success": "Teşekkürler! Yakında sizinle iletişime geçeceğiz.",
+    "error": "Gönderme başarısız. Lütfen tekrar deneyin."
+  }
 }

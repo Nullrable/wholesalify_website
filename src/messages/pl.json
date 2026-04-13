@@ -1,16 +1,192 @@
 {
-  "nav": { "features": "Funkcje", "about": "O nas", "contact": "Kontakt", "getEarlyAccess": "Wczesny Dostęp" },
-  "hero": { "title": "Wholesalify", "subtitle": "Nowoczesna Platforma Zamówień Hurtowych B2B", "description": "Zarządzaj zamówieniami hurtowymi, inwentarzem i zakupami w jednym prostym systemie.", "cta": "Poproś o Wczesny Dostęp", "emailPlaceholder": "Wprowadź swój e-mail", "joinList": "Dołącz do listy wczesnego dostępu." },
-  "problem": { "title": "Firmy hurtowe nadal zarządzają zamówieniami ręcznie.", "whatsapp": "Zamówienia przez WhatsApp", "whatsappDesc": "Nieuporządkowane rozmowy, zagubione zamówienia, brak historii.", "spreadsheets": "Ręczne arkusze kalkulacyjne", "spreadsheetsDesc": "Podatne na błędy, trudne do śledzenia, brak współpracy.", "inventory": "Błędy w inwentarzu", "inventoryDesc": "Nadmierna sprzedaż, braki w magazynie, niezadowoleni klienci.", "purchasing": "Powolne procesy zakupowe", "purchasingDesc": "Opóźnione uzupełnianie, utracone szanse sprzedaży." },
-  "solution": { "title": "Wholesalify upraszcza operacje hurtowe.", "subtitle": "Wszystko, czego potrzebujesz do efektywnego prowadzenia firmy hurtowej." },
-  "features": { "orderingPortal": { "title": "Portal Zamówień Hurtowych", "description": "Klienci składają zamówienia hurtowe online.", "items": ["Katalog B2B", "Zamówienia hurtowe", "Konta klientów", "Historia zamówień"] }, "orderManagement": { "title": "Zarządzanie Zamówieniami", "description": "Zarządzaj wszystkimi zamówieniami w jednym panelu.", "items": ["Śledzenie zamówień", "Aktualizacje statusu", "Rekordy klientów"] }, "inventory": { "title": "Zarządzanie Inwentarzem", "description": "Śledzenie inwentarza w czasie rzeczywistym.", "items": ["Poziomy inwentarza", "Alerty niskiego stanu", "Raporty magazynowe"] }, "purchasing": { "title": "Zarządzanie Zakupami", "description": "Zarządzaj dostawcami i zamówieniami zakupowymi.", "items": ["Zamówienia zakupowe", "Śledzenie dostawców", "Uzupełnianie stanu"] }, "admin": { "title": "Panel Admina", "description": "Kompletne zarządzanie hurtowe.", "items": ["Przegląd zamówień", "Statystyki inwentarza", "Analityka klientów"] }, "mobile": { "title": "Admin Mobilny", "description": "Zarządzaj firmą z dowolnego miejsca.", "items": ["Aplikacja iOS", "Aplikacja Android"] } },
-  "preview": { "title": "Przegląd Produktu", "subtitle": "Wszystko, czego potrzebujesz do zarządzania firmą hurtową.", "orders": "Zamówienia", "inventory": "Inwentarz", "purchasing": "Zakupy", "customers": "Klienci" },
-  "cta": { "title": "Zacznij korzystać z Wholesalify", "subtitle": "Dołącz do wczesnego dostępu i przekształć swoją firmę hurtową." },
-  "footer": { "tagline": "Nowoczesna platforma zamówień B2B dla hurtowników i dystrybutorów.", "product": "Produkt", "features": "Funkcje", "pricing": "Ceny", "about": "O nas", "company": "Firma", "contact": "Kontakt", "blog": "Blog", "legal": "Prawne", "privacy": "Prywatność", "terms": "Regulamin", "copyright": "© {year} Wholesalify. Wszelkie prawa zastrzeżone." },
-  "contact": { "title": "Skontaktuj się z nami", "subtitle": "Zainteresowany wczesnym dostępem lub masz pytania? Skontaktuj się z nami.", "name": "Imię", "namePlaceholder": "Twoje imię", "email": "E-mail", "emailPlaceholder": "twój@email.com", "message": "Wiadomość", "messagePlaceholder": "Jak możemy pomóc?", "send": "Wyślij Wiadomość", "orEmail": "Lub napisz do nas bezpośrednio na" },
-  "about": { "title": "O Wholesalify", "description": "Wholesalify to nowoczesna platforma zamówień B2B zaprojektowana dla hurtowników, dystrybutorów i firm handlowych.", "mission": "Naszą misją jest upraszczanie operacji hurtowych poprzez dostarczenie kompleksowej platformy do zarządzania zamówieniami, inwentarzem i zakupami.", "vision": "Wyobrażamy sobie świat, w którym każda firma hurtowa, niezależnie od wielkości, może sprawnie operować dzięki nowoczesnej technologii." },
-  "privacy": { "title": "Polityka Prywatności", "lastUpdated": "Ostatnia aktualizacja: {date}", "section1Title": "1. Gromadzone Informacje", "section1Desc": "Gromadzimy informacje, które podajesz bezpośrednio, w tym imię, e-mail i informacje biznesowe, gdy rejestrujesz się w celu uzyskania wczesnego dostępu lub się z nami kontaktujesz.", "section2Title": "2. Jak Używamy Informacji", "section2Desc": "Używamy informacji do świadczenia i ulepszania naszych usług, komunikowania się z Tobą oraz wysyłania aktualizacji dotyczących Wholesalify.", "section3Title": "3. Bezpieczeństwo Danych", "section3Desc": "Wdrażamy odpowiednie środki bezpieczeństwa w celu ochrony Twoich danych osobowych.", "section4Title": "4. Kontakt", "section4Desc": "Jeśli masz pytania dotyczące tej Polityki Prywatności, skontaktuj się z nami." },
-  "terms": { "title": "Regulamin Usługi", "lastUpdated": "Ostatnia aktualizacja: {date}", "section1Title": "1. Akceptacja Regulaminu", "section1Desc": "Uzyskując dostęp lub korzystając z Wholesalify, wyrażasz zgodę na związanie się niniejszym Regulaminem Usługi.", "section2Title": "2. Korzystanie z Usługi", "section2Desc": "Wholesalify zapewnia platformę do zamówień B2B. Wyrażasz zgodę na korzystanie z niej wyłącznie w celach zgodnych z prawem i zgodnie z niniejszym Regulaminem.", "section3Title": "3. Własność Intelektualna", "section3Desc": "Wszystkie treści i materiały dostępne w Wholesalify są własnością Wholesalify lub jej licencjodawców.", "section4Title": "4. Kontakt", "section4Desc": "Jeśli masz pytania dotyczące niniejszego Regulaminu, skontaktuj się z nami." },
-  "featuresPage": { "title": "Funkcje Produktu", "subtitle": "Wszystko, czego potrzebujesz do efektywnego prowadzenia firmy hurtowej." },
-  "form": { "submitting": "Wysyłanie...", "success": "Dziękujemy! Skontaktujemy się z Tobą wkrótce.", "error": "Wysyłanie nie powiodło się. Spróbuj ponownie." }
+  "nav": {
+    "features": "Funkcje",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "getEarlyAccess": "Wczesny Dostęp"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Nowoczesna Platforma Zamówień Hurtowych B2B",
+    "description": "Zarządzaj zamówieniami hurtowymi, inwentarzem i zakupami w jednym prostym systemie.",
+    "cta": "Poproś o Wczesny Dostęp",
+    "emailPlaceholder": "Wprowadź swój e-mail",
+    "joinList": "Dołącz do listy wczesnego dostępu."
+  },
+  "problem": {
+    "title": "Firmy hurtowe nadal zarządzają zamówieniami ręcznie.",
+    "whatsapp": "Zamówienia przez WhatsApp",
+    "whatsappDesc": "Nieuporządkowane rozmowy, zagubione zamówienia, brak historii.",
+    "spreadsheets": "Ręczne arkusze kalkulacyjne",
+    "spreadsheetsDesc": "Podatne na błędy, trudne do śledzenia, brak współpracy.",
+    "inventory": "Błędy w inwentarzu",
+    "inventoryDesc": "Nadmierna sprzedaż, braki w magazynie, niezadowoleni klienci.",
+    "purchasing": "Powolne procesy zakupowe",
+    "purchasingDesc": "Opóźnione uzupełnianie, utracone szanse sprzedaży."
+  },
+  "solution": {
+    "title": "Wholesalify upraszcza operacje hurtowe.",
+    "subtitle": "Wszystko, czego potrzebujesz do efektywnego prowadzenia firmy hurtowej."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Portal Zamówień Hurtowych",
+      "description": "Klienci składają zamówienia hurtowe online.",
+      "items": [
+        "Katalog B2B",
+        "Zamówienia hurtowe",
+        "Konta klientów",
+        "Historia zamówień"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Zamówienia Produktów Ważonych",
+      "description": "Sprzedawaj produkty niestandardowe na wagę z precyzyjną obsługą ilości.",
+      "items": [
+        "Ceny na podstawie wagi",
+        "Dynamiczne wprowadzanie ilości",
+        "Elastyczna konwersja jednostek"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Wielopoziomowe Ceny Owoców",
+      "description": "Ceny ryczałtowe dla owoców z obsługą wielu jednostek sprzedaży.",
+      "items": [
+        "Ceny na podstawie klasy",
+        "Obsługa wielu jednostek (kg/paczka/szt)",
+        "Rabaty ilościowe"
+      ]
+    },
+    "multiSpec": {
+      "title": "Produkty Wielowariantowe",
+      "description": "Sprzedawaj produkty standardowe z wieloma specyfikacjami i wariantami.",
+      "items": [
+        "Warianty rozmiaru",
+        "Opcje kolorów",
+        "Kombinacje smakowe"
+      ]
+    },
+    "orderManagement": {
+      "title": "Zarządzanie Zamówieniami",
+      "description": "Zarządzaj wszystkimi zamówieniami w jednym panelu.",
+      "items": [
+        "Śledzenie zamówień",
+        "Aktualizacje statusu",
+        "Rekordy klientów"
+      ]
+    },
+    "inventory": {
+      "title": "Zarządzanie Inwentarzem",
+      "description": "Śledzenie inwentarza w czasie rzeczywistym.",
+      "items": [
+        "Poziomy inwentarza",
+        "Alerty niskiego stanu",
+        "Raporty magazynowe"
+      ]
+    },
+    "purchasing": {
+      "title": "Zarządzanie Zakupami",
+      "description": "Zarządzaj dostawcami i zamówieniami zakupowymi.",
+      "items": [
+        "Zamówienia zakupowe",
+        "Śledzenie dostawców",
+        "Uzupełnianie stanu"
+      ]
+    },
+    "admin": {
+      "title": "Panel Admina",
+      "description": "Kompletne zarządzanie hurtowe.",
+      "items": [
+        "Przegląd zamówień",
+        "Statystyki inwentarza",
+        "Analityka klientów"
+      ]
+    },
+    "mobile": {
+      "title": "Admin Mobilny",
+      "description": "Zarządzaj firmą z dowolnego miejsca.",
+      "items": [
+        "Aplikacja iOS",
+        "Aplikacja Android"
+      ]
+    }
+  },
+  "preview": {
+    "title": "Przegląd Produktu",
+    "subtitle": "Wszystko, czego potrzebujesz do zarządzania firmą hurtową.",
+    "orders": "Zamówienia",
+    "inventory": "Inwentarz",
+    "purchasing": "Zakupy",
+    "customers": "Klienci"
+  },
+  "cta": {
+    "title": "Zacznij korzystać z Wholesalify",
+    "subtitle": "Dołącz do wczesnego dostępu i przekształć swoją firmę hurtową."
+  },
+  "footer": {
+    "tagline": "Nowoczesna platforma zamówień B2B dla hurtowników i dystrybutorów.",
+    "product": "Produkt",
+    "features": "Funkcje",
+    "pricing": "Ceny",
+    "about": "O nas",
+    "company": "Firma",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "legal": "Prawne",
+    "privacy": "Prywatność",
+    "terms": "Regulamin",
+    "copyright": "© {year} Wholesalify. Wszelkie prawa zastrzeżone."
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "subtitle": "Zainteresowany wczesnym dostępem lub masz pytania? Skontaktuj się z nami.",
+    "name": "Imię",
+    "namePlaceholder": "Twoje imię",
+    "email": "E-mail",
+    "emailPlaceholder": "twój@email.com",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Jak możemy pomóc?",
+    "send": "Wyślij Wiadomość",
+    "orEmail": "Lub napisz do nas bezpośrednio na"
+  },
+  "about": {
+    "title": "O Wholesalify",
+    "description": "Wholesalify to nowoczesna platforma zamówień B2B zaprojektowana dla hurtowników, dystrybutorów i firm handlowych.",
+    "mission": "Naszą misją jest upraszczanie operacji hurtowych poprzez dostarczenie kompleksowej platformy do zarządzania zamówieniami, inwentarzem i zakupami.",
+    "vision": "Wyobrażamy sobie świat, w którym każda firma hurtowa, niezależnie od wielkości, może sprawnie operować dzięki nowoczesnej technologii.",
+    "visionTitle": "Nasza Wizja"
+  },
+  "privacy": {
+    "title": "Polityka Prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: {date}",
+    "section1Title": "1. Gromadzone Informacje",
+    "section1Desc": "Gromadzimy informacje, które podajesz bezpośrednio, w tym imię, e-mail i informacje biznesowe, gdy rejestrujesz się w celu uzyskania wczesnego dostępu lub się z nami kontaktujesz.",
+    "section2Title": "2. Jak Używamy Informacji",
+    "section2Desc": "Używamy informacji do świadczenia i ulepszania naszych usług, komunikowania się z Tobą oraz wysyłania aktualizacji dotyczących Wholesalify.",
+    "section3Title": "3. Bezpieczeństwo Danych",
+    "section3Desc": "Wdrażamy odpowiednie środki bezpieczeństwa w celu ochrony Twoich danych osobowych.",
+    "section4Title": "4. Kontakt",
+    "section4Desc": "Jeśli masz pytania dotyczące tej Polityki Prywatności, skontaktuj się z nami."
+  },
+  "terms": {
+    "title": "Regulamin Usługi",
+    "lastUpdated": "Ostatnia aktualizacja: {date}",
+    "section1Title": "1. Akceptacja Regulaminu",
+    "section1Desc": "Uzyskując dostęp lub korzystając z Wholesalify, wyrażasz zgodę na związanie się niniejszym Regulaminem Usługi.",
+    "section2Title": "2. Korzystanie z Usługi",
+    "section2Desc": "Wholesalify zapewnia platformę do zamówień B2B. Wyrażasz zgodę na korzystanie z niej wyłącznie w celach zgodnych z prawem i zgodnie z niniejszym Regulaminem.",
+    "section3Title": "3. Własność Intelektualna",
+    "section3Desc": "Wszystkie treści i materiały dostępne w Wholesalify są własnością Wholesalify lub jej licencjodawców.",
+    "section4Title": "4. Kontakt",
+    "section4Desc": "Jeśli masz pytania dotyczące niniejszego Regulaminu, skontaktuj się z nami."
+  },
+  "featuresPage": {
+    "title": "Funkcje Produktu",
+    "subtitle": "Wszystko, czego potrzebujesz do efektywnego prowadzenia firmy hurtowej."
+  },
+  "form": {
+    "submitting": "Wysyłanie...",
+    "success": "Dziękujemy! Skontaktujemy się z Tobą wkrótce.",
+    "error": "Wysyłanie nie powiodło się. Spróbuj ponownie."
+  }
 }

@@ -32,32 +32,83 @@
     "orderingPortal": {
       "title": "Wholesale Ordering Portal",
       "description": "Customers place wholesale orders online.",
-      "items": ["B2B catalog", "Bulk ordering", "Customer accounts", "Order history"]
+      "items": [
+        "B2B catalog",
+        "Bulk ordering",
+        "Customer accounts",
+        "Order history"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Weighed Product Ordering",
+      "description": "Sell non-standard products by weight with precise quantity handling.",
+      "items": [
+        "Weight-based pricing",
+        "Dynamic quantity input",
+        "Flexible unit conversion"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Fruit Multi-level Pricing",
+      "description": "Tiered pricing for fruits with support for multiple sales units.",
+      "items": [
+        "Grade-based pricing",
+        "Multi-unit support (kg/box/pcs)",
+        "Volume discounts"
+      ]
+    },
+    "multiSpec": {
+      "title": "Multi-specification Products",
+      "description": "Sell standard products with multiple specifications and variations.",
+      "items": [
+        "Size variations",
+        "Color options",
+        "Flavor combinations"
+      ]
     },
     "orderManagement": {
       "title": "Order Management",
       "description": "Manage all orders in one dashboard.",
-      "items": ["Order tracking", "Status updates", "Customer records"]
+      "items": [
+        "Order tracking",
+        "Status updates",
+        "Customer records"
+      ]
     },
     "inventory": {
       "title": "Inventory Management",
       "description": "Real‑time inventory tracking.",
-      "items": ["Inventory levels", "Low stock alerts", "Stock reports"]
+      "items": [
+        "Inventory levels",
+        "Low stock alerts",
+        "Stock reports"
+      ]
     },
     "purchasing": {
       "title": "Purchasing Management",
       "description": "Manage suppliers and purchase orders.",
-      "items": ["Purchase orders", "Supplier tracking", "Stock replenishment"]
+      "items": [
+        "Purchase orders",
+        "Supplier tracking",
+        "Stock replenishment"
+      ]
     },
     "admin": {
       "title": "Admin Dashboard",
       "description": "Complete wholesale management.",
-      "items": ["Orders overview", "Inventory insights", "Customer analytics"]
+      "items": [
+        "Orders overview",
+        "Inventory insights",
+        "Customer analytics"
+      ]
     },
     "mobile": {
       "title": "Mobile Admin",
       "description": "Manage business anywhere.",
-      "items": ["iOS App", "Android App"]
+      "items": [
+        "iOS App",
+        "Android App"
+      ]
     }
   },
   "preview": {
@@ -102,7 +153,8 @@
     "title": "About Wholesalify",
     "description": "Wholesalify is a modern B2B wholesale ordering platform designed for wholesalers, distributors, and trade companies.",
     "mission": "Our mission is to simplify wholesale operations by providing an all-in-one platform for managing orders, inventory, and purchasing.",
-    "vision": "We envision a world where every wholesale business, regardless of size, can operate efficiently with modern technology."
+    "vision": "We envision a world where every wholesale business, regardless of size, can operate efficiently with modern technology.",
+    "visionTitle": "Our Vision"
   },
   "privacy": {
     "title": "Privacy Policy",

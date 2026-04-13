@@ -1,16 +1,192 @@
 {
-  "nav": { "features": "Funktionen", "about": "Über", "contact": "Kontakt", "getEarlyAccess": "Frühzugang" },
-  "hero": { "title": "Wholesalify", "subtitle": "Moderne B2B Großhandelsbestellplattform", "description": "Verwalten Sie Großhandelsbestellungen, Inventar und Einkauf in einem einfachen System.", "cta": "Frühzugang anfordern", "emailPlaceholder": "Geben Sie Ihre E-Mail ein", "joinList": "Treten Sie der Frühzugangsliste bei." },
-  "problem": { "title": "Großhandelsunternehmen verwalten Bestellungen noch manuell.", "whatsapp": "Bestellungen über WhatsApp", "whatsappDesc": "Unübersichtliche Gespräche, verlorene Bestellungen, keine Historie.", "spreadsheets": "Manuelle Tabellen", "spreadsheetsDesc": "Fehleranfällig, schwer verfolgbar, keine Zusammenarbeit.", "inventory": "Inventarfehler", "inventoryDesc": "Überverkauf, Lagerbestandslücken, unzufriedene Kunden.", "purchasing": "Langsame Einkaufsabläufe", "purchasingDesc": "Langsame Wiederauffüllung, verpasste Verkaufschancen." },
-  "solution": { "title": "Wholesalify vereinfacht Großhandelsabläufe.", "subtitle": "Alles was Sie brauchen, um Ihr Großhandelsgeschäft effizient zu führen." },
-  "features": { "orderingPortal": { "title": "Großhandelsbestellportal", "description": "Kunden geben Großhandelsbestellungen online auf.", "items": ["B2B-Katalog", "Massensbestellung", "Kundenkonten", "Bestellhistorie"] }, "orderManagement": { "title": "Bestellverwaltung", "description": "Verwalten Sie alle Bestellungen in einem Dashboard.", "items": ["Bestellverfolgung", "Statusaktualisierungen", "Kundenaufzeichnungen"] }, "inventory": { "title": "Inventarverwaltung", "description": "Echtzeit-Inventarverfolgung.", "items": ["Inventarstände", "Warnungen bei niedrigem Bestand", "Bestandsberichte"] }, "purchasing": { "title": "Einkaufsverwaltung", "description": "Verwalten Sie Lieferanten und Bestellungen.", "items": ["Bestellungen", "Lieferantenverfolgung", "Bestandsauffüllung"] }, "admin": { "title": "Admin-Dashboard", "description": "Vollständige Großhandelsverwaltung.", "items": ["Bestellübersicht", "Inventareinblicke", "Kundenanalysen"] }, "mobile": { "title": "Mobiles Admin", "description": "Verwalten Sie Ihr Geschäft überall.", "items": ["iOS-App", "Android-App"] } },
-  "preview": { "title": "Produktübersicht", "subtitle": "Alles was Sie brauchen, um Ihr Großhandelsgeschäft zu verwalten.", "orders": "Bestellungen", "inventory": "Inventar", "purchasing": "Einkauf", "customers": "Kunden" },
-  "cta": { "title": "Beginnen Sie mit Wholesalify", "subtitle": "Schließen Sie sich dem Frühzugang an und transformieren Sie Ihr Großhandelsgeschäft." },
-  "footer": { "tagline": "Moderne B2B-Bestellplattform für Großhändler und Distributoren.", "product": "Produkt", "features": "Funktionen", "pricing": "Preise", "about": "Über", "company": "Unternehmen", "contact": "Kontakt", "blog": "Blog", "legal": "Rechtlich", "privacy": "Datenschutz", "terms": "AGB", "copyright": "© {year} Wholesalify. Alle Rechte vorbehalten." },
-  "contact": { "title": "Kontaktieren Sie uns", "subtitle": "Interesse am Frühzugang oder Fragen? Kontaktieren Sie uns.", "name": "Name", "namePlaceholder": "Ihr Name", "email": "E-Mail", "emailPlaceholder": "ihre@email.com", "message": "Nachricht", "messagePlaceholder": "Wie können wir helfen?", "send": "Nachricht senden", "orEmail": "Oder schreiben Sie uns direkt an" },
-  "about": { "title": "Über Wholesalify", "description": "Wholesalify ist eine moderne B2B-Großhandelsbestellplattform für Großhändler, Distributoren und Handelsunternehmen.", "mission": "Unsere Mission ist es, Großhandelsabläufe zu vereinfachen, indem wir eine All-in-One-Plattform zur Verwaltung von Bestellungen, Inventar und Einkauf bereitstellen.", "vision": "Wir stellen uns eine Welt vor, in der jedes Großhandelsgeschäft unabhängig von seiner Größe effizient mit moderner Technologie arbeiten kann." },
-  "privacy": { "title": "Datenschutzrichtlinie", "lastUpdated": "Zuletzt aktualisiert: {date}", "section1Title": "1. Informationen, die wir sammeln", "section1Desc": "Wir sammeln Informationen, die Sie direkt angeben, einschließlich Name, E-Mail und Geschäftsinformationen, wenn Sie sich für Frühzugang registrieren oder uns kontaktieren.", "section2Title": "2. Wie wir Informationen verwenden", "section2Desc": "Wir verwenden Informationen, um unsere Dienste bereitzustellen und zu verbessern, mit Ihnen zu kommunizieren und Ihnen Updates über Wholesalify zu senden.", "section3Title": "3. Datensicherheit", "section3Desc": "Wir implementieren geeignete Sicherheitsmaßnahmen, um Ihre persönlichen Daten zu schützen.", "section4Title": "4. Kontakt", "section4Desc": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte." },
-  "terms": { "title": "Nutzungsbedingungen", "lastUpdated": "Zuletzt aktualisiert: {date}", "section1Title": "1. Annahme der Bedingungen", "section1Desc": "Durch den Zugriff auf oder die Nutzung von Wholesalify stimmen Sie zu, an diese Nutzungsbedingungen gebunden zu sein.", "section2Title": "2. Nutzung des Dienstes", "section2Desc": "Wholesalify bietet eine B2B-Großhandelsbestellplattform. Sie stimmen zu, sie nur für legitime Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen.", "section3Title": "3. Geistiges Eigentum", "section3Desc": "Alle Inhalte und Materialien auf Wholesalify sind Eigentum von Wholesalify oder seinen Lizenzgebern.", "section4Title": "4. Kontakt", "section4Desc": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte." },
-  "featuresPage": { "title": "Produktfunktionen", "subtitle": "Alles was Sie brauchen, um Ihr Großhandelsgeschäft effizient zu führen." },
-  "form": { "submitting": "Wird gesendet...", "success": "Danke! Wir werden Sie bald kontaktieren.", "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut." }
+  "nav": {
+    "features": "Funktionen",
+    "about": "Über",
+    "contact": "Kontakt",
+    "getEarlyAccess": "Frühzugang"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Moderne B2B Großhandelsbestellplattform",
+    "description": "Verwalten Sie Großhandelsbestellungen, Inventar und Einkauf in einem einfachen System.",
+    "cta": "Frühzugang anfordern",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "joinList": "Treten Sie der Frühzugangsliste bei."
+  },
+  "problem": {
+    "title": "Großhandelsunternehmen verwalten Bestellungen noch manuell.",
+    "whatsapp": "Bestellungen über WhatsApp",
+    "whatsappDesc": "Unübersichtliche Gespräche, verlorene Bestellungen, keine Historie.",
+    "spreadsheets": "Manuelle Tabellen",
+    "spreadsheetsDesc": "Fehleranfällig, schwer verfolgbar, keine Zusammenarbeit.",
+    "inventory": "Inventarfehler",
+    "inventoryDesc": "Überverkauf, Lagerbestandslücken, unzufriedene Kunden.",
+    "purchasing": "Langsame Einkaufsabläufe",
+    "purchasingDesc": "Langsame Wiederauffüllung, verpasste Verkaufschancen."
+  },
+  "solution": {
+    "title": "Wholesalify vereinfacht Großhandelsabläufe.",
+    "subtitle": "Alles was Sie brauchen, um Ihr Großhandelsgeschäft effizient zu führen."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Großhandelsbestellportal",
+      "description": "Kunden geben Großhandelsbestellungen online auf.",
+      "items": [
+        "B2B-Katalog",
+        "Massensbestellung",
+        "Kundenkonten",
+        "Bestellhistorie"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Wiegenprodukt-Bestellung",
+      "description": "Verkaufen Sie Nicht-Standardprodukte nach Gewicht mit präziser Mengenhandhabung.",
+      "items": [
+        "Gewichtsbasierte Preisgestaltung",
+        "Dynamische Mengeneingabe",
+        "Flexible Einheitenumrechnung"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Obst-Multipreisgestaltung",
+      "description": "Gestaffelte Preise für Obst mit Unterstützung für mehrere Verkaufseinheiten.",
+      "items": [
+        "Klassenbasierte Preisgestaltung",
+        "Multi-Einheiten-Unterstützung (kg/Kiste/Stück)",
+        "Mengenrabatte"
+      ]
+    },
+    "multiSpec": {
+      "title": "Multispezifikations-Produkte",
+      "description": "Verkaufen Sie Standardprodukte mit mehreren Spezifikationen und Variationen.",
+      "items": [
+        "Größenvarianten",
+        "Farboptionen",
+        "Geschmackskombinationen"
+      ]
+    },
+    "orderManagement": {
+      "title": "Bestellverwaltung",
+      "description": "Verwalten Sie alle Bestellungen in einem Dashboard.",
+      "items": [
+        "Bestellverfolgung",
+        "Statusaktualisierungen",
+        "Kundenaufzeichnungen"
+      ]
+    },
+    "inventory": {
+      "title": "Inventarverwaltung",
+      "description": "Echtzeit-Inventarverfolgung.",
+      "items": [
+        "Inventarstände",
+        "Warnungen bei niedrigem Bestand",
+        "Bestandsberichte"
+      ]
+    },
+    "purchasing": {
+      "title": "Einkaufsverwaltung",
+      "description": "Verwalten Sie Lieferanten und Bestellungen.",
+      "items": [
+        "Bestellungen",
+        "Lieferantenverfolgung",
+        "Bestandsauffüllung"
+      ]
+    },
+    "admin": {
+      "title": "Admin-Dashboard",
+      "description": "Vollständige Großhandelsverwaltung.",
+      "items": [
+        "Bestellübersicht",
+        "Inventareinblicke",
+        "Kundenanalysen"
+      ]
+    },
+    "mobile": {
+      "title": "Mobiles Admin",
+      "description": "Verwalten Sie Ihr Geschäft überall.",
+      "items": [
+        "iOS-App",
+        "Android-App"
+      ]
+    }
+  },
+  "preview": {
+    "title": "Produktübersicht",
+    "subtitle": "Alles was Sie brauchen, um Ihr Großhandelsgeschäft zu verwalten.",
+    "orders": "Bestellungen",
+    "inventory": "Inventar",
+    "purchasing": "Einkauf",
+    "customers": "Kunden"
+  },
+  "cta": {
+    "title": "Beginnen Sie mit Wholesalify",
+    "subtitle": "Schließen Sie sich dem Frühzugang an und transformieren Sie Ihr Großhandelsgeschäft."
+  },
+  "footer": {
+    "tagline": "Moderne B2B-Bestellplattform für Großhändler und Distributoren.",
+    "product": "Produkt",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "about": "Über",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "blog": "Blog",
+    "legal": "Rechtlich",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "copyright": "© {year} Wholesalify. Alle Rechte vorbehalten."
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Interesse am Frühzugang oder Fragen? Kontaktieren Sie uns.",
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "ihre@email.com",
+    "message": "Nachricht",
+    "messagePlaceholder": "Wie können wir helfen?",
+    "send": "Nachricht senden",
+    "orEmail": "Oder schreiben Sie uns direkt an"
+  },
+  "about": {
+    "title": "Über Wholesalify",
+    "description": "Wholesalify ist eine moderne B2B-Großhandelsbestellplattform für Großhändler, Distributoren und Handelsunternehmen.",
+    "mission": "Unsere Mission ist es, Großhandelsabläufe zu vereinfachen, indem wir eine All-in-One-Plattform zur Verwaltung von Bestellungen, Inventar und Einkauf bereitstellen.",
+    "vision": "Wir stellen uns eine Welt vor, in der jedes Großhandelsgeschäft unabhängig von seiner Größe effizient mit moderner Technologie arbeiten kann.",
+    "visionTitle": "Unsere Vision"
+  },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "lastUpdated": "Zuletzt aktualisiert: {date}",
+    "section1Title": "1. Informationen, die wir sammeln",
+    "section1Desc": "Wir sammeln Informationen, die Sie direkt angeben, einschließlich Name, E-Mail und Geschäftsinformationen, wenn Sie sich für Frühzugang registrieren oder uns kontaktieren.",
+    "section2Title": "2. Wie wir Informationen verwenden",
+    "section2Desc": "Wir verwenden Informationen, um unsere Dienste bereitzustellen und zu verbessern, mit Ihnen zu kommunizieren und Ihnen Updates über Wholesalify zu senden.",
+    "section3Title": "3. Datensicherheit",
+    "section3Desc": "Wir implementieren geeignete Sicherheitsmaßnahmen, um Ihre persönlichen Daten zu schützen.",
+    "section4Title": "4. Kontakt",
+    "section4Desc": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte."
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert: {date}",
+    "section1Title": "1. Annahme der Bedingungen",
+    "section1Desc": "Durch den Zugriff auf oder die Nutzung von Wholesalify stimmen Sie zu, an diese Nutzungsbedingungen gebunden zu sein.",
+    "section2Title": "2. Nutzung des Dienstes",
+    "section2Desc": "Wholesalify bietet eine B2B-Großhandelsbestellplattform. Sie stimmen zu, sie nur für legitime Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen.",
+    "section3Title": "3. Geistiges Eigentum",
+    "section3Desc": "Alle Inhalte und Materialien auf Wholesalify sind Eigentum von Wholesalify oder seinen Lizenzgebern.",
+    "section4Title": "4. Kontakt",
+    "section4Desc": "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte."
+  },
+  "featuresPage": {
+    "title": "Produktfunktionen",
+    "subtitle": "Alles was Sie brauchen, um Ihr Großhandelsgeschäft effizient zu führen."
+  },
+  "form": {
+    "submitting": "Wird gesendet...",
+    "success": "Danke! Wir werden Sie bald kontaktieren.",
+    "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut."
+  }
 }

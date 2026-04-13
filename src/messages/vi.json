@@ -1,16 +1,192 @@
 {
-  "nav": { "features": "Tính năng", "about": "Giới thiệu", "contact": "Liên hệ", "getEarlyAccess": "Truy cập sớm" },
-  "hero": { "title": "Wholesalify", "subtitle": "Nền tảng đặt hàng B2B hiện đại", "description": "Quản lý đơn hàng, hàng tồn kho và mua hàng trong một hệ thống đơn giản.", "cta": "Yêu cầu truy cập sớm", "emailPlaceholder": "Nhập email của bạn", "joinList": "Tham gia danh sách truy cập sớm." },
-  "problem": { "title": "Doanh nghiệp bán sỉ vẫn quản lý đơn hàng thủ công.", "whatsapp": "Đơn hàng qua WhatsApp", "whatsappDesc": "Hội thoại lộn xộn, đơn hàng thất lạc, không có lịch sử.", "spreadsheets": "Bảng tính thủ công", "spreadsheetsDesc": "Dễ lỗi, khó theo dõi, không có cộng tác.", "inventory": "Lỗi hàng tồn kho", "inventoryDesc": "Bán quá, hết hàng, khách hàng không hài lòng.", "purchasing": "Quy trình mua hàng chậm", "purchasingDesc": "Bổ sung hàng chậm, mất cơ hội bán." },
-  "solution": { "title": "Wholesalify đơn giản hóa hoạt động bán sỉ.", "subtitle": "Mọi thứ bạn cần để điều hành doanh nghiệp bán sỉ hiệu quả." },
-  "features": { "orderingPortal": { "title": "Cổng đặt hàng sỉ", "description": "Khách hàng đặt hàng sỉ trực tuyến.", "items": ["Danh mục B2B", "Đặt hàng số lượng lớn", "Tài khoản khách hàng", "Lịch sử đơn hàng"] }, "orderManagement": { "title": "Quản lý đơn hàng", "description": "Quản lý tất cả đơn hàng trong một bảng điều khiển.", "items": ["Theo dõi đơn hàng", "Cập nhật trạng thái", "Hồ sơ khách hàng"] }, "inventory": { "title": "Quản lý hàng tồn kho", "description": "Theo dõi hàng tồn kho thời gian thực.", "items": ["Mức hàng tồn kho", "Cảnh báo hết hàng", "Báo cáo hàng tồn kho"] }, "purchasing": { "title": "Quản lý mua hàng", "description": "Quản lý nhà cung cấp và đơn mua hàng.", "items": ["Đơn mua hàng", "Theo dõi nhà cung cấp", "Bổ sung hàng tồn kho"] }, "admin": { "title": "Bảng điều khiển quản trị", "description": "Quản lý bán sỉ toàn diện.", "items": ["Tổng quan đơn hàng", "Phân tích hàng tồn kho", "Phân tích khách hàng"] }, "mobile": { "title": "Quản trị di động", "description": "Quản lý kinh doanh mọi nơi.", "items": ["Ứng dụng iOS", "Ứng dụng Android"] } },
-  "preview": { "title": "Tổng quan sản phẩm", "subtitle": "Mọi thứ bạn cần để quản lý doanh nghiệp bán sỉ.", "orders": "Đơn hàng", "inventory": "Hàng tồn kho", "purchasing": "Mua hàng", "customers": "Khách hàng" },
-  "cta": { "title": "Bắt đầu sử dụng Wholesalify", "subtitle": "Tham gia truy cập sớm và chuyển đổi doanh nghiệp bán sỉ của bạn." },
-  "footer": { "tagline": "Nền tảng đặt hàng B2B hiện đại cho nhà bán sỉ và nhà phân phối.", "product": "Sản phẩm", "features": "Tính năng", "pricing": "Giá", "about": "Giới thiệu", "company": "Công ty", "contact": "Liên hệ", "blog": "Blog", "legal": "Pháp lý", "privacy": "Quyền riêng tư", "terms": "Điều khoản", "copyright": "© {year} Wholesalify. Mọi quyền được bảo lưu." },
-  "contact": { "title": "Liên hệ chúng tôi", "subtitle": "Quan tâm đến truy cập sớm hoặc có câu hỏi? Liên hệ với chúng tôi.", "name": "Tên", "namePlaceholder": "Tên của bạn", "email": "Email", "emailPlaceholder": "your@email.com", "message": "Tin nhắn", "messagePlaceholder": "Chúng tôi có thể giúp gì?", "send": "Gửi tin nhắn", "orEmail": "Hoặc email trực tiếp cho chúng tôi tại" },
-  "about": { "title": "Về Wholesalify", "description": "Wholesalify là nền tảng đặt hàng B2B hiện đại được thiết kế cho nhà bán sỉ, nhà phân phối và công ty thương mại.", "mission": "Sứ mệnh của chúng tôi là đơn giản hóa hoạt động bán sỉ bằng cách cung cấp một nền tảng toàn diện để quản lý đơn hàng, hàng tồn kho và mua hàng.", "vision": "Chúng tôi hình dung một thế giới nơi mọi doanh nghiệp bán sỉ, bất kể quy mô, đều có thể hoạt động hiệu quả với công nghệ hiện đại." },
-  "privacy": { "title": "Chính sách quyền riêng tư", "lastUpdated": "Cập nhật lần cuối: {date}", "section1Title": "1. Thông tin chúng tôi thu thập", "section1Desc": "Chúng tôi thu thập thông tin bạn cung cấp trực tiếp, bao gồm tên, email và thông tin kinh doanh khi bạn đăng ký truy cập sớm hoặc liên hệ chúng tôi.", "section2Title": "2. Cách chúng tôi sử dụng thông tin", "section2Desc": "Chúng tôi sử dụng thông tin để cung cấp và cải thiện dịch vụ, giao tiếp với bạn và gửi cho bạn các cập nhật về Wholesalify.", "section3Title": "3. Bảo mật dữ liệu", "section3Desc": "Chúng tôi thực hiện các biện pháp bảo mật phù hợp để bảo vệ thông tin cá nhân của bạn.", "section4Title": "4. Liên hệ", "section4Desc": "Nếu bạn có câu hỏi về Chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi." },
-  "terms": { "title": "Điều khoản dịch vụ", "lastUpdated": "Cập nhật lần cuối: {date}", "section1Title": "1. Chấp nhận điều khoản", "section1Desc": "Bằng cách truy cập hoặc sử dụng Wholesalify, bạn đồng ý bị ràng buộc bởi các Điều khoản dịch vụ này.", "section2Title": "2. Sử dụng dịch vụ", "section2Desc": "Wholesalify cung cấp nền tảng đặt hàng B2B. Bạn đồng ý chỉ sử dụng nó cho các mục đích hợp pháp và tuân thủ các Điều khoản này.", "section3Title": "3. Sở hữu trí tuệ", "section3Desc": "Tất cả nội dung và tài liệu có sẵn trên Wholesalify là tài sản của Wholesalify hoặc các bên cấp phép.", "section4Title": "4. Liên hệ", "section4Desc": "Nếu bạn có câu hỏi về các Điều khoản này, vui lòng liên hệ với chúng tôi." },
-  "featuresPage": { "title": "Tính năng sản phẩm", "subtitle": "Mọi thứ bạn cần để điều hành doanh nghiệp bán sỉ hiệu quả." },
-  "form": { "submitting": "Đang gửi...", "success": "Cảm ơn! Chúng tôi sẽ liên hệ sớm.", "error": "Gửi thất bại. Vui lòng thử lại." }
+  "nav": {
+    "features": "Tính năng",
+    "about": "Giới thiệu",
+    "contact": "Liên hệ",
+    "getEarlyAccess": "Truy cập sớm"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Nền tảng đặt hàng B2B hiện đại",
+    "description": "Quản lý đơn hàng, hàng tồn kho và mua hàng trong một hệ thống đơn giản.",
+    "cta": "Yêu cầu truy cập sớm",
+    "emailPlaceholder": "Nhập email của bạn",
+    "joinList": "Tham gia danh sách truy cập sớm."
+  },
+  "problem": {
+    "title": "Doanh nghiệp bán sỉ vẫn quản lý đơn hàng thủ công.",
+    "whatsapp": "Đơn hàng qua WhatsApp",
+    "whatsappDesc": "Hội thoại lộn xộn, đơn hàng thất lạc, không có lịch sử.",
+    "spreadsheets": "Bảng tính thủ công",
+    "spreadsheetsDesc": "Dễ lỗi, khó theo dõi, không có cộng tác.",
+    "inventory": "Lỗi hàng tồn kho",
+    "inventoryDesc": "Bán quá, hết hàng, khách hàng không hài lòng.",
+    "purchasing": "Quy trình mua hàng chậm",
+    "purchasingDesc": "Bổ sung hàng chậm, mất cơ hội bán."
+  },
+  "solution": {
+    "title": "Wholesalify đơn giản hóa hoạt động bán sỉ.",
+    "subtitle": "Mọi thứ bạn cần để điều hành doanh nghiệp bán sỉ hiệu quả."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Cổng đặt hàng sỉ",
+      "description": "Khách hàng đặt hàng sỉ trực tuyến.",
+      "items": [
+        "Danh mục B2B",
+        "Đặt hàng số lượng lớn",
+        "Tài khoản khách hàng",
+        "Lịch sử đơn hàng"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Đặt hàng sản phẩm cân",
+      "description": "Bán sản phẩm không tiêu chuẩn theo cân với xử lý số lượng chính xác.",
+      "items": [
+        "Định giá theo cân",
+        "Nhập số lượng linh hoạt",
+        "Chuyển đổi đơn vị linh hoạt"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Định giá đa cấp trái cây",
+      "description": "Định giá theo cấp cho trái cây với hỗ trợ nhiều đơn vị bán.",
+      "items": [
+        "Định giá theo cấp",
+        "Hỗ trợ đa đơn vị (kg/hộp/cái)",
+        "Giảm giá số lượng lớn"
+      ]
+    },
+    "multiSpec": {
+      "title": "Sản phẩm đa quy cách",
+      "description": "Bán sản phẩm tiêu chuẩn với nhiều quy cách và biến thể.",
+      "items": [
+        "Biến thể kích thước",
+        "Tùy chọn màu sắc",
+        "Kết hợp hương vị"
+      ]
+    },
+    "orderManagement": {
+      "title": "Quản lý đơn hàng",
+      "description": "Quản lý tất cả đơn hàng trong một bảng điều khiển.",
+      "items": [
+        "Theo dõi đơn hàng",
+        "Cập nhật trạng thái",
+        "Hồ sơ khách hàng"
+      ]
+    },
+    "inventory": {
+      "title": "Quản lý hàng tồn kho",
+      "description": "Theo dõi hàng tồn kho thời gian thực.",
+      "items": [
+        "Mức hàng tồn kho",
+        "Cảnh báo hết hàng",
+        "Báo cáo hàng tồn kho"
+      ]
+    },
+    "purchasing": {
+      "title": "Quản lý mua hàng",
+      "description": "Quản lý nhà cung cấp và đơn mua hàng.",
+      "items": [
+        "Đơn mua hàng",
+        "Theo dõi nhà cung cấp",
+        "Bổ sung hàng tồn kho"
+      ]
+    },
+    "admin": {
+      "title": "Bảng điều khiển quản trị",
+      "description": "Quản lý bán sỉ toàn diện.",
+      "items": [
+        "Tổng quan đơn hàng",
+        "Phân tích hàng tồn kho",
+        "Phân tích khách hàng"
+      ]
+    },
+    "mobile": {
+      "title": "Quản trị di động",
+      "description": "Quản lý kinh doanh mọi nơi.",
+      "items": [
+        "Ứng dụng iOS",
+        "Ứng dụng Android"
+      ]
+    }
+  },
+  "preview": {
+    "title": "Tổng quan sản phẩm",
+    "subtitle": "Mọi thứ bạn cần để quản lý doanh nghiệp bán sỉ.",
+    "orders": "Đơn hàng",
+    "inventory": "Hàng tồn kho",
+    "purchasing": "Mua hàng",
+    "customers": "Khách hàng"
+  },
+  "cta": {
+    "title": "Bắt đầu sử dụng Wholesalify",
+    "subtitle": "Tham gia truy cập sớm và chuyển đổi doanh nghiệp bán sỉ của bạn."
+  },
+  "footer": {
+    "tagline": "Nền tảng đặt hàng B2B hiện đại cho nhà bán sỉ và nhà phân phối.",
+    "product": "Sản phẩm",
+    "features": "Tính năng",
+    "pricing": "Giá",
+    "about": "Giới thiệu",
+    "company": "Công ty",
+    "contact": "Liên hệ",
+    "blog": "Blog",
+    "legal": "Pháp lý",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản",
+    "copyright": "© {year} Wholesalify. Mọi quyền được bảo lưu."
+  },
+  "contact": {
+    "title": "Liên hệ chúng tôi",
+    "subtitle": "Quan tâm đến truy cập sớm hoặc có câu hỏi? Liên hệ với chúng tôi.",
+    "name": "Tên",
+    "namePlaceholder": "Tên của bạn",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Chúng tôi có thể giúp gì?",
+    "send": "Gửi tin nhắn",
+    "orEmail": "Hoặc email trực tiếp cho chúng tôi tại"
+  },
+  "about": {
+    "title": "Về Wholesalify",
+    "description": "Wholesalify là nền tảng đặt hàng B2B hiện đại được thiết kế cho nhà bán sỉ, nhà phân phối và công ty thương mại.",
+    "mission": "Sứ mệnh của chúng tôi là đơn giản hóa hoạt động bán sỉ bằng cách cung cấp một nền tảng toàn diện để quản lý đơn hàng, hàng tồn kho và mua hàng.",
+    "vision": "Chúng tôi hình dung một thế giới nơi mọi doanh nghiệp bán sỉ, bất kể quy mô, đều có thể hoạt động hiệu quả với công nghệ hiện đại.",
+    "visionTitle": "Tầm nhìn của chúng tôi"
+  },
+  "privacy": {
+    "title": "Chính sách quyền riêng tư",
+    "lastUpdated": "Cập nhật lần cuối: {date}",
+    "section1Title": "1. Thông tin chúng tôi thu thập",
+    "section1Desc": "Chúng tôi thu thập thông tin bạn cung cấp trực tiếp, bao gồm tên, email và thông tin kinh doanh khi bạn đăng ký truy cập sớm hoặc liên hệ chúng tôi.",
+    "section2Title": "2. Cách chúng tôi sử dụng thông tin",
+    "section2Desc": "Chúng tôi sử dụng thông tin để cung cấp và cải thiện dịch vụ, giao tiếp với bạn và gửi cho bạn các cập nhật về Wholesalify.",
+    "section3Title": "3. Bảo mật dữ liệu",
+    "section3Desc": "Chúng tôi thực hiện các biện pháp bảo mật phù hợp để bảo vệ thông tin cá nhân của bạn.",
+    "section4Title": "4. Liên hệ",
+    "section4Desc": "Nếu bạn có câu hỏi về Chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi."
+  },
+  "terms": {
+    "title": "Điều khoản dịch vụ",
+    "lastUpdated": "Cập nhật lần cuối: {date}",
+    "section1Title": "1. Chấp nhận điều khoản",
+    "section1Desc": "Bằng cách truy cập hoặc sử dụng Wholesalify, bạn đồng ý bị ràng buộc bởi các Điều khoản dịch vụ này.",
+    "section2Title": "2. Sử dụng dịch vụ",
+    "section2Desc": "Wholesalify cung cấp nền tảng đặt hàng B2B. Bạn đồng ý chỉ sử dụng nó cho các mục đích hợp pháp và tuân thủ các Điều khoản này.",
+    "section3Title": "3. Sở hữu trí tuệ",
+    "section3Desc": "Tất cả nội dung và tài liệu có sẵn trên Wholesalify là tài sản của Wholesalify hoặc các bên cấp phép.",
+    "section4Title": "4. Liên hệ",
+    "section4Desc": "Nếu bạn có câu hỏi về các Điều khoản này, vui lòng liên hệ với chúng tôi."
+  },
+  "featuresPage": {
+    "title": "Tính năng sản phẩm",
+    "subtitle": "Mọi thứ bạn cần để điều hành doanh nghiệp bán sỉ hiệu quả."
+  },
+  "form": {
+    "submitting": "Đang gửi...",
+    "success": "Cảm ơn! Chúng tôi sẽ liên hệ sớm.",
+    "error": "Gửi thất bại. Vui lòng thử lại."
+  }
 }

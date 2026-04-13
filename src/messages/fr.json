@@ -1,16 +1,192 @@
 {
-  "nav": { "features": "Fonctionnalités", "about": "À propos", "contact": "Contact", "getEarlyAccess": "Accès Anticipé" },
-  "hero": { "title": "Wholesalify", "subtitle": "Plateforme Moderne de Commande de Gros B2B", "description": "Gérez les commandes de gros, l'inventaire et les achats dans un seul système simple.", "cta": "Demander l'Accès Anticipé", "emailPlaceholder": "Entrez votre e-mail", "joinList": "Rejoignez la liste d'accès anticipé." },
-  "problem": { "title": "Les entreprises de gros gèrent encore les commandes manuellement.", "whatsapp": "Commandes via WhatsApp", "whatsappDesc": "Conversations désordonnées, commandes perdues, sans historique.", "spreadsheets": "Tableurs manuels", "spreadsheetsDesc": "Propices aux erreurs, difficiles à suivre, sans collaboration.", "inventory": "Erreurs d'inventaire", "inventoryDesc": "Survente, ruptures de stock, clients mécontents.", "purchasing": "Flux d'achat lents", "purchasingDesc": "Réapprovisionnement lent, opportunités de vente perdues." },
-  "solution": { "title": "Wholesalify simplifie les opérations de gros.", "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de gros efficacement." },
-  "features": { "orderingPortal": { "title": "Portail de Commande de Gros", "description": "Les clients passent des commandes de gros en ligne.", "items": ["Catalogue B2B", "Commandes en volume", "Comptes clients", "Historique des commandes"] }, "orderManagement": { "title": "Gestion des Commandes", "description": "Gérez toutes les commandes dans un seul tableau de bord.", "items": ["Suivi des commandes", "Mises à jour de statut", "Enregistrements clients"] }, "inventory": { "title": "Gestion des Stocks", "description": "Suivi des stocks en temps réel.", "items": ["Niveaux de stock", "Alertes stock bas", "Rapports de stock"] }, "purchasing": { "title": "Gestion des Achats", "description": "Gérez les fournisseurs et les bons de commande.", "items": ["Bons de commande", "Suivi des fournisseurs", "Réapprovisionnement"] }, "admin": { "title": "Tableau de Bord Admin", "description": "Gestion complète du gros.", "items": ["Aperçu des commandes", "Aperçus des stocks", "Analyses clients"] }, "mobile": { "title": "Admin Mobile", "description": "Gérez votre entreprise n'importe où.", "items": ["Application iOS", "Application Android"] } },
-  "preview": { "title": "Aperçu du Produit", "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de gros.", "orders": "Commandes", "inventory": "Stock", "purchasing": "Achats", "customers": "Clients" },
-  "cta": { "title": "Commencez à utiliser Wholesalify", "subtitle": "Rejoignez l'accès anticipé et transformez votre entreprise de gros." },
-  "footer": { "tagline": "Plateforme moderne de commande B2B pour grossistes et distributeurs.", "product": "Produit", "features": "Fonctionnalités", "pricing": "Tarifs", "about": "À propos", "company": "Entreprise", "contact": "Contact", "blog": "Blog", "legal": "Légal", "privacy": "Confidentialité", "terms": "Conditions", "copyright": "© {year} Wholesalify. Tous droits réservés." },
-  "contact": { "title": "Contactez-nous", "subtitle": "Intéressé par l'accès anticipé ou avez des questions? Contactez-nous.", "name": "Nom", "namePlaceholder": "Votre nom", "email": "E-mail", "emailPlaceholder": "votre@email.com", "message": "Message", "messagePlaceholder": "Comment pouvons-nous vous aider?", "send": "Envoyer le Message", "orEmail": "Ou envoyez-nous un e-mail directement à" },
-  "about": { "title": "À propos de Wholesalify", "description": "Wholesalify est une plateforme moderne de commande B2B conçue pour les grossistes, distributeurs et entreprises commerciales.", "mission": "Notre mission est de simplifier les opérations de gros en fournissant une plateforme tout-en-un pour gérer les commandes, l'inventaire et les achats.", "vision": "Nous imaginons un monde où chaque entreprise de gros, quelle que soit sa taille, peut opérer efficacement avec la technologie moderne." },
-  "privacy": { "title": "Politique de Confidentialité", "lastUpdated": "Dernière mise à jour: {date}", "section1Title": "1. Informations que Nous Collectons", "section1Desc": "Nous collectons les informations que vous fournissez directement, y compris le nom, l'e-mail et les informations commerciales lorsque vous vous inscrivez pour l'accès anticipé ou nous contactez.", "section2Title": "2. Comment Nous Utilisons les Informations", "section2Desc": "Nous utilisons les informations pour fournir et améliorer nos services, communiquer avec vous et vous envoyer des mises à jour sur Wholesalify.", "section3Title": "3. Sécurité des Données", "section3Desc": "Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles.", "section4Title": "4. Contact", "section4Desc": "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter." },
-  "terms": { "title": "Conditions d'Utilisation", "lastUpdated": "Dernière mise à jour: {date}", "section1Title": "1. Acceptation des Conditions", "section1Desc": "En accédant ou en utilisant Wholesalify, vous acceptez d'être lié par ces Conditions d'Utilisation.", "section2Title": "2. Utilisation du Service", "section2Desc": "Wholesalify fournit une plateforme de commande B2B. Vous acceptez de l'utiliser uniquement à des fins légitimes et conformément à ces Conditions.", "section3Title": "3. Propriété Intellectuelle", "section3Desc": "Tout le contenu et les matériaux disponibles sur Wholesalify sont la propriété de Wholesalify ou de ses concédants.", "section4Title": "4. Contact", "section4Desc": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter." },
-  "featuresPage": { "title": "Fonctionnalités du Produit", "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de gros efficacement." },
-  "form": { "submitting": "Envoi en cours...", "success": "Merci! Nous vous contacterons bientôt.", "error": "Échec de l'envoi. Veuillez réessayer." }
+  "nav": {
+    "features": "Fonctionnalités",
+    "about": "À propos",
+    "contact": "Contact",
+    "getEarlyAccess": "Accès Anticipé"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Plateforme Moderne de Commande de Gros B2B",
+    "description": "Gérez les commandes de gros, l'inventaire et les achats dans un seul système simple.",
+    "cta": "Demander l'Accès Anticipé",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "joinList": "Rejoignez la liste d'accès anticipé."
+  },
+  "problem": {
+    "title": "Les entreprises de gros gèrent encore les commandes manuellement.",
+    "whatsapp": "Commandes via WhatsApp",
+    "whatsappDesc": "Conversations désordonnées, commandes perdues, sans historique.",
+    "spreadsheets": "Tableurs manuels",
+    "spreadsheetsDesc": "Propices aux erreurs, difficiles à suivre, sans collaboration.",
+    "inventory": "Erreurs d'inventaire",
+    "inventoryDesc": "Survente, ruptures de stock, clients mécontents.",
+    "purchasing": "Flux d'achat lents",
+    "purchasingDesc": "Réapprovisionnement lent, opportunités de vente perdues."
+  },
+  "solution": {
+    "title": "Wholesalify simplifie les opérations de gros.",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de gros efficacement."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Portail de Commande de Gros",
+      "description": "Les clients passent des commandes de gros en ligne.",
+      "items": [
+        "Catalogue B2B",
+        "Commandes en volume",
+        "Comptes clients",
+        "Historique des commandes"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Commande de Produits Pesés",
+      "description": "Vendez des produits non standard au poids avec une gestion précise des quantités.",
+      "items": [
+        "Tarification au poids",
+        "Saisie de quantité dynamique",
+        "Conversion d'unités flexible"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Tarification Multi-niveaux pour Fruits",
+      "description": "Tarification échelonnée pour les fruits avec support de plusieurs unités de vente.",
+      "items": [
+        "Tarification par grade",
+        "Support multi-unités (kg/boîte/pce)",
+        "Remises sur volume"
+      ]
+    },
+    "multiSpec": {
+      "title": "Produits Multi-spécifications",
+      "description": "Vendez des produits standard avec plusieurs spécifications et variations.",
+      "items": [
+        "Variations de taille",
+        "Options de couleur",
+        "Combinaisons de saveurs"
+      ]
+    },
+    "orderManagement": {
+      "title": "Gestion des Commandes",
+      "description": "Gérez toutes les commandes dans un seul tableau de bord.",
+      "items": [
+        "Suivi des commandes",
+        "Mises à jour de statut",
+        "Enregistrements clients"
+      ]
+    },
+    "inventory": {
+      "title": "Gestion des Stocks",
+      "description": "Suivi des stocks en temps réel.",
+      "items": [
+        "Niveaux de stock",
+        "Alertes stock bas",
+        "Rapports de stock"
+      ]
+    },
+    "purchasing": {
+      "title": "Gestion des Achats",
+      "description": "Gérez les fournisseurs et les bons de commande.",
+      "items": [
+        "Bons de commande",
+        "Suivi des fournisseurs",
+        "Réapprovisionnement"
+      ]
+    },
+    "admin": {
+      "title": "Tableau de Bord Admin",
+      "description": "Gestion complète du gros.",
+      "items": [
+        "Aperçu des commandes",
+        "Aperçus des stocks",
+        "Analyses clients"
+      ]
+    },
+    "mobile": {
+      "title": "Admin Mobile",
+      "description": "Gérez votre entreprise n'importe où.",
+      "items": [
+        "Application iOS",
+        "Application Android"
+      ]
+    }
+  },
+  "preview": {
+    "title": "Aperçu du Produit",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de gros.",
+    "orders": "Commandes",
+    "inventory": "Stock",
+    "purchasing": "Achats",
+    "customers": "Clients"
+  },
+  "cta": {
+    "title": "Commencez à utiliser Wholesalify",
+    "subtitle": "Rejoignez l'accès anticipé et transformez votre entreprise de gros."
+  },
+  "footer": {
+    "tagline": "Plateforme moderne de commande B2B pour grossistes et distributeurs.",
+    "product": "Produit",
+    "features": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "about": "À propos",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "blog": "Blog",
+    "legal": "Légal",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "copyright": "© {year} Wholesalify. Tous droits réservés."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Intéressé par l'accès anticipé ou avez des questions? Contactez-nous.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail",
+    "emailPlaceholder": "votre@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Comment pouvons-nous vous aider?",
+    "send": "Envoyer le Message",
+    "orEmail": "Ou envoyez-nous un e-mail directement à"
+  },
+  "about": {
+    "title": "À propos de Wholesalify",
+    "description": "Wholesalify est une plateforme moderne de commande B2B conçue pour les grossistes, distributeurs et entreprises commerciales.",
+    "mission": "Notre mission est de simplifier les opérations de gros en fournissant une plateforme tout-en-un pour gérer les commandes, l'inventaire et les achats.",
+    "vision": "Nous imaginons un monde où chaque entreprise de gros, quelle que soit sa taille, peut opérer efficacement avec la technologie moderne.",
+    "visionTitle": "Notre Vision"
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour: {date}",
+    "section1Title": "1. Informations que Nous Collectons",
+    "section1Desc": "Nous collectons les informations que vous fournissez directement, y compris le nom, l'e-mail et les informations commerciales lorsque vous vous inscrivez pour l'accès anticipé ou nous contactez.",
+    "section2Title": "2. Comment Nous Utilisons les Informations",
+    "section2Desc": "Nous utilisons les informations pour fournir et améliorer nos services, communiquer avec vous et vous envoyer des mises à jour sur Wholesalify.",
+    "section3Title": "3. Sécurité des Données",
+    "section3Desc": "Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles.",
+    "section4Title": "4. Contact",
+    "section4Desc": "Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter."
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "lastUpdated": "Dernière mise à jour: {date}",
+    "section1Title": "1. Acceptation des Conditions",
+    "section1Desc": "En accédant ou en utilisant Wholesalify, vous acceptez d'être lié par ces Conditions d'Utilisation.",
+    "section2Title": "2. Utilisation du Service",
+    "section2Desc": "Wholesalify fournit une plateforme de commande B2B. Vous acceptez de l'utiliser uniquement à des fins légitimes et conformément à ces Conditions.",
+    "section3Title": "3. Propriété Intellectuelle",
+    "section3Desc": "Tout le contenu et les matériaux disponibles sur Wholesalify sont la propriété de Wholesalify ou de ses concédants.",
+    "section4Title": "4. Contact",
+    "section4Desc": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter."
+  },
+  "featuresPage": {
+    "title": "Fonctionnalités du Produit",
+    "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de gros efficacement."
+  },
+  "form": {
+    "submitting": "Envoi en cours...",
+    "success": "Merci! Nous vous contacterons bientôt.",
+    "error": "Échec de l'envoi. Veuillez réessayer."
+  }
 }

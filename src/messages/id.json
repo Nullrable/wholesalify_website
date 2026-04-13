@@ -1,16 +1,192 @@
 {
-  "nav": { "features": "Fitur", "about": "Tentang", "contact": "Kontak", "getEarlyAccess": "Akses Awal" },
-  "hero": { "title": "Wholesalify", "subtitle": "Platform Pemesanan Grosir B2B Modern", "description": "Kelola pesanan grosir, inventaris, dan pembelian dalam satu sistem sederhana.", "cta": "Minta Akses Awal", "emailPlaceholder": "Masukkan email Anda", "joinList": "Bergabung dengan daftar akses awal." },
-  "problem": { "title": "Bisnis grosir masih mengelola pesanan secara manual.", "whatsapp": "Pesanan melalui WhatsApp", "whatsappDesc": "Percakapan berantakan, pesanan hilang, tanpa riwayat.", "spreadsheets": "Spreadsheet manual", "spreadsheetsDesc": "Rawan kesalahan, sulit dilacak, tanpa kolaborasi.", "inventory": "Kesalahan inventaris", "inventoryDesc": "Overselling, kehabisan stok, pelanggan tidak bahagia.", "purchasing": "Alur kerja pembelian lambat", "purchasingDesc": "Pengisian ulang terlambat, kehilangan peluang penjualan." },
-  "solution": { "title": "Wholesalify menyederhanakan operasi grosir.", "subtitle": "Semua yang Anda butuhkan untuk menjalankan bisnis grosir secara efisien." },
-  "features": { "orderingPortal": { "title": "Portal Pemesanan Grosir", "description": "Pelanggan melakukan pemesanan grosir online.", "items": ["Katalog B2B", "Pemesanan massal", "Akun pelanggan", "Riwayat pesanan"] }, "orderManagement": { "title": "Manajemen Pesanan", "description": "Kelola semua pesanan di satu dashboard.", "items": ["Pelacakan pesanan", "Pembaruan status", "Rekam pelanggan"] }, "inventory": { "title": "Manajemen Inventaris", "description": "Pelacakan inventaris real-time.", "items": ["Tingkat inventaris", "Peringatan stok rendah", "Laporan stok"] }, "purchasing": { "title": "Manajemen Pembelian", "description": "Kelola pemasok dan pesanan pembelian.", "items": ["Pesanan pembelian", "Pelacakan pemasok", "Pengisian ulang stok"] }, "admin": { "title": "Dashboard Admin", "description": "Manajemen grosir lengkap.", "items": ["Ringkasan pesanan", "Wawasan inventaris", "Analisis pelanggan"] }, "mobile": { "title": "Admin Seluler", "description": "Kelola bisnis di mana saja.", "items": ["Aplikasi iOS", "Aplikasi Android"] } },
-  "preview": { "title": "Ikhtisar Produk", "subtitle": "Semua yang Anda butuhkan untuk mengelola bisnis grosir.", "orders": "Pesanan", "inventory": "Inventaris", "purchasing": "Pembelian", "customers": "Pelanggan" },
-  "cta": { "title": "Mulai menggunakan Wholesalify", "subtitle": "Bergabung dengan akses awal dan transformasikan bisnis grosir Anda." },
-  "footer": { "tagline": "Platform Pemesanan B2B Modern untuk grosir dan distributor.", "product": "Produk", "features": "Fitur", "pricing": "Harga", "about": "Tentang", "company": "Perusahaan", "contact": "Kontak", "blog": "Blog", "legal": "Hukum", "privacy": "Privasi", "terms": "Ketentuan", "copyright": "© {year} Wholesalify. Hak cipta dilindungi." },
-  "contact": { "title": "Hubungi Kami", "subtitle": "Tertarik dengan akses awal atau punya pertanyaan? Hubungi kami.", "name": "Nama", "namePlaceholder": "Nama Anda", "email": "Email", "emailPlaceholder": "your@email.com", "message": "Pesan", "messagePlaceholder": "Bagaimana kami bisa membantu?", "send": "Kirim Pesan", "orEmail": "Atau email kami langsung di" },
-  "about": { "title": "Tentang Wholesalify", "description": "Wholesalify adalah platform pemesanan grosir B2B modern yang dirancang untuk grosir, distributor, dan perusahaan perdagangan.", "mission": "Misi kami adalah menyederhanakan operasi grosir dengan menyediakan platform terpadu untuk mengelola pesanan, inventaris, dan pembelian.", "vision": "Kami membayangkan dunia di mana setiap bisnis grosir, terlepas dari ukuran, dapat beroperasi secara efisien dengan teknologi modern." },
-  "privacy": { "title": "Kebijakan Privasi", "lastUpdated": "Terakhir diperbarui: {date}", "section1Title": "1. Informasi yang Kami Kumpulkan", "section1Desc": "Kami mengumpulkan informasi yang Anda berikan secara langsung, termasuk nama, email, dan informasi bisnis saat Anda mendaftar untuk akses awal atau menghubungi kami.", "section2Title": "2. Cara Kami Menggunakan Informasi", "section2Desc": "Kami menggunakan informasi untuk menyediakan dan meningkatkan layanan kami, berkomunikasi dengan Anda, dan mengirimkan pembaruan tentang Wholesalify.", "section3Title": "3. Keamanan Data", "section3Desc": "Kami menerapkan langkah-langkah keamanan yang sesuai untuk melindungi informasi pribadi Anda.", "section4Title": "4. Kontak", "section4Desc": "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami." },
-  "terms": { "title": "Ketentuan Layanan", "lastUpdated": "Terakhir diperbarui: {date}", "section1Title": "1. Penerimaan Ketentuan", "section1Desc": "Dengan mengakses atau menggunakan Wholesalify, Anda setuju untuk terikat dengan Ketentuanketentuan Layanan ini.", "section2Title": "2. Penggunaan Layanan", "section2Desc": "Wholesalify menyediakan platform pemesanan grosir B2B. Anda setuju untuk hanya menggunakannya untuk tujuan yang sah dan sesuai dengan Ketentuan ini.", "section3Title": "3. Kekayaan Intelektual", "section3Desc": "Semua konten dan materi yang tersedia di Wholesalify adalah milik Wholesalify atau pemberi lisensinya.", "section4Title": "4. Kontak", "section4Desc": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, silakan hubungi kami." },
-  "featuresPage": { "title": "Fitur Produk", "subtitle": "Semua yang Anda butuhkan untuk menjalankan bisnis grosir secara efisien." },
-  "form": { "submitting": "Mengirim...", "success": "Terima kasih! Kami akan segera menghubungi Anda.", "error": "Gagal mengirim. Silakan coba lagi." }
+  "nav": {
+    "features": "Fitur",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "getEarlyAccess": "Akses Awal"
+  },
+  "hero": {
+    "title": "Wholesalify",
+    "subtitle": "Platform Pemesanan Grosir B2B Modern",
+    "description": "Kelola pesanan grosir, inventaris, dan pembelian dalam satu sistem sederhana.",
+    "cta": "Minta Akses Awal",
+    "emailPlaceholder": "Masukkan email Anda",
+    "joinList": "Bergabung dengan daftar akses awal."
+  },
+  "problem": {
+    "title": "Bisnis grosir masih mengelola pesanan secara manual.",
+    "whatsapp": "Pesanan melalui WhatsApp",
+    "whatsappDesc": "Percakapan berantakan, pesanan hilang, tanpa riwayat.",
+    "spreadsheets": "Spreadsheet manual",
+    "spreadsheetsDesc": "Rawan kesalahan, sulit dilacak, tanpa kolaborasi.",
+    "inventory": "Kesalahan inventaris",
+    "inventoryDesc": "Overselling, kehabisan stok, pelanggan tidak bahagia.",
+    "purchasing": "Alur kerja pembelian lambat",
+    "purchasingDesc": "Pengisian ulang terlambat, kehilangan peluang penjualan."
+  },
+  "solution": {
+    "title": "Wholesalify menyederhanakan operasi grosir.",
+    "subtitle": "Semua yang Anda butuhkan untuk menjalankan bisnis grosir secara efisien."
+  },
+  "features": {
+    "orderingPortal": {
+      "title": "Portal Pemesanan Grosir",
+      "description": "Pelanggan melakukan pemesanan grosir online.",
+      "items": [
+        "Katalog B2B",
+        "Pemesanan massal",
+        "Akun pelanggan",
+        "Riwayat pesanan"
+      ]
+    },
+    "weighedProducts": {
+      "title": "Pemesanan Produk Timbang",
+      "description": "Jual produk non-standar berdasarkan berat dengan penanganan kuantitas yang presisi.",
+      "items": [
+        "Harga berdasarkan berat",
+        "Input kuantitas dinamis",
+        "Konversi unit fleksibel"
+      ]
+    },
+    "fruitPricing": {
+      "title": "Harga Bertingkat untuk Buah",
+      "description": "Harga berjenjang untuk buah dengan dukungan unit jual berbagai ukuran.",
+      "items": [
+        "Harga berdasarkan grade",
+        "Dukung multi-unit (kg/kotak/buah)",
+        "Diskon volume"
+      ]
+    },
+    "multiSpec": {
+      "title": "Produk Multi-Spesifikasi",
+      "description": "Jual produk standar dengan berbagai spesifikasi dan variasi.",
+      "items": [
+        "Variasi ukuran",
+        "Pilihan warna",
+        "Kombinasi rasa"
+      ]
+    },
+    "orderManagement": {
+      "title": "Manajemen Pesanan",
+      "description": "Kelola semua pesanan di satu dashboard.",
+      "items": [
+        "Pelacakan pesanan",
+        "Pembaruan status",
+        "Rekam pelanggan"
+      ]
+    },
+    "inventory": {
+      "title": "Manajemen Inventaris",
+      "description": "Pelacakan inventaris real-time.",
+      "items": [
+        "Tingkat inventaris",
+        "Peringatan stok rendah",
+        "Laporan stok"
+      ]
+    },
+    "purchasing": {
+      "title": "Manajemen Pembelian",
+      "description": "Kelola pemasok dan pesanan pembelian.",
+      "items": [
+        "Pesanan pembelian",
+        "Pelacakan pemasok",
+        "Pengisian ulang stok"
+      ]
+    },
+    "admin": {
+      "title": "Dashboard Admin",
+      "description": "Manajemen grosir lengkap.",
+      "items": [
+        "Ringkasan pesanan",
+        "Wawasan inventaris",
+        "Analisis pelanggan"
+      ]
+    },
+    "mobile": {
+      "title": "Admin Seluler",
+      "description": "Kelola bisnis di mana saja.",
+      "items": [
+        "Aplikasi iOS",
+        "Aplikasi Android"
+      ]
+    }
+  },
+  "preview": {
+    "title": "Ikhtisar Produk",
+    "subtitle": "Semua yang Anda butuhkan untuk mengelola bisnis grosir.",
+    "orders": "Pesanan",
+    "inventory": "Inventaris",
+    "purchasing": "Pembelian",
+    "customers": "Pelanggan"
+  },
+  "cta": {
+    "title": "Mulai menggunakan Wholesalify",
+    "subtitle": "Bergabung dengan akses awal dan transformasikan bisnis grosir Anda."
+  },
+  "footer": {
+    "tagline": "Platform Pemesanan B2B Modern untuk grosir dan distributor.",
+    "product": "Produk",
+    "features": "Fitur",
+    "pricing": "Harga",
+    "about": "Tentang",
+    "company": "Perusahaan",
+    "contact": "Kontak",
+    "blog": "Blog",
+    "legal": "Hukum",
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "copyright": "© {year} Wholesalify. Hak cipta dilindungi."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Tertarik dengan akses awal atau punya pertanyaan? Hubungi kami.",
+    "name": "Nama",
+    "namePlaceholder": "Nama Anda",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "message": "Pesan",
+    "messagePlaceholder": "Bagaimana kami bisa membantu?",
+    "send": "Kirim Pesan",
+    "orEmail": "Atau email kami langsung di"
+  },
+  "about": {
+    "title": "Tentang Wholesalify",
+    "description": "Wholesalify adalah platform pemesanan grosir B2B modern yang dirancang untuk grosir, distributor, dan perusahaan perdagangan.",
+    "mission": "Misi kami adalah menyederhanakan operasi grosir dengan menyediakan platform terpadu untuk mengelola pesanan, inventaris, dan pembelian.",
+    "vision": "Kami membayangkan dunia di mana setiap bisnis grosir, terlepas dari ukuran, dapat beroperasi secara efisien dengan teknologi modern.",
+    "visionTitle": "Visi Kami"
+  },
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "lastUpdated": "Terakhir diperbarui: {date}",
+    "section1Title": "1. Informasi yang Kami Kumpulkan",
+    "section1Desc": "Kami mengumpulkan informasi yang Anda berikan secara langsung, termasuk nama, email, dan informasi bisnis saat Anda mendaftar untuk akses awal atau menghubungi kami.",
+    "section2Title": "2. Cara Kami Menggunakan Informasi",
+    "section2Desc": "Kami menggunakan informasi untuk menyediakan dan meningkatkan layanan kami, berkomunikasi dengan Anda, dan mengirimkan pembaruan tentang Wholesalify.",
+    "section3Title": "3. Keamanan Data",
+    "section3Desc": "Kami menerapkan langkah-langkah keamanan yang sesuai untuk melindungi informasi pribadi Anda.",
+    "section4Title": "4. Kontak",
+    "section4Desc": "Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami."
+  },
+  "terms": {
+    "title": "Ketentuan Layanan",
+    "lastUpdated": "Terakhir diperbarui: {date}",
+    "section1Title": "1. Penerimaan Ketentuan",
+    "section1Desc": "Dengan mengakses atau menggunakan Wholesalify, Anda setuju untuk terikat dengan Ketentuanketentuan Layanan ini.",
+    "section2Title": "2. Penggunaan Layanan",
+    "section2Desc": "Wholesalify menyediakan platform pemesanan grosir B2B. Anda setuju untuk hanya menggunakannya untuk tujuan yang sah dan sesuai dengan Ketentuan ini.",
+    "section3Title": "3. Kekayaan Intelektual",
+    "section3Desc": "Semua konten dan materi yang tersedia di Wholesalify adalah milik Wholesalify atau pemberi lisensinya.",
+    "section4Title": "4. Kontak",
+    "section4Desc": "Jika Anda memiliki pertanyaan tentang Ketentuan ini, silakan hubungi kami."
+  },
+  "featuresPage": {
+    "title": "Fitur Produk",
+    "subtitle": "Semua yang Anda butuhkan untuk menjalankan bisnis grosir secara efisien."
+  },
+  "form": {
+    "submitting": "Mengirim...",
+    "success": "Terima kasih! Kami akan segera menghubungi Anda.",
+    "error": "Gagal mengirim. Silakan coba lagi."
+  }
 }

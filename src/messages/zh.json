@@ -32,32 +32,83 @@
     "orderingPortal": {
       "title": "批发订货门户",
       "description": "客户在线下批发订单。",
-      "items": ["B2B 目录", "批量订货", "客户账户", "订单历史"]
+      "items": [
+        "B2B 目录",
+        "批量订货",
+        "客户账户",
+        "订单历史"
+      ]
+    },
+    "weighedProducts": {
+      "title": "称重商品订货",
+      "description": "按重量销售非标准商品，精确处理数量。",
+      "items": [
+        "按重量定价",
+        "动态数量输入",
+        "灵活单位转换"
+      ]
+    },
+    "fruitPricing": {
+      "title": "水果多等级定价",
+      "description": "水果分级定价，支持多种销售单位。",
+      "items": [
+        "等级定价",
+        "多单位支持（公斤/箱/件）",
+        "批量折扣"
+      ]
+    },
+    "multiSpec": {
+      "title": "多规格商品",
+      "description": "标准商品多规格、多变体销售。",
+      "items": [
+        "规格多样",
+        "颜色选项",
+        "口味组合"
+      ]
     },
     "orderManagement": {
       "title": "订单管理",
       "description": "在一个仪表板中管理所有订单。",
-      "items": ["订单追踪", "状态更新", "客户记录"]
+      "items": [
+        "订单追踪",
+        "状态更新",
+        "客户记录"
+      ]
     },
     "inventory": {
       "title": "库存管理",
       "description": "实时库存追踪。",
-      "items": ["库存水平", "低库存提醒", "库存报告"]
+      "items": [
+        "库存水平",
+        "低库存提醒",
+        "库存报告"
+      ]
     },
     "purchasing": {
       "title": "采购管理",
       "description": "管理供应商和采购订单。",
-      "items": ["采购订单", "供应商追踪", "库存补货"]
+      "items": [
+        "采购订单",
+        "供应商追踪",
+        "库存补货"
+      ]
     },
     "admin": {
       "title": "管理后台",
       "description": "完整的批发管理。",
-      "items": ["订单概览", "库存洞察", "客户分析"]
+      "items": [
+        "订单概览",
+        "库存洞察",
+        "客户分析"
+      ]
     },
     "mobile": {
       "title": "移动管理",
       "description": "随时随地管理业务。",
-      "items": ["iOS 应用", "Android 应用"]
+      "items": [
+        "iOS 应用",
+        "Android 应用"
+      ]
     }
   },
   "preview": {
@@ -102,7 +153,8 @@
     "title": "关于 Wholesalify",
     "description": "Wholesalify 是一个现代化的 B2B 批发订货平台，专为批发商、分销商和贸易公司设计。",
     "mission": "我们的使命是通过提供一个管理订单、库存和采购的一体化平台来简化批发运营。",
-    "vision": "我们设想一个无论规模大小的批发企业都能通过现代技术高效运营的世界。"
+    "vision": "我们设想一个无论规模大小的批发企业都能通过现代技术高效运营的世界。",
+    "visionTitle": "我们的愿景"
   },
   "privacy": {
     "title": "隐私政策",
