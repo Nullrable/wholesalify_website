@@ -9,7 +9,6 @@ export default createMiddleware({
 
 export const config = {
   matcher: [
-    "/",
     "/(zh|vi|th|id|ms|ar|tr|es-MX|es-ES|pt-BR|pt-PT|de|fr|it|pl)/:path*",
   ],
 };
