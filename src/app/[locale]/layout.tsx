@@ -58,7 +58,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+    <div lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -73,15 +73,13 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
         />
       </head>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar />
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <Navbar />
+        {children}
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
+      </NextIntlClientProvider>
+    </div>
   );
 }
