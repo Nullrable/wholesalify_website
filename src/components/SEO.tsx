@@ -11,7 +11,7 @@ interface SEOProps {
   image?: string;
 }
 
-const BASE_URL = "https://wholesalify.com";
+const BASE_URL = "https://www.wholesalify.com";
 const DEFAULT_OG_IMAGE = "/og-image.png";
 const DEFAULT_LOCALE: Locale = "en";
 

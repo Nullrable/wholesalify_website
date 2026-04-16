@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.wholesalify.com)",
+      "Bash(curl -s \"https://www.wholesalify.com/es-MX\")",
+      "Bash(curl -s \"https://www.wholesalify.com/en\")",
+      "Bash(curl -s \"https://www.wholesalify.com/\")",
+      "Bash(curl -s \"https://wholesalify.com/es-MX\" -I)",
+      "Bash(curl -s \"https://www.wholesalify.com/es-MX\" -I)"
+    ]
+  }
+}
