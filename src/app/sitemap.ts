@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://wholesalify.com'
+const BASE_URL = 'https://www.wholesalify.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ['', '/about', '/contact', '/features', '/privacy', '/terms']
