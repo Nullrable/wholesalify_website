@@ -6,7 +6,18 @@
       "Bash(curl -s \"https://www.wholesalify.com/en\")",
       "Bash(curl -s \"https://www.wholesalify.com/\")",
       "Bash(curl -s \"https://wholesalify.com/es-MX\" -I)",
-      "Bash(curl -s \"https://www.wholesalify.com/es-MX\" -I)"
+      "Bash(curl -s \"https://www.wholesalify.com/es-MX\" -I)",
+      "Bash(npx vercel:*)",
+      "Bash(npm cache:*)",
+      "Bash(npx vercel@latest --yes)",
+      "Bash(vercel:*)",
+      "Bash(npm list:*)",
+      "Bash(npm install:*)",
+      "Bash(./node_modules/.bin/vercel:*)",
+      "WebSearch",
+      "Bash(grep -l '\"blog\": {' src/messages/*.json)",
+      "Bash(grep -l '\"articles\": [' src/messages/*.json)",
+      "Bash(grep:*)"
     ]
   }
 }

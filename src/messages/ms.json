@@ -188,5 +188,31 @@
     "submitting": "Menghantar...",
     "success": "Terima kasih! Kami akan menghubungi anda tidak lama lagi.",
     "error": "Gagal menghantar. Sila cuba lagi."
+  },
+  "blog": {
+    "title": "Wawasan & panduan pesanan borong",
+    "subtitle": "Pelajari cara mengoptimumkan perniagaan borong anda dengan alat pesanan B2B moden.",
+    "articles": [
+      {
+        "title": "Cara Memilih Portal Pesanan Borong untuk Perniagaan Produk Segar",
+        "description": "Temui ciri paling penting apabila memilih portal pelanggan borong untuk operasi borong buah dan sayur anda.",
+        "keywords": ["portal pesanan borong", "produk segar", "perniagaan borong buah"]
+      },
+      {
+        "title": "Perisian Borong B2B: Sokongan untuk Produk Berbilang Unit, BerGred & Ditimbang",
+        "description": "Pelajari cara perisian borong berbilang unit mengendalikan harga kes, palet dan unit bersama produk berGred dan berasas berat.",
+        "keywords": ["perisian borong berbilang unit", "produk berGred", "produk ditimbang", "B2B borong"]
+      },
+      {
+        "title": "Mengapa Perniagaan Borong Buah Anda Memerlukan Portal Pelanggan",
+        "description": "Terokai faedah portal pelanggan borong khusus untuk menguruskan gred buah, harga berbilang aras dan akaun pelanggan.",
+        "keywords": ["portal pelanggan borong", "borong buah", "akaun pelanggan"]
+      },
+      {
+        "title": "Panduan Lengkap Pengurusan Produk Multi-Spesifikasi dalam Pesanan B2B",
+        "description": "Semua yang anda perlu ketahui tentang menguruskan variasi saiz, pilihan warna dan kombinasi rasa dalam platform pesanan B2B anda.",
+        "keywords": ["produk multi-spesifikasi", "pesanan B2B", "variasi produk"]
+      }
+    ]
   }
 }

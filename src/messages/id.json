@@ -188,5 +188,31 @@
     "submitting": "Mengirim...",
     "success": "Terima kasih! Kami akan segera menghubungi Anda.",
     "error": "Gagal mengirim. Silakan coba lagi."
+  },
+  "blog": {
+    "title": "Wawasan & panduan pemesanan grosir",
+    "subtitle": "Pelajari cara mengoptimalkan bisnis grosir Anda dengan alat pemesanan B2B modern.",
+    "articles": [
+      {
+        "title": "Cara Memilih Portal Pemesanan Grosir untuk Bisnis Produk Segar",
+        "description": "Temukan fitur paling penting saat memilih portal pelanggan grosir untuk operasi grosir buah dan sayuran Anda.",
+        "keywords": ["portal pemesanan grosir", "produk segar", "bisnis grosir buah"]
+      },
+      {
+        "title": "Perangkat Lunak Grosir B2B: Dukungan untuk Produk Multi-Unit, Bers grade & Ditimbang",
+        "description": "Pelajari cara perangkat lunak grosir multi-unit menangani harga per kasus, pallet, dan unit bersama produk bers grade dan berbasis berat.",
+        "keywords": ["perangkat lunak grosir multi-unit", "produk bers grade", "produk ditimbang", "B2B grosir"]
+      },
+      {
+        "title": "Mengapa Bisnis Grosir Buah Anda Membutuhkan Portal Pelanggan",
+        "description": "Jelajahi manfaat portal pelanggan grosir khusus untuk mengelola grade buah, harga multi-level, dan akun pelanggan.",
+        "keywords": ["portal pelanggan grosir", "grosir buah", "akun pelanggan"]
+      },
+      {
+        "title": "Panduan Lengkap Manajemen Produk Multi-Spesifikasi dalam Pemesanan B2B",
+        "description": "Semua yang perlu Anda ketahui tentang mengelola variasi ukuran, opsi warna, dan kombinasi rasa di platform pemesanan B2B Anda.",
+        "keywords": ["produk multi-spesifikasi", "pemesanan B2B", "variasi produk"]
+      }
+    ]
   }
 }

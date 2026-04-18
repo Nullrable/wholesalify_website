@@ -188,5 +188,31 @@
     "submitting": "Gönderiliyor...",
     "success": "Teşekkürler! Yakında sizinle iletişime geçeceğiz.",
     "error": "Gönderme başarısız. Lütfen tekrar deneyin."
+  },
+  "blog": {
+    "title": "Toptan sipariş içgörüleri ve rehberleri",
+    "subtitle": "Modern B2B sipariş araçlarıyla toptan işletmenizi nasıl optimize edeceğinizi öğrenin.",
+    "articles": [
+      {
+        "title": "Taze Ürün İşletmesi İçin Toptan Sipariş Portalı Nasıl Seçilir",
+        "description": "Meyve ve sebze toptan operasyonlarınız için toptan müşteri portalı seçerken hangi özelliklerin en önemli olduğunu keşfedin.",
+        "keywords": ["toptan sipariş portalı", "taze ürün", "meyve toptan işi"]
+      },
+      {
+        "title": "B2B Toptan Yazılım: Çoklu Birim, Dereceli ve Tartılı Ürün Desteği",
+        "description": "Çoklu birim toptan yazılımının koli, palet ve birim fiyatlandırmasını ve dereceli ve ağırlık tabanlı ürünleri nasıl ele aldığını öğrenin.",
+        "keywords": ["çoklu birim toptan yazılımı", "dereceli ürün", "tartılı ürün", "B2B toptan"]
+      },
+      {
+        "title": "Meyve Toptan İşletmeniz Neden Müşteri Portalına İhtiyaç Duyuyor",
+        "description": "Meyve derecelendirme, çok seviyeli fiyatlandırma ve müşteri hesaplarını yönetmek için özel toptan müşteri portalının avantajlarını keşfedin.",
+        "keywords": ["toptan müşteri portalı", "meyve toptan", "müşteri hesapları"]
+      },
+      {
+        "title": "B2B Siparişte Çoklu Spesifikasyonlu Ürün Yönetimi İçin Kapsamlı Rehber",
+        "description": "B2B sipariş platformunuzda boyut varyasyonları, renk seçenekleri ve lezzet kombinasyonlarını yönetmek için bilmeniz gereken her şey.",
+        "keywords": ["çoklu spesifikasyonlu ürünler", "B2B sipariş", "ürün varyasyonları"]
+      }
+    ]
   }
 }

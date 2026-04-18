@@ -188,5 +188,31 @@
     "submitting": "Enviando...",
     "success": "¡Gracias! Te contactaremos pronto.",
     "error": "Error al enviar. Por favor intenta de nuevo."
+  },
+  "blog": {
+    "title": "Perspectivas y guías de pedidos al por mayor",
+    "subtitle": "Aprenda cómo optimizar su negocio mayorista con herramientas modernas de pedido B2B.",
+    "articles": [
+      {
+        "title": "Cómo Elegir un Portal de Pedidos al Por Mayor para Productos Frescos",
+        "description": "Descubra las características más importantes al seleccionar un portal de clientes B2B para sus operaciones mayoristas de frutas y verduras.",
+        "keywords": ["portal de pedidos al por mayor", "productos frescos", "negocio mayorista de frutas"]
+      },
+      {
+        "title": "Software Mayorista B2B: Soporte para Productos Multi-Unidad, Graduados y Pesados",
+        "description": "Aprenda cómo el software mayorista multi-unidad maneja precios por caso, paleta y unidad junto con productos graduados y basados en peso.",
+        "keywords": ["software mayorista multi-unidad", "productos graduados", "productos pesados", "B2B mayorista"]
+      },
+      {
+        "title": "Por Qué Su Negocio Mayorista de Frutas Necesita un Portal de Clientes",
+        "description": "Explore los beneficios de un portal de clientes B2B dedicado para gestionar grados de frutas, precios multinivel y cuentas de clientes.",
+        "keywords": ["portal de clientes B2B", "mayorista de frutas", "cuentas de clientes"]
+      },
+      {
+        "title": "Guía Completa de Gestión de Productos Multi-Especificación en Pedidos B2B",
+        "description": "Todo lo que necesita saber sobre la gestión de variaciones de tamaño, opciones de color y combinaciones de sabores en su plataforma de pedidos B2B.",
+        "keywords": ["productos multi-especificación", "pedidos B2B", "variaciones de productos"]
+      }
+    ]
   }
 }

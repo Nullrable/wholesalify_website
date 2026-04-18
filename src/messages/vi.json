@@ -188,5 +188,31 @@
     "submitting": "Đang gửi...",
     "success": "Cảm ơn! Chúng tôi sẽ liên hệ sớm.",
     "error": "Gửi thất bại. Vui lòng thử lại."
+  },
+  "blog": {
+    "title": "Hiểu biết & hướng dẫn đặt hàng bán sỉ",
+    "subtitle": "Tìm hiểu cách tối ưu hóa hoạt động kinh doanh bán sỉ với công cụ đặt hàng B2B hiện đại.",
+    "articles": [
+      {
+        "title": "Cách Chọn Cổng Đặt Hàng Bán Sỉ Cho Doanh Nghiệp Nông Sản Tươi",
+        "description": "Khám phá những tính năng quan trọng nhất khi lựa chọn cổng khách hàng bán sỉ cho hoạt động bán sỉ trái cây và rau quả.",
+        "keywords": ["cổng đặt hàng bán sỉ", "nông sản tươi", "kinh doanh bán sỉ trái cây"]
+      },
+      {
+        "title": "Phần Mềm Bán Sỉ B2B: Hỗ Trợ Đa Đơn Vị, Phân Loại & Sản Phẩm Cân",
+        "description": "Tìm hiểu cách phần mềm bán sỉ đa đơn vị xử lý giá theo thùng, pallet và đơn vị cùng sản phẩm được phân loại và tính theo trọng lượng.",
+        "keywords": ["phần mềm bán sỉ đa đơn vị", "sản phẩm phân loại", "sản phẩm cân", "B2B bán sỉ"]
+      },
+      {
+        "title": "Tại Sao Doanh Nghiệp Bán Sỉ Trái Cây Cần Cổng Khách Hàng",
+        "description": "Khám phá lợi ích của cổng khách hàng bán sỉ chuyên dụng để quản lý phân loại trái cây, định giá đa cấp và tài khoản khách hàng.",
+        "keywords": ["cổng khách hàng bán sỉ", "bán sỉ trái cây", "tài khoản khách hàng"]
+      },
+      {
+        "title": "Hướng Dẫn Toàn Diện Quản Lý Sản Phẩm Đa Quy Cách Trong Đặt Hàng B2B",
+        "description": "Mọi thứ bạn cần biết về quản lý biến thể kích thước, tùy chọn màu sắc và kết hợp hương vị trong nền tảng đặt hàng B2B của bạn.",
+        "keywords": ["sản phẩm đa quy cách", "đặt hàng B2B", "biến thể sản phẩm"]
+      }
+    ]
   }
 }

@@ -52,6 +52,20 @@ const SEO_KEYWORDS: Record<string, string[]> = {
     "fresh produce wholesale software",
     "seafood wholesale software",
     "find fruit wholesale software",
+    // 目标关键词
+    "wholesale ordering portal",
+    "wholesale customer portal",
+    "customer portal for wholesalers",
+    "b2b portal for wholesalers",
+    "wholesale ordering platform for fresh produce",
+    // 产品特点长尾词
+    "wholesale ordering system for fresh produce weight",
+    "B2B wholesale software multi-unit products",
+    "wholesale portal for graded fruit and vegetables",
+    "wholesale ordering platform with multi-specification products",
+    "B2B ordering system for weighed produce",
+    "wholesale fruit pricing by grade",
+    "wholesale ordering software case pallet unit",
   ],
   zh: [
     "批发订货平台",

@@ -188,5 +188,31 @@
     "submitting": "Enviando...",
     "success": "Obrigado! Entraremos em contato em breve.",
     "error": "Falha ao enviar. Por favor tente novamente."
+  },
+  "blog": {
+    "title": "Informações e guias de pedidos por atacado",
+    "subtitle": "Aprenda como otimizar seu negócio atacadista com ferramentas modernas de pedido B2B.",
+    "articles": [
+      {
+        "title": "Como Escolher um Portal de Pedidos por Atacado para Produtos Frescos",
+        "description": "Descubra as funcionalidades mais importantes ao selecionar um portal de clientes B2B para suas operações atacadistas de frutas e vegetais.",
+        "keywords": ["portal de pedidos por atacado", "produtos frescos", "negócio atacadista de frutas"]
+      },
+      {
+        "title": "Software B2B Atacadista: Suporte para Produtos Multi-Unidade, Classificados e Pesados",
+        "description": "Aprenda como o software atacadista multi-unidade processa preços por caixa, pallet e unidade junto com produtos classificados e baseados em peso.",
+        "keywords": ["software atacadista multi-unidade", "produtos classificados", "produtos pesados", "B2B atacadista"]
+      },
+      {
+        "title": "Por Que Seu Negócio Atacadista de Frutas Precisa de um Portal de Clientes",
+        "description": "Explore os benefícios de um portal de clientes B2B dedicado para gerenciar graus de frutas, preços multinível e contas de clientes.",
+        "keywords": ["portal de clientes B2B", "atacadista de frutas", "contas de clientes"]
+      },
+      {
+        "title": "Guia Completo de Gestão de Produtos Multi-Especificação em Pedidos B2B",
+        "description": "Tudo o que você precisa saber sobre gestão de variações de tamanho, opções de cor e combinações de sabores na sua plataforma de pedidos B2B.",
+        "keywords": ["produtos multi-especificação", "pedidos B2B", "variações de produtos"]
+      }
+    ]
   }
 }

@@ -188,5 +188,31 @@
     "submitting": "Enviando...",
     "success": "Obrigado! Entraremos em contato em breve.",
     "error": "Falha ao enviar. Por favor tente novamente."
+  },
+  "blog": {
+    "title": "Informações e guias de pedidos por grosso",
+    "subtitle": "Aprenda como otimizar o seu negócio por grosso com ferramentas modernas de encomenda B2B.",
+    "articles": [
+      {
+        "title": "Como Escolher um Portal de Encomendas por Grosso para Produtos Frescos",
+        "description": "Descubra as funcionalidades mais importantes ao selecionar um portal de clientes B2B para as suas operações por grosso de frutas e vegetais.",
+        "keywords": ["portal de encomendas por grosso", "produtos frescos", "negócio por grosso de frutas"]
+      },
+      {
+        "title": "Software B2B por Grosso: Suporte para Produtos Multi-Unidade, Classificados e Pesados",
+        "description": "Aprenda como o software por grosso multi-unidade processa preços por caixa, palete e unidade junto com produtos classificados e baseados em peso.",
+        "keywords": ["software por grosso multi-unidade", "produtos classificados", "produtos pesados", "B2B por grosso"]
+      },
+      {
+        "title": "Porque o Seu Negócio por Grosso de Frutas Precisa de um Portal de Clientes",
+        "description": "Explore os benefícios de um portal de clientes B2B dedicado para gerir graus de frutas, preços multinível e contas de clientes.",
+        "keywords": ["portal de clientes B2B", "por grosso de frutas", "contas de clientes"]
+      },
+      {
+        "title": "Guia Completo de Gestão de Produtos Multi-Especificação em Encomendas B2B",
+        "description": "Tudo o que precisa de saber sobre a gestão de variações de tamanho, opções de cor e combinações de sabores na sua plataforma de encomendas B2B.",
+        "keywords": ["produtos multi-especificação", "encomendas B2B", "variações de produtos"]
+      }
+    ]
   }
 }

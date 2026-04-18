@@ -188,5 +188,31 @@
     "submitting": "Wird gesendet...",
     "success": "Danke! Wir werden Sie bald kontaktieren.",
     "error": "Senden fehlgeschlagen. Bitte versuchen Sie es erneut."
+  },
+  "blog": {
+    "title": "Großhandelsbestellungs-Einblicke & Leitfäden",
+    "subtitle": "Erfahren Sie, wie Sie Ihr Großhandelsgeschäft mit modernen B2B-Bestellungstools optimieren können.",
+    "articles": [
+      {
+        "title": "So Wählen Sie ein Großhandels-Bestellungsportal für Ihr Frischwarengeschäft",
+        "description": "Entdecken Sie, welche Funktionen beim Auswahl eines Großhandels-Kundenportals für Ihre Obst- und Gemüsegroßhandelsoperationen am wichtigsten sind.",
+        "keywords": ["Großhandels-Bestellungsportal", "Frischwaren", "Obstgroßhandelsgeschäft"]
+      },
+      {
+        "title": "B2B-Großhandelssoftware: Unterstützung für Multi-Unit-, Graduierte- & Wiegeprodukte",
+        "description": "Erfahren Sie, wie Großhandelssoftware mit mehreren Einheiten Preise pro Fall, Palette und Einheit zusammen mit eingestuften und gewichtsbasierten Produkten abwickelt.",
+        "keywords": ["Großhandelssoftware mit mehreren Einheiten", "eingestufte Produkte", "Wiegeprodukte", "B2B Großhandel"]
+      },
+      {
+        "title": "Warum Ihr Obstgroßhandelsgeschäft ein Kundenportal Benötigt",
+        "description": "Entdecken Sie die Vorteile eines dedizierten Großhandels-Kundenportals für die Verwaltung von Obstqualitäten, mehrstufiger Preisgestaltung und Kundenkonten.",
+        "keywords": ["Großhandels-Kundenportal", "Obstgroßhandel", "Kundenkonten"]
+      },
+      {
+        "title": "Vollständiger Leitfaden zur Multi-Spezifikations-Produktverwaltung in B2B-Bestellungen",
+        "description": "Alles, was Sie über die Verwaltung von Größenvarianten, Farboptionen und Geschmackskombinationen in Ihrer B2B-Bestellungsplattform wissen müssen.",
+        "keywords": ["Multi-Spezifikations-Produkte", "B2B-Bestellung", "Produktvarianten"]
+      }
+    ]
   }
 }

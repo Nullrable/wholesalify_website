@@ -7,8 +7,8 @@
   },
   "hero": {
     "title": "Wholesalify",
-    "subtitle": "Modern B2B Wholesale Ordering Platform",
-    "description": "Manage wholesale orders, inventory, and purchasing in one simple system.",
+    "subtitle": "B2B Wholesale Ordering Platform for Fresh Produce & Multi-Unit Catalog",
+    "description": "The wholesale customer portal for wholesalers — supporting weighed products, multi-level fruit grades, case/pallet/unit pricing, and multi-specification catalogs.",
     "cta": "Request Early Access",
     "emailPlaceholder": "Enter your email",
     "joinList": "Join the early access list."
@@ -124,7 +124,7 @@
     "subtitle": "Join early access and transform your wholesale business."
   },
   "footer": {
-    "tagline": "Modern B2B Wholesale Ordering Platform for wholesalers and distributors.",
+    "tagline": "B2B Wholesale Ordering Platform — wholesale customer portal with weighed products, graded fruit pricing, multi-unit and multi-specification support.",
     "product": "Product",
     "features": "Features",
     "pricing": "Pricing",
@@ -188,5 +188,31 @@
     "submitting": "Submitting...",
     "success": "Thanks! We'll contact you soon.",
     "error": "Failed to submit. Please try again."
+  },
+  "blog": {
+    "title": "Wholesale ordering insights & guides",
+    "subtitle": "Learn how to optimize your wholesale business with modern B2B ordering tools.",
+    "articles": [
+      {
+        "title": "How to Choose a Wholesale Ordering Portal for Fresh Produce Business",
+        "description": "Discover what features matter most when selecting a wholesale customer portal for your fruit and vegetable wholesale operations.",
+        "keywords": ["wholesale ordering portal", "fresh produce", "fruit wholesale business"]
+      },
+      {
+        "title": "B2B Wholesale Software: Support for Multi-Unit, Graded & Weighed Products",
+        "description": "Learn how multi-unit wholesale software handles case, pallet, and unit pricing along with graded produce and weight-based products.",
+        "keywords": ["multi-unit wholesale software", "graded produce", "weighed products", "B2B wholesale"]
+      },
+      {
+        "title": "Why Your Fruit Wholesale Business Needs a Customer Portal",
+        "description": "Explore the benefits of a dedicated wholesale customer portal for managing fruit grades, multi-level pricing, and customer accounts.",
+        "keywords": ["wholesale customer portal", "fruit wholesale", "customer accounts"]
+      },
+      {
+        "title": "Complete Guide to Multi-Specification Product Management in B2B Ordering",
+        "description": "Everything you need to know about managing size variations, color options, and flavor combinations in your B2B ordering platform.",
+        "keywords": ["multi-specification products", "B2B ordering", "product variations"]
+      }
+    ]
   }
 }
