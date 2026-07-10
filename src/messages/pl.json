@@ -2,16 +2,12 @@
   "nav": {
     "features": "Funkcje",
     "about": "O nas",
-    "contact": "Kontakt",
-    "getEarlyAccess": "Wczesny Dostęp"
+    "contact": "Kontakt"
   },
   "hero": {
     "title": "Wholesalify",
     "subtitle": "Nowoczesna Platforma Zamówień Hurtowych B2B",
-    "description": "Zarządzaj zamówieniami hurtowymi, inwentarzem i zakupami w jednym prostym systemie.",
-    "cta": "Poproś o Wczesny Dostęp",
-    "emailPlaceholder": "Wprowadź swój e-mail",
-    "joinList": "Dołącz do listy wczesnego dostępu."
+    "description": "Zarządzaj zamówieniami hurtowymi, inwentarzem i zakupami w jednym prostym systemie."
   },
   "problem": {
     "title": "Firmy hurtowe nadal zarządzają zamówieniami ręcznie.",
@@ -196,22 +192,39 @@
       {
         "title": "Jak Wybrać Portal Zamówień Hurtowych dla Działalności z Produktami Świeżymi",
         "description": "Odkryj, które funkcje są najważniejsze przy wyborze portalu klienta B2B dla operacji hurtowych owoców i warzyw.",
-        "keywords": ["portal zamówień hurtowych", "produkty świeże", "hurtownia owoców"]
+        "keywords": [
+          "portal zamówień hurtowych",
+          "produkty świeże",
+          "hurtownia owoców"
+        ]
       },
       {
         "title": "Oprogramowanie Hurtowe B2B: Wsparcie dla Produktów Wielojednostkowych, Klasyfikowanych i Ważonych",
         "description": "Dowiedz się, jak oprogramowanie hurtowe wielojednostkowe obsługuje ceny za przypadek, paletę i jednostkę wraz z produktami klasyfikowanymi i ważonymi.",
-        "keywords": ["oprogramowanie hurtowe wielojednostkowe", "produkty klasyfikowane", "produkty ważone", "B2B hurt"]
+        "keywords": [
+          "oprogramowanie hurtowe wielojednostkowe",
+          "produkty klasyfikowane",
+          "produkty ważone",
+          "B2B hurt"
+        ]
       },
       {
         "title": "Dlaczego Twoja Hurtownia Owoców Potrzebuje Portalu Klienta",
         "description": "Poznaj zalety dedykowanego portalu klienta B2B do zarządzania klasami owoców, cenami wielopoziomowymi i kontami klientów.",
-        "keywords": ["portal klienta B2B", "hurtownia owoców", "konta klientów"]
+        "keywords": [
+          "portal klienta B2B",
+          "hurtownia owoców",
+          "konta klientów"
+        ]
       },
       {
         "title": "Kompletny Przewodnik po Zarządzaniu Produktami Wielowariantowymi w Zamówieniach B2B",
         "description": "Wszystko, co musisz wiedzieć o zarządzaniu wariantami rozmiarów, opcjami kolorów i kombinacjami smaków na platformie zamówień B2B.",
-        "keywords": ["produkty wielowariantowe", "zamówienia B2B", "warianty produktów"]
+        "keywords": [
+          "produkty wielowariantowe",
+          "zamówienia B2B",
+          "warianty produktów"
+        ]
       }
     ]
   }

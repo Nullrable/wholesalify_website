@@ -2,16 +2,12 @@
   "nav": {
     "features": "Funzionalità",
     "about": "Chi siamo",
-    "contact": "Contatti",
-    "getEarlyAccess": "Accesso Anticipato"
+    "contact": "Contatti"
   },
   "hero": {
     "title": "Wholesalify",
     "subtitle": "Piattaforma Moderna per Ordini all'Ingrosso B2B",
-    "description": "Gestisci ordini all'ingrosso, inventario e acquisti in un unico sistema semplice.",
-    "cta": "Richiedi Accesso Anticipato",
-    "emailPlaceholder": "Inserisci la tua email",
-    "joinList": "Unisciti alla lista di accesso anticipato."
+    "description": "Gestisci ordini all'ingrosso, inventario e acquisti in un unico sistema semplice."
   },
   "problem": {
     "title": "Le aziende all'ingrosso gestiscono ancora gli ordini manualmente.",
@@ -196,22 +192,39 @@
       {
         "title": "Come Scegliere un Portale di Ordinazione all'Ingrosso per Prodotti Freschi",
         "description": "Scopri le funzionalità più importanti nella scelta di un portale clienti B2B per le tue operazioni di ingrosso di frutta e verdura.",
-        "keywords": ["portale di ordinazione all'ingrosso", "prodotti freschi", "attività di ingrosso frutta"]
+        "keywords": [
+          "portale di ordinazione all'ingrosso",
+          "prodotti freschi",
+          "attività di ingrosso frutta"
+        ]
       },
       {
         "title": "Software B2B per Ingrosso: Supporto per Prodotti Multi-Unità, Graduati e al Peso",
         "description": "Scopri come il software di ingrosso multi-unità gestisce prezzi per caso, pallet e unità insieme a prodotti graduati e basati sul peso.",
-        "keywords": ["software di ingrosso multi-unità", "prodotti graduati", "prodotti al peso", "B2B ingrosso"]
+        "keywords": [
+          "software di ingrosso multi-unità",
+          "prodotti graduati",
+          "prodotti al peso",
+          "B2B ingrosso"
+        ]
       },
       {
         "title": "Perché la Tua Attività di Ingrosso Frutta ha Bisogno di un Portale Clienti",
         "description": "Esplora i vantaggi di un portale clienti B2B dedicato per gestire gradi di frutta, prezzi multi-livello e account clienti.",
-        "keywords": ["portale clienti B2B", "ingrosso frutta", "account clienti"]
+        "keywords": [
+          "portale clienti B2B",
+          "ingrosso frutta",
+          "account clienti"
+        ]
       },
       {
         "title": "Guida Completa alla Gestione dei Prodotti Multi-Specifica negli Ordini B2B",
         "description": "Tutto ciò che devi sapere sulla gestione delle variazioni di dimensione, opzioni di colore e combinazioni di sapori nella tua piattaforma di ordinazione B2B.",
-        "keywords": ["prodotti multi-specifica", "ordinazione B2B", "varianti di prodotto"]
+        "keywords": [
+          "prodotti multi-specifica",
+          "ordinazione B2B",
+          "varianti di prodotto"
+        ]
       }
     ]
   }

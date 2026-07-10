@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import EmailForm from "./EmailForm";
 
 export default function CTASection() {
   const t = useTranslations("cta");
@@ -13,9 +12,6 @@ export default function CTASection() {
           {t("title")}
         </h2>
         <p className="text-white/80 text-lg mb-8">{t("subtitle")}</p>
-        <div className="flex justify-center">
-          <EmailForm />
-        </div>
       </div>
     </section>
   );

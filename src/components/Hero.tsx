@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import EmailForm from "./EmailForm";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -17,10 +16,6 @@ export default function Hero() {
         <p className="text-xl text-secondary mb-8 max-w-2xl mx-auto">
           {t("description")}
         </p>
-        <div id="waitlist" className="flex justify-center mb-6 scroll-mt-24">
-          <EmailForm />
-        </div>
-        <p className="text-sm text-gray-500">{t("joinList")}</p>
       </div>
     </section>
   );

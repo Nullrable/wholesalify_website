@@ -2,16 +2,12 @@
   "nav": {
     "features": "Fonctionnalités",
     "about": "À propos",
-    "contact": "Contact",
-    "getEarlyAccess": "Accès Anticipé"
+    "contact": "Contact"
   },
   "hero": {
     "title": "Wholesalify",
     "subtitle": "Plateforme Moderne de Commande de Gros B2B",
-    "description": "Gérez les commandes de gros, l'inventaire et les achats dans un seul système simple.",
-    "cta": "Demander l'Accès Anticipé",
-    "emailPlaceholder": "Entrez votre e-mail",
-    "joinList": "Rejoignez la liste d'accès anticipé."
+    "description": "Gérez les commandes de gros, l'inventaire et les achats dans un seul système simple."
   },
   "problem": {
     "title": "Les entreprises de gros gèrent encore les commandes manuellement.",
@@ -196,22 +192,39 @@
       {
         "title": "Comment Choisir un Portail de Commande en Gros pour les Entreprises de Produits Frais",
         "description": "Découvrez les fonctionnalités les plus importantes lors du choix d'un portail clients B2B pour vos opérations de gros de fruits et légumes.",
-        "keywords": ["portail de commande en gros", "produits frais", "entreprise de gros de fruits"]
+        "keywords": [
+          "portail de commande en gros",
+          "produits frais",
+          "entreprise de gros de fruits"
+        ]
       },
       {
         "title": "Logiciel de Gros B2B: Support pour Produits Multi-Unités, Gradués et Pesés",
         "description": "Découvrez comment les logiciels de gros multi-unités gèrent les prix par caisse, palette et unité ainsi que les produits gradués et pesés.",
-        "keywords": ["logiciel de gros multi-unités", "produits gradués", "produits pesés", "B2B gros"]
+        "keywords": [
+          "logiciel de gros multi-unités",
+          "produits gradués",
+          "produits pesés",
+          "B2B gros"
+        ]
       },
       {
         "title": "Pourquoi Votre Entreprise de Gros de Fruits a Besoin d'un Portail Clients",
         "description": "Explorez les avantages d'un portail clients B2B dédié pour gérer les grades de fruits, la tarification multi-niveaux et les comptes clients.",
-        "keywords": ["portail clients B2B", "gros de fruits", "comptes clients"]
+        "keywords": [
+          "portail clients B2B",
+          "gros de fruits",
+          "comptes clients"
+        ]
       },
       {
         "title": "Guide Complet de Gestion des Produits Multi-Spécifications dans les Commandes B2B",
         "description": "Tout ce que vous devez savoir sur la gestion des variations de taille, des options de couleur et des combinaisons de saveurs dans votre plateforme de commande B2B.",
-        "keywords": ["produits multi-spécifications", "commande B2B", "variations de produits"]
+        "keywords": [
+          "produits multi-spécifications",
+          "commande B2B",
+          "variations de produits"
+        ]
       }
     ]
   }

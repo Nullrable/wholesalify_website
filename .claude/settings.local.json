@@ -1,25 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.wholesalify.com)",
-      "Bash(curl -s \"https://www.wholesalify.com/es-MX\")",
-      "Bash(curl -s \"https://www.wholesalify.com/en\")",
-      "Bash(curl -s \"https://www.wholesalify.com/\")",
-      "Bash(curl -s \"https://wholesalify.com/es-MX\" -I)",
-      "Bash(curl -s \"https://www.wholesalify.com/es-MX\" -I)",
-      "Bash(vercel:*)"
-      "Bash(curl -s \"https://www.wholesalify.com/es-MX\" -I)",
-      "Bash(npx vercel:*)",
-      "Bash(npm cache:*)",
-      "Bash(npx vercel@latest --yes)",
-      "Bash(vercel:*)",
-      "Bash(npm list:*)",
-      "Bash(npm install:*)",
-      "Bash(./node_modules/.bin/vercel:*)",
-      "WebSearch",
-      "Bash(grep -l '\"blog\": {' src/messages/*.json)",
-      "Bash(grep -l '\"articles\": [' src/messages/*.json)",
-      "Bash(grep:*)"
+      "Bash(for f:*)",
+      "Bash(do)",
+      "Read(//Users/lusudong/Documents/fronted-work/wholease_website/**)",
+      "Bash(\"$f.tmp\")",
+      "Bash(mv \"$f.tmp\" \"$f\")",
+      "Bash(if ! jq empty \"$f\")",
+      "Bash(then)",
+      "Bash(echo \"INVALID: $f\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(jq 'has\\(\"\"\"\"nav\"\"\"\"\\) and \\(.nav | has\\(\"\"\"\"getEarlyAccess\"\"\"\"\\) | not\\) and has\\(\"\"\"\"hero\"\"\"\"\\) and \\(.hero | has\\(\"\"\"\"cta\"\"\"\"\\) | not\\) and \\(.hero | has\\(\"\"\"\"emailPlaceholder\"\"\"\"\\) | not\\) and \\(.hero | has\\(\"\"\"\"joinList\"\"\"\"\\) | not\\)' *.json)"
     ]
   }
 }
