@@ -41,6 +41,12 @@ export default function Navbar() {
             {t("features")}
           </Link>
           <Link
+            href={getLocalizedPath("/docs/get-started/overview")}
+            className="text-secondary hover:text-primary transition-colors cursor-pointer"
+          >
+            {t("docs")}
+          </Link>
+          <Link
             href={getLocalizedPath("/about")}
             className="text-secondary hover:text-primary transition-colors cursor-pointer"
           >
@@ -134,6 +140,13 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {t("features")}
+              </Link>
+              <Link
+                href={getLocalizedPath("/docs/get-started/overview")}
+                className="text-secondary hover:text-primary transition-colors py-1"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {t("docs")}
               </Link>
               <Link
                 href={getLocalizedPath("/about")}

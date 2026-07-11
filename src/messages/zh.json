@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "功能",
+    "docs": "Docs",
     "about": "关于",
     "contact": "联系我们"
   },
@@ -123,6 +124,7 @@
     "tagline": "面向批发商和分销商的现代化 B2B 批发订货平台。",
     "product": "产品",
     "features": "功能",
+    "docs": "Documentation",
     "pricing": "价格",
     "about": "关于",
     "company": "公司",

@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Recursos",
+    "docs": "Docs",
     "about": "Sobre",
     "contact": "Contato"
   },
@@ -123,6 +124,7 @@
     "tagline": "Plataforma moderna de pedidos B2B para atacadistas e distribuidores.",
     "product": "Produto",
     "features": "Recursos",
+    "docs": "Documentation",
     "pricing": "Preços",
     "about": "Sobre",
     "company": "Empresa",

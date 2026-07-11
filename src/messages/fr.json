@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Fonctionnalités",
+    "docs": "Docs",
     "about": "À propos",
     "contact": "Contact"
   },
@@ -123,6 +124,7 @@
     "tagline": "Plateforme moderne de commande B2B pour grossistes et distributeurs.",
     "product": "Produit",
     "features": "Fonctionnalités",
+    "docs": "Documentation",
     "pricing": "Tarifs",
     "about": "À propos",
     "company": "Entreprise",

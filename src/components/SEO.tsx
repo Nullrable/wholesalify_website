@@ -66,6 +66,11 @@ const SEO_KEYWORDS: Record<string, string[]> = {
     "B2B ordering system for weighed produce",
     "wholesale fruit pricing by grade",
     "wholesale ordering software case pallet unit",
+    // Documentation keywords
+    "wholesale documentation",
+    "B2B wholesale software docs",
+    "wholesale platform user guide",
+    "wholesale ordering quickstart",
   ],
   zh: [
     "批发订货平台",

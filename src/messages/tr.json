@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Özellikler",
+    "docs": "Docs",
     "about": "Hakkında",
     "contact": "İletişim"
   },
@@ -123,6 +124,7 @@
     "tagline": "Toptancılar ve distribütörler için modern B2B sipariş platformu.",
     "product": "Ürün",
     "features": "Özellikler",
+    "docs": "Documentation",
     "pricing": "Fiyatlandırma",
     "about": "Hakkında",
     "company": "Şirket",

@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Características",
+    "docs": "Docs",
     "about": "Acerca de",
     "contact": "Contacto"
   },
@@ -123,6 +124,7 @@
     "tagline": "Plataforma moderna de pedidos B2B para mayoristas y distribuidores.",
     "product": "Producto",
     "features": "Características",
+    "docs": "Documentation",
     "pricing": "Precios",
     "about": "Acerca de",
     "company": "Empresa",

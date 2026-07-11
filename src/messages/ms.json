@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Ciri-ciri",
+    "docs": "Docs",
     "about": "Tentang",
     "contact": "Hubungi"
   },
@@ -123,6 +124,7 @@
     "tagline": "Platform Pesanan B2B Moden untuk pemborong dan pengedar.",
     "product": "Produk",
     "features": "Ciri-ciri",
+    "docs": "Documentation",
     "pricing": "Harga",
     "about": "Tentang",
     "company": "Syarikat",

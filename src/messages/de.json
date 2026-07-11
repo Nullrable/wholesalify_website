@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Funktionen",
+    "docs": "Docs",
     "about": "Über",
     "contact": "Kontakt"
   },
@@ -123,6 +124,7 @@
     "tagline": "Moderne B2B-Bestellplattform für Großhändler und Distributoren.",
     "product": "Produkt",
     "features": "Funktionen",
+    "docs": "Documentation",
     "pricing": "Preise",
     "about": "Über",
     "company": "Unternehmen",

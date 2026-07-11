@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Tính năng",
+    "docs": "Docs",
     "about": "Giới thiệu",
     "contact": "Liên hệ"
   },
@@ -123,6 +124,7 @@
     "tagline": "Nền tảng đặt hàng B2B hiện đại cho nhà bán sỉ và nhà phân phối.",
     "product": "Sản phẩm",
     "features": "Tính năng",
+    "docs": "Documentation",
     "pricing": "Giá",
     "about": "Giới thiệu",
     "company": "Công ty",

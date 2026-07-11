@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Fitur",
+    "docs": "Docs",
     "about": "Tentang",
     "contact": "Kontak"
   },
@@ -123,6 +124,7 @@
     "tagline": "Platform Pemesanan B2B Modern untuk grosir dan distributor.",
     "product": "Produk",
     "features": "Fitur",
+    "docs": "Documentation",
     "pricing": "Harga",
     "about": "Tentang",
     "company": "Perusahaan",

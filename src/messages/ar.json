@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "الميزات",
+    "docs": "Docs",
     "about": "حول",
     "contact": "اتصل بنا"
   },
@@ -123,6 +124,7 @@
     "tagline": "منصة طلبات B2B الحديثة للموزعين وتجار الجملة.",
     "product": "المنتج",
     "features": "الميزات",
+    "docs": "Documentation",
     "pricing": "التسعير",
     "about": "حول",
     "company": "الشركة",

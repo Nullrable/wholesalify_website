@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Features",
+    "docs": "Docs",
     "about": "About",
     "contact": "Contact"
   },
@@ -123,6 +124,7 @@
     "tagline": "B2B Wholesale Ordering Platform — wholesale customer portal with weighed products, graded fruit pricing, multi-unit and multi-specification support.",
     "product": "Product",
     "features": "Features",
+    "docs": "Documentation",
     "pricing": "Pricing",
     "about": "About",
     "company": "Company",

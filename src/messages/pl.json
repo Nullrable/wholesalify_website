@@ -1,6 +1,7 @@
 {
   "nav": {
     "features": "Funkcje",
+    "docs": "Docs",
     "about": "O nas",
     "contact": "Kontakt"
   },
@@ -123,6 +124,7 @@
     "tagline": "Nowoczesna platforma zamówień B2B dla hurtowników i dystrybutorów.",
     "product": "Produkt",
     "features": "Funkcje",
+    "docs": "Documentation",
     "pricing": "Ceny",
     "about": "O nas",
     "company": "Firma",
