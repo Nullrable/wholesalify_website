@@ -17,7 +17,7 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { locale, path } = params;
   if (!locales.includes(locale as Locale)) return {};
-  const article = getArticleByPath(path);
+  const article = getArticleByPath(path, locale);
 
   if (!article) {
     return generatePageMetadata(locale as Locale, {
@@ -46,7 +46,7 @@ export default async function DocsPathPage({ params }: PageProps) {
 
   // Single-segment path → category landing page.
   if (path.length === 1) {
-    const categories = getCategories();
+    const categories = getCategories(locale);
     const category = categories.find((c) => c.slug === path[0]);
     if (!category) notFound();
 
@@ -79,7 +79,7 @@ export default async function DocsPathPage({ params }: PageProps) {
   }
 
   // Two+ segment path → article page.
-  const article = getArticleByPath(path);
+  const article = getArticleByPath(path, locale);
   if (!article) notFound();
 
   const breadcrumbItems = [

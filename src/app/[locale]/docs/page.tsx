@@ -25,8 +25,8 @@ export default async function DocsHomePage({
   params: { locale: string };
 }) {
   setRequestLocale(locale);
-  const categories = getCategories();
-  const allArticles = getArticles();
+  const categories = getCategories(locale);
+  const allArticles = getArticles(locale);
 
   return (
     <div className="max-w-4xl">

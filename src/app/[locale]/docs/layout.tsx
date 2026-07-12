@@ -22,9 +22,12 @@ export async function generateMetadata({
   });
 }
 
-export default async function DocsLayout({ children, params: { locale } }: Props) {
+export default async function DocsLayout({
+  children,
+  params: { locale },
+}: Props) {
   setRequestLocale(locale);
-  const sections = getSections();
+  const sections = getSections(locale);
 
   return (
     <div className="min-h-screen pt-24 pb-20">
