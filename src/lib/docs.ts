@@ -84,7 +84,13 @@ const CATEGORY_LABELS: Record<Locale, Record<string, string>> = {
     inventory: "库存",
     purchasing: "采购",
   },
-  vi: {},
+  vi: {
+    "get-started": "Bắt đầu",
+    "ordering-portal": "Cổng đặt hàng",
+    orders: "Quản lý đơn hàng",
+    inventory: "Hàng tồn kho",
+    purchasing: "Mua hàng",
+  },
   th: {},
   id: {},
   ms: {},
@@ -120,7 +126,18 @@ const CATEGORY_DESCRIPTIONS: Record<Locale, Record<string, string>> = {
     inventory: "跨仓库跟踪库存、设置补货阈值，并实时核对库存。",
     purchasing: "管理供应商、建立采购订单，并将收货转化为库存更新。",
   },
-  vi: {},
+  vi: {
+    "get-started":
+      "Thiết lập tenant, cấu hình danh mục và hoàn thành đơn hàng bán sỉ đầu tiên trong vòng chưa đầy một giờ.",
+    "ordering-portal":
+      "Cấu hình cổng đặt hàng mà khách bán sỉ sử dụng — danh mục, giá bán và trải nghiệm khách hàng.",
+    orders:
+      "Quản lý mọi đơn hàng từ khi đặt đến khi giao, bao gồm chuyển trạng thái và xuất hóa đơn.",
+    inventory:
+      "Theo dõi tồn kho giữa các kho, đặt ngưỡng bổ sung và đối chiếu tồn kho theo thời gian thực.",
+    purchasing:
+      "Quản lý nhà cung cấp, tạo đơn mua hàng và chuyển hàng nhận thành cập nhật tồn kho.",
+  },
   th: {},
   id: {},
   ms: {},
@@ -145,7 +162,10 @@ const SECTION_TITLES: Record<Locale, Record<string, string>> = {
     fundamentals: "入门基础",
     platform: "平台指南",
   },
-  vi: {},
+  vi: {
+    fundamentals: "Nền tảng cơ bản",
+    platform: "Hướng dẫn nền tảng",
+  },
   th: {},
   id: {},
   ms: {},
@@ -1935,6 +1955,995 @@ export const articles: DocArticle[] = [
     ],
     prev: { href: "/docs/inventory/stock", title: "库存水位" },
   },
+
+  // ===================================================================
+  // VIETNAMESE (vi)
+  // ===================================================================
+
+  // ----- Get started / Overview -----
+  {
+    locale: "vi",
+    slug: "overview",
+    category: "get-started",
+    href: "/docs/get-started/overview",
+    title: "Tổng quan Wholesalify",
+    description:
+      "Tổng quan ngắn gọn về Wholesalify — nền tảng đặt hàng bán sỉ B2B cho nông sản tươi, FMCG và doanh nghiệp bán sỉ đa đơn vị.",
+    keywords: ["nền tảng bán sỉ", "đặt hàng B2B", "tổng quan SaaS bán sỉ"],
+    readingTime: "4 phút đọc",
+    lastUpdated: "2026-07-08",
+    blocks: [
+      {
+        type: "p",
+        text: "Wholesalify là nền tảng đặt hàng bán sỉ B2B hiện đại được xây dựng cho nhà bán sỉ, nhà phân phối và công ty thương mại. Nền tảng kết hợp cổng đặt hàng hướng khách hàng với bảng quản trị mạnh mẽ để đội ngũ của bạn quản lý đơn hàng, tồn kho, mua hàng và tài khoản khách hàng tại một nơi duy nhất.",
+      },
+      {
+        type: "p",
+        text: "Dù bạn bán nông sản tươi theo cân nặng, bán trái cây phân loại theo thùng, hay bán sản phẩm đa quy cách theo SKU, Wholesalify cung cấp mô hình danh mục và giá linh hoạt phù hợp với cách doanh nghiệp bạn thực sự vận hành.",
+      },
+      {
+        type: "h2",
+        id: "what-you-can-do",
+        text: "Wholesalify có thể giúp bạn điều gì",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bán sản phẩm theo cân nặng, theo thùng/pallet hoặc theo đơn vị — từ cùng một danh mục.",
+          "Phân tầng giá trái cây và nông sản theo cấp, kích thước hoặc sản lượng.",
+          "Quản lý song song sản phẩm cân, sản phẩm phân loại và sản phẩm đa quy cách.",
+          "Cung cấp cho mỗi khách bán sỉ cổng đặt hàng tự phục vụ có lịch sử đơn hàng.",
+          "Theo dõi đơn hàng, thanh toán và giao hàng từ một bảng điều khiển đơn hàng thống nhất.",
+          "Chạy báo cáo tồn kho và tự động bổ sung hàng.",
+          "Quản lý nhà cung cấp, đơn mua hàng và hàng nhập kho.",
+        ],
+      },
+      {
+        type: "h2",
+        id: "how-it-fits-together",
+        text: "Cách nền tảng phối hợp với nhau",
+      },
+      {
+        type: "p",
+        text: "Wholesalify được cấu thành từ ba lớp chia sẻ cùng một nguồn dữ liệu duy nhất:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Cổng đặt hàng — cửa hàng hướng khách hàng dành cho người mua bán sỉ.",
+          "Bảng quản trị — back-office dùng cho đội ngũ vận hành.",
+        ],
+      },
+      { type: "mockup", variant: "dashboard" },
+      { type: "h2", id: "who-uses-it", text: "Ai sử dụng Wholesalify" },
+      {
+        type: "ul",
+        items: [
+          "Nhà bán sỉ nông sản tươi (trái cây, rau, hải sản).",
+          "Nhà phân phối thực phẩm và FMCG.",
+          "Nhà bán sỉ vật liệu xây dựng và đồ kim khí.",
+          "Nhà nhập khẩu đa đơn vị và công ty thương mại.",
+          "Doanh nghiệp bán sỉ vừa và nhỏ đã vượt qua giới hạn của bảng tính và WhatsApp.",
+        ],
+      },
+      { type: "h2", id: "next-steps", text: "Bước tiếp theo" },
+      {
+        type: "ul",
+        items: [
+          "Đọc Hướng dẫn nhanh để tạo tenant đầu tiên và đặt một đơn hàng thử.",
+          "Xem hướng dẫn Cổng đặt hàng để thiết lập danh mục bán sỉ.",
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Sẵn sàng bắt đầu?",
+        text: "Đăng ký dùng thử miễn phí và bắt đầu khám phá Wholesalify ngay — không cần thẻ tín dụng. Tạo tenant, thêm vài sản phẩm và đặt đơn hàng thử trong chưa đầy 15 phút.",
+        action: {
+          href: "https://admin.wholesalify.com/register",
+          label: "Đăng ký miễn phí",
+        },
+      },
+    ],
+    toc: [
+      {
+        id: "what-you-can-do",
+        text: "Wholesalify có thể giúp bạn điều gì",
+        level: 2,
+      },
+      {
+        id: "how-it-fits-together",
+        text: "Cách nền tảng phối hợp với nhau",
+        level: 2,
+      },
+      { id: "who-uses-it", text: "Ai sử dụng Wholesalify", level: 2 },
+      { id: "next-steps", text: "Bước tiếp theo", level: 2 },
+    ],
+    next: { href: "/docs/get-started/quickstart", title: "Hướng dẫn nhanh" },
+  },
+  {
+    locale: "vi",
+    slug: "quickstart",
+    category: "get-started",
+    href: "/docs/get-started/quickstart",
+    title: "Hướng dẫn nhanh",
+    description:
+      "Thiết lập tenant Wholesalify của bạn trong chưa đầy 15 phút: tạo tài khoản, thêm sản phẩm, mời khách mua và đặt đơn hàng bán sỉ đầu tiên.",
+    keywords: ["thiết lập bán sỉ", "khởi động nhanh B2B", "onboarding tenant"],
+    readingTime: "6 phút đọc",
+    lastUpdated: "2026-07-08",
+    blocks: [
+      {
+        type: "p",
+        text: "Hướng dẫn nhanh này dẫn bạn đi theo con đường nhanh nhất để có một tenant Wholesalify hoạt động. Kết thúc hướng dẫn, bạn sẽ có một danh mục với vài sản phẩm mẫu và một khách bán sỉ có thể đặt đơn hàng thực.",
+      },
+      { type: "h2", id: "prerequisites", text: "Điều kiện tiên quyết" },
+      {
+        type: "ul",
+        items: [
+          "Một tài khoản Wholesalify. Đăng ký tại trang đăng ký nếu bạn chưa có.",
+          "Một email doanh nghiệp — khách mua sẽ nhận liên kết mời tại đó.",
+          "Khoảng 15 phút để thiết lập.",
+        ],
+      },
+      {
+        type: "h2",
+        id: "step-1-create-account",
+        text: "1. Tạo tài khoản và tenant",
+      },
+      {
+        type: "p",
+        text: "Mở trang đăng ký Wholesalify, nhập email doanh nghiệp và tạo mật khẩu. Sau khi xác minh email, bạn sẽ được đưa đến bảng điều khiển tenant. Mỗi tenant được cô lập hoàn toàn — danh mục, khách hàng và đơn hàng của bạn luôn riêng tư trong không gian làm việc của bạn.",
+      },
+      { type: "mockup", variant: "settings" },
+      {
+        type: "h2",
+        id: "step-2-add-products",
+        text: "2. Thêm sản phẩm đầu tiên",
+      },
+      {
+        type: "p",
+        text: "Mở không gian danh mục và nhấp Thêm sản phẩm. Wholesalify hỗ trợ ba loại sản phẩm ngay từ đầu:",
+      },
+      {
+        type: "table",
+        headers: ["Loại sản phẩm", "Sử dụng khi…", "Ví dụ"],
+        rows: [
+          [
+            "Sản phẩm cân",
+            "Bạn bán theo cân nặng (kg / lb).",
+            "Cà chua rời thùng 5 kg",
+          ],
+          [
+            "Sản phẩm phân loại",
+            "Bạn có nhiều cấp hoặc tầng chất lượng.",
+            "Táo — Cấp A / B",
+          ],
+          [
+            "Sản phẩm đa quy cách",
+            "Bạn bán các SKU khác nhau theo màu/kích thước/hương vị.",
+            "Xà phòng 100 g — hoa hồng / oải hương / không mùi",
+          ],
+        ],
+      },
+      {
+        type: "h2",
+        id: "step-3-invite-buyer",
+        text: "3. Mời khách bán sỉ",
+      },
+      {
+        type: "p",
+        text: "Từ Khách hàng, nhấp Mời khách mua. Nhập email khách mua và chọn bảng giá cùng điều khoản thanh toán mà họ sẽ thấy. Khách mua nhận email chứa liên kết để đặt mật khẩu và đăng nhập.",
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Mẹo",
+        text: "Khi thử nghiệm, hãy dùng email cá nhân (ví dụ Gmail) — như vậy bạn không cần hộp thư riêng để xác minh lời mời.",
+      },
+      {
+        type: "h2",
+        id: "step-4-place-order",
+        text: "4. Đặt đơn hàng đầu tiên",
+      },
+      {
+        type: "p",
+        text: "Chuyển sang tài khoản khách mua và mở cổng đặt hàng. Thêm vài sản phẩm vào giỏ hàng, chọn ngày giao và gửi. Đơn hàng sẽ xuất hiện ngay trong bảng quản trị của bạn dưới mục Đơn hàng.",
+      },
+      { type: "mockup", variant: "order" },
+      {
+        type: "h2",
+        id: "step-5-explore",
+        text: "5. Khám phá phần còn lại của nền tảng",
+      },
+      {
+        type: "p",
+        text: "Từ đây bạn có thể kết nối tồn kho, tạo đơn mua hàng đầu tiên và mời đội ngũ vận hành. Các hướng dẫn còn lại trong tài liệu này sẽ đi sâu vào từng khu vực.",
+      },
+    ],
+    toc: [
+      { id: "prerequisites", text: "Điều kiện tiên quyết", level: 2 },
+      {
+        id: "step-1-create-account",
+        text: "1. Tạo tài khoản và tenant",
+        level: 2,
+      },
+      {
+        id: "step-2-add-products",
+        text: "2. Thêm sản phẩm đầu tiên",
+        level: 2,
+      },
+      {
+        id: "step-3-invite-buyer",
+        text: "3. Mời khách bán sỉ",
+        level: 2,
+      },
+      {
+        id: "step-4-place-order",
+        text: "4. Đặt đơn hàng đầu tiên",
+        level: 2,
+      },
+      {
+        id: "step-5-explore",
+        text: "5. Khám phá phần còn lại của nền tảng",
+        level: 2,
+      },
+    ],
+    prev: { href: "/docs/get-started/overview", title: "Tổng quan" },
+    next: { href: "/docs/get-started/concepts", title: "Khái niệm cốt lõi" },
+  },
+  {
+    locale: "vi",
+    slug: "concepts",
+    category: "get-started",
+    href: "/docs/get-started/concepts",
+    title: "Khái niệm cốt lõi",
+    description:
+      "Hiểu các khối xây dựng của Wholesalify: tenant, danh mục, tầng giá, tài khoản khách hàng và vòng đời đơn hàng.",
+    keywords: ["tenant", "danh mục", "tầng giá", "khái niệm bán sỉ"],
+    readingTime: "7 phút đọc",
+    lastUpdated: "2026-07-05",
+    blocks: [
+      {
+        type: "p",
+        text: "Trước khi đi vào các tính năng cụ thể, việc nắm vài thuật ngữ chúng tôi dùng xuyên suốt sản phẩm và tài liệu là rất hữu ích.",
+      },
+      { type: "h2", id: "tenant", text: "Tenant" },
+      {
+        type: "p",
+        text: "Tenant là một không gian làm việc Wholesalify được cô lập, thuộc sở hữu của một doanh nghiệp bán sỉ duy nhất. Mỗi tenant có danh mục, khách hàng, đơn hàng, tồn kho và người dùng riêng. Các tenant không bao giờ chia sẻ dữ liệu với nhau.",
+      },
+      { type: "h2", id: "product-kinds", text: "Các loại sản phẩm" },
+      {
+        type: "p",
+        text: "Mỗi mặt hàng trong danh mục thuộc một trong ba loại:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Tiêu chuẩn — bán theo đơn vị rời rạc như thùng, pallet hoặc SKU đơn lẻ.",
+          "Cân — bán theo cân nặng với đơn vị cơ bản (kg / lb) và các quy cách đóng gói.",
+          "Đa quy cách — bán dưới một sản phẩm cha với nhiều SKU (kích thước, màu, hương vị).",
+        ],
+      },
+      {
+        type: "h2",
+        id: "price-tiers",
+        text: "Tầng giá và giá khách hàng",
+      },
+      {
+        type: "p",
+        text: "Tầng giá là một nhóm khách hàng nên thấy cùng một mức giá. Bạn có thể gán mỗi khách hàng vào một hoặc nhiều tầng (ví dụ: VIP, Bán sỉ, Bán lại). Cổng đặt hàng tự động hiển thị giá chính xác cho người mua đang đăng nhập.",
+      },
+      { type: "h2", id: "order-lifecycle", text: "Vòng đời đơn hàng" },
+      {
+        type: "p",
+        text: "Mỗi đơn hàng đi qua một tập trạng thái nhỏ. Đội ngũ của bạn chuyển đơn hàng từ trạng thái này sang trạng thái tiếp theo khi công việc tiến triển:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Bản nháp — người mua vẫn đang chỉnh sửa đơn trong cổng của họ.",
+          "Đã gửi — người mua đã đặt và đang chờ xác nhận.",
+          "Đã xác nhận — đội ngũ của bạn đã chấp nhận; tồn kho được giữ chỗ.",
+          "Đã hủy — trạng thái kết thúc; đơn hàng đã bị hủy bỏ.",
+        ],
+      },
+      { type: "h2", id: "inventory-units", text: "Đơn vị tồn kho" },
+      {
+        type: "p",
+        text: "Tồn kho được theo dõi bằng đơn vị tồn kho bạn chọn cho mỗi sản phẩm — kilogram cho nông sản, thùng cho đồ uống, cái cho đồ kim khí. Đơn vị bán được quy đổi tự động theo các quy tắc quy đổi bạn đặt trên từng sản phẩm.",
+      },
+      { type: "h2", id: "users-and-roles", text: "Người dùng và vai trò" },
+      {
+        type: "p",
+        text: "Các thành viên tenant thuộc một vài vai trò:",
+      },
+      {
+        type: "table",
+        headers: ["Vai trò", "Họ làm gì"],
+        rows: [
+          ["Chủ sở hữu", "Quản lý thanh toán, người dùng và mọi cài đặt."],
+          ["Quản trị viên", "Quản lý danh mục, đơn hàng, tồn kho và mua hàng."],
+          ["Vận hành viên", "Xử lý công việc đơn hàng hằng ngày."],
+        ],
+      },
+    ],
+    toc: [
+      { id: "tenant", text: "Tenant", level: 2 },
+      { id: "product-kinds", text: "Các loại sản phẩm", level: 2 },
+      { id: "price-tiers", text: "Tầng giá và giá khách hàng", level: 2 },
+      { id: "order-lifecycle", text: "Vòng đời đơn hàng", level: 2 },
+      { id: "inventory-units", text: "Đơn vị tồn kho", level: 2 },
+      { id: "users-and-roles", text: "Người dùng và vai trò", level: 2 },
+    ],
+    prev: { href: "/docs/get-started/quickstart", title: "Hướng dẫn nhanh" },
+    next: {
+      href: "/docs/ordering-portal/setup",
+      title: "Thiết lập danh mục của bạn",
+    },
+  },
+
+  // ----- Ordering portal -----
+  {
+    locale: "vi",
+    slug: "setup",
+    category: "ordering-portal",
+    href: "/docs/ordering-portal/setup",
+    title: "Thiết lập cổng đặt hàng",
+    description:
+      "Cấu hình cổng đặt hàng bán sỉ — thông tin merchant, showroom riêng, showroom công khai, thông báo thanh toán và các tùy chỉnh theo từng khách hàng quyết định mỗi người mua thấy gì khi đăng nhập.",
+    keywords: [
+      "thiết lập cổng đặt hàng",
+      "cửa hàng bán sỉ",
+      "cài đặt showroom",
+    ],
+    readingTime: "6 phút đọc",
+    lastUpdated: "2026-07-12",
+    blocks: [
+      {
+        type: "p",
+        text: "Cổng đặt hàng là cửa hàng mà khách mua của bạn sử dụng. Toàn bộ cấu hình phía merchant nằm trong Cài đặt — một ngăn kéo duy nhất với 12 mục bao gồm cửa hàng, sản phẩm, thanh toán và đội ngũ. Hướng dẫn này tập trung vào các mục bạn thường dùng nhất khi khởi chạy cổng mới.",
+      },
+      { type: "h2", id: "merchant", text: "Thông tin merchant" },
+      {
+        type: "p",
+        text: "Cài đặt → Merchant là nơi bạn đặt tên doanh nghiệp, số điện thoại, tiền tệ mặc định, ngôn ngữ, múi giờ và định dạng ngày hiển thị trên mọi đơn hàng, hóa đơn và màn hình hướng khách hàng. Lưu thay đổi ở đây có thể khiến bạn đăng xuất để ngôn ngữ mới có hiệu lực.",
+      },
+      {
+        type: "h2",
+        id: "showroom",
+        text: "Showroom riêng (cổng đặt hàng)",
+      },
+      {
+        type: "p",
+        text: "Cài đặt → Showroom riêng là trung tâm cho mọi thứ khách mua đã đăng nhập thấy. Ngăn kéo cài đặt mở năm tab theo thứ tự:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Bật — một công tắc duy nhất bật hoặc tắt cổng B2B cho tenant. Khi tắt, khách mua chỉ thấy showroom công khai.",
+          "Tài khoản khách hàng — danh sách mọi khách hàng cùng các tùy chỉnh showroom riêng của họ. Mỗi khách có thể kế thừa mặc định của merchant hoặc có banner, chủ đề và giới hạn sản phẩm riêng.",
+          "Showroom công khai — cài đặt cho khách truy cập chưa đăng nhập: thông báo đăng ký, cấp giá bán, cấp giá so sánh.",
+          "Showroom riêng — cấu hình trực quan mà mỗi khách đã đăng nhập thấy.",
+          "Cài đặt thanh toán — email nhắc giỏ hàng, thông báo thanh toán và thông báo sau đơn hàng.",
+        ],
+      },
+      { type: "h3", id: "public", text: "Showroom công khai" },
+      {
+        type: "p",
+        text: "Với khách truy cập chưa đăng nhập, hãy chọn cấp giá họ thấy (Cấp giá bán) và cấp giá hiển thị gạch ngang làm tham chiếu (Cấp giá so sánh). Trường Thông báo đăng ký là văn bản ngắn hiển thị phía trên danh mục — thường là lời mời một dòng để đăng ký và truy cập giá bán sỉ của bạn.",
+      },
+      { type: "h3", id: "private", text: "Showroom riêng" },
+      {
+        type: "p",
+        text: "Các cài đặt này định hình trải nghiệm của mỗi khách đã đăng nhập. Tab Showroom riêng được nhóm thành năm khối:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Banner — Banner di động (16:9) và banner web riêng. Khuyến nghị 1920×1080 px, JPG/PNG/WebP, ≤ 5 MB. Mỗi cái có thể tải lên hoặc xóa độc lập.",
+          "Cài đặt hiển thị — bật/tắt ẩn sản phẩm hết hàng, chọn chế độ mức tồn: Ẩn tồn / Chỉ hiện Còn/Hết / Hiện số + trạng thái.",
+          "Hiển thị sản phẩm — bật/tắt hiển thị hình ảnh, danh mục, mô tả và ghi chú sản phẩm.",
+          "Thông tin liên hệ — email liên hệ, điện thoại liên hệ và thông điệp liên hệ dạng tự do hiển thị cho khách mua.",
+          "Giới hạn — chọn sản phẩm và kho (location) nào khách hàng được thấy. Danh sách trống nghĩa là không giới hạn.",
+        ],
+      },
+      { type: "mockup", variant: "showroom-private" },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Thuế và chiết khấu",
+        text: "Chế độ thuế (thuế chính + thuế phụ tùy chọn) và chiết khấu (phần trăm hoặc số tiền cố định) cũng được cấu hình tại đây. Chúng tự động chảy vào tính toán giỏ hàng và thanh toán.",
+      },
+      { type: "h3", id: "checkout", text: "Thông báo thanh toán" },
+      {
+        type: "p",
+        text: "Ba đoạn văn bản ngắn điều khiển trải nghiệm khách mua quanh thanh toán: Nhắc giỏ hàng (email nhắc tự động 1 giờ), Thông báo thanh toán (hiển thị trên màn hình giỏ/thanh toán) và Thông báo sau đơn (hiển thị sau khi đặt hàng thành công). Cả ba chấp nhận văn bản thuần.",
+      },
+      { type: "h2", id: "payment", text: "Phương thức thanh toán và thuế" },
+      {
+        type: "p",
+        text: "Cài đặt → Phương thức thanh toán là nơi bạn bật các lựa chọn thanh toán mà khách mua có thể chọn khi thanh toán (chuyển khoản, thanh toán khi nhận hàng, công nợ tín dụng...). Cài đặt → Mã thuế định nghĩa chế độ thuế mà showroom tham chiếu — thuế chính và thuế phụ tùy chọn theo từng khu vực.",
+      },
+      { type: "h2", id: "open-storefront", text: "Mở cửa hàng của bạn" },
+      {
+        type: "p",
+        text: "Khi Bật được bật và ít nhất một tài khoản khách hàng đã có quyền truy cập, URL cửa hàng sẽ xuất hiện ở đầu ngăn kéo Showroom riêng. Dùng Mở cửa hàng để xác minh những gì khách mua sẽ thấy trước khi gửi lời mời.",
+      },
+      {
+        type: "h2",
+        id: "showroom-preview",
+        text: "Xem trước showroom hướng người mua",
+      },
+      {
+        type: "p",
+        text: "Bên dưới là cửa hàng thực tế mà người mua đã đăng nhập thấy — cùng tiêu đề thương hiệu, banner và lưới sản phẩm mà họ điều hướng trên điện thoại hoặc máy tính. Dùng bản xem trước này để xác nhận khả năng hiển thị danh mục, thứ tự sắp xếp và trải nghiệm thêm vào giỏ hàng trước khi chia sẻ URL.",
+      },
+      { type: "mockup", variant: "showroom" },
+    ],
+    toc: [
+      { id: "merchant", text: "Thông tin merchant", level: 2 },
+      {
+        id: "showroom",
+        text: "Showroom riêng (cổng đặt hàng)",
+        level: 2,
+      },
+      { id: "public", text: "Showroom công khai", level: 3 },
+      { id: "private", text: "Showroom riêng", level: 3 },
+      { id: "checkout", text: "Thông báo thanh toán", level: 3 },
+      { id: "payment", text: "Phương thức thanh toán và thuế", level: 2 },
+      { id: "open-storefront", text: "Mở cửa hàng của bạn", level: 2 },
+      {
+        id: "showroom-preview",
+        text: "Xem trước showroom hướng người mua",
+        level: 2,
+      },
+    ],
+    prev: {
+      href: "/docs/get-started/concepts",
+      title: "Khái niệm cốt lõi",
+    },
+    next: {
+      href: "/docs/ordering-portal/catalog",
+      title: "Xây dựng danh mục",
+    },
+  },
+  {
+    locale: "vi",
+    slug: "catalog",
+    category: "ordering-portal",
+    href: "/docs/ordering-portal/catalog",
+    title: "Xây dựng danh mục",
+    description:
+      "Tạo sản phẩm cân, phân loại và đa quy cách, sắp xếp chúng theo danh mục và thẻ, quản lý hình ảnh và bản dịch.",
+    keywords: ["danh mục sản phẩm", "danh mục bán sỉ", "sản phẩm cân"],
+    readingTime: "8 phút đọc",
+    lastUpdated: "2026-07-07",
+    blocks: [
+      {
+        type: "p",
+        text: "Danh mục của bạn là nền tảng của cổng đặt hàng. Mô hình sản phẩm của Wholesalify được xây dựng để xử lý ba thực tế của bán sỉ: sản phẩm bán theo cân, nông sản phân loại và SKU có nhiều quy cách.",
+      },
+      { type: "h2", id: "create-product", text: "Tạo sản phẩm" },
+      {
+        type: "p",
+        text: "Vào Danh mục → Sản phẩm → Sản phẩm mới. Wholesalify cung cấp bốn loại sản phẩm: Tiêu chuẩn, Cân, Không tồn kho và Dịch vụ.",
+      },
+      { type: "mockup", variant: "product-list" },
+      { type: "h3", id: "standard", text: "Tiêu chuẩn" },
+      {
+        type: "p",
+        text: "Sản phẩm tiêu chuẩn bán theo đơn vị rời rạc (cái / thùng / pallet). Định nghĩa SKU, đơn vị tồn kho và giá bán. Để cung cấp nhiều quy cách đóng gói, chuyển sang tab Đơn vị bán và thêm một hàng cho mỗi đơn vị — mỗi hàng có giá riêng, công tắc Bao gồm thuế và 5 tầng giá.",
+      },
+      { type: "mockup", variant: "product-standard" },
+      { type: "h3", id: "weighed", text: "Cân" },
+      {
+        type: "p",
+        text: "Sản phẩm cân không có SKU cố định — người mua nhập bất kỳ số thập phân nào khi thanh toán. Đặt đơn vị cơ bản (kg / lb) và giá bán trên mỗi đơn vị; hệ thống làm tròn mỗi dòng đơn hàng theo độ chính xác đã cấu hình.",
+      },
+      { type: "mockup", variant: "product-weighed" },
+      { type: "h3", id: "multi-spec", text: "Đa quy cách" },
+      {
+        type: "p",
+        text: "Trên sản phẩm Tiêu chuẩn, bật công tắc Chế độ đa quy cách để định nghĩa nhiều thuộc tính (ví dụ Kích thước × Mùi hương). Hệ thống tạo một SKU cho mỗi tổ hợp. Định nghĩa các tùy chọn thuộc tính trong Danh mục → Thuộc tính trước.",
+      },
+      { type: "mockup", variant: "product-multi-spec" },
+      { type: "h3", id: "multi-grade", text: "Đa cấp" },
+      {
+        type: "p",
+        text: "Trên sản phẩm Cân, trình soạn SKU thêm tab Cấp sản phẩm. Thêm tối đa 10 hàng cấp cho cùng một SKU (ví dụ Cao cấp / Cấp A / Cấp B). Mỗi hàng có giá bán riêng, công tắc Bao gồm thuế và 5 tầng giá. Người mua chọn cấp cụ thể khi thanh toán; tổng đơn hàng dùng giá của cấp đó.",
+      },
+      { type: "mockup", variant: "weighed-grades" },
+      { type: "h2", id: "categories", text: "Danh mục con và thẻ" },
+      {
+        type: "p",
+        text: "Nhóm sản phẩm vào các danh mục con để kiểm soát cách chúng xuất hiện trong thanh bên của cổng và danh mục nào người mua có thể duyệt. Thẻ là nhãn tự do dùng để lọc và tìm kiếm.",
+      },
+      { type: "h2", id: "images", text: "Hình ảnh và bản dịch" },
+      {
+        type: "p",
+        text: "Tải lên tối đa một hình ảnh cho mỗi sản phẩm — nó trở thành ảnh chính của cửa hàng. Nếu bạn vận hành ở nhiều khu vực, hãy thêm tên và mô tả đã dịch từ trang chỉnh sửa sản phẩm — chúng tự động lan sang ngôn ngữ tương ứng.",
+      },
+    ],
+    toc: [
+      { id: "create-product", text: "Tạo sản phẩm", level: 2 },
+      { id: "standard", text: "Tiêu chuẩn", level: 3 },
+      { id: "weighed", text: "Cân", level: 3 },
+      { id: "multi-spec", text: "Đa quy cách", level: 3 },
+      { id: "multi-grade", text: "Đa cấp", level: 3 },
+      { id: "categories", text: "Danh mục con và thẻ", level: 2 },
+      { id: "images", text: "Hình ảnh và bản dịch", level: 2 },
+    ],
+    prev: {
+      href: "/docs/ordering-portal/setup",
+      title: "Thiết lập cổng đặt hàng",
+    },
+    next: {
+      href: "/docs/ordering-portal/pricing",
+      title: "Tầng giá và giá khách hàng",
+    },
+  },
+  {
+    locale: "vi",
+    slug: "pricing",
+    category: "ordering-portal",
+    href: "/docs/ordering-portal/pricing",
+    title: "Tầng giá và giá khách hàng",
+    description:
+      "Cấu hình 5 tầng giá cho mỗi SKU, thiết lập giá phân cấp cho sản phẩm cân và gán mỗi khách hàng vào một cấp giá quyết định họ thấy tầng nào trong cổng đặt hàng.",
+    keywords: [
+      "tầng giá",
+      "định giá bán sỉ",
+      "phân cấp trái cây",
+      "cấp giá khách hàng",
+    ],
+    readingTime: "6 phút đọc",
+    lastUpdated: "2026-07-12",
+    blocks: [
+      {
+        type: "p",
+        text: "Định giá của Wholesalify xoay quanh hai ý tưởng: mỗi SKU mang 5 tầng giá (Cấp giá 1–5), và mỗi khách hàng được gán vào một trong 5 tầng đó trong hồ sơ của họ. Hai phía được ánh xạ 1-1 và cấu hình ở hai nơi: tầng SKU trong Sản phẩm → trình soạn SKU, cấp khách hàng trong Khách hàng → Chỉnh sửa khách hàng.",
+      },
+      {
+        type: "h2",
+        id: "sku-price-levels",
+        text: "Tầng giá trên mọi SKU",
+      },
+      {
+        type: "p",
+        text: "Trên tab Thông tin cơ bản của bất kỳ SKU nào, ô nhập Giá bán có biểu tượng thanh trượt bên phải. Nhấp vào đó để mở hộp thoại Cấp giá, nơi bạn có thể điền 5 giá riêng biệt (Cấp giá 1 đến Cấp giá 5) và bật/tắt Bao gồm thuế cho từng cái độc lập.",
+      },
+      {
+        type: "ul",
+        items: [
+          "5 tầng ánh xạ tới 5 cấp giá khách hàng (đặt trên hồ sơ khách hàng — xem bên dưới).",
+          "Một chấm nhỏ trên biểu tượng cho biết ít nhất một giá tầng đã được đặt (>0); chấm chỉ mang tính thông tin.",
+          "Một SKU mang một bộ 5 giá tầng; số tiền hiển thị thực tế còn phụ thuộc vào đơn vị cơ bản / đơn vị bán, chế độ thuế và tiền tệ.",
+          "Giá khách truy cập đã đăng xuất thấy được điều khiển bởi Cài đặt → Showroom → Cấp giá bán; giá so sánh gạch ngang được điều khiển bởi Cấp giá so sánh.",
+        ],
+      },
+      { type: "mockup", variant: "tier-price" },
+      {
+        type: "h2",
+        id: "weighed-grades",
+        text: "Cài đặt cấp cho sản phẩm cân",
+      },
+      {
+        type: "p",
+        text: "Khi chế độ sản phẩm là Cân, trình soạn SKU hiển thị thêm tab Cấp sản phẩm. Tại đó bạn có thể thêm tối đa 10 hàng cấp cho cùng một SKU (ví dụ Cao cấp / Cấp A / Cấp B). Mỗi hàng có tên cấp, giá bán (hậu tố cố định /{baseUnit}, ví dụ /kg), công tắc bao gồm thuế và cùng biểu tượng thanh trượt trên ô giá — nhấp mở cùng hộp thoại Cấp giá 5 tầng để cấp cụ thể đó có thể mang 5 giá riêng.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Tối đa 10 hàng cấp; xóa hàng cuối sẽ để lại một hàng trống thay vì xóa cả mục.",
+          "Hậu tố giá luôn là /{baseUnit} (ví dụ /kg) để khớp quy ước bán cân.",
+          "Người mua chọn cấp cụ thể khi đặt hàng; tổng đơn hàng được tính theo giá của cấp đó.",
+        ],
+      },
+      { type: "mockup", variant: "weighed-grades" },
+      {
+        type: "h2",
+        id: "sale-unit-tiers",
+        text: "Tầng giá cho sản phẩm nhiều đơn vị bán",
+      },
+      {
+        type: "p",
+        text: "Sản phẩm không cân có thể có nhiều đơn vị bán (ví dụ Thùng / Cái / Bộ) được cấu hình trên tab Đơn vị bán. Mỗi hàng đơn vị bán cũng có ô giá bán riêng với biểu tượng thanh trượt, mở cùng hộp thoại Cấp giá 5 tầng để đơn vị có thể mang 5 giá riêng cùng công tắc thuế.",
+      },
+      { type: "mockup", variant: "order" },
+      {
+        type: "h2",
+        id: "customer-price-level",
+        text: "Cấp giá khách hàng",
+      },
+      {
+        type: "p",
+        text: "Mở bất kỳ khách hàng nào trong Quản lý khách hàng — khu vực thông tin cơ bản có menu thả Cấp giá với năm tùy chọn (Cấp giá 1 đến Cấp giá 5). Cấp bạn gán ở đây quyết định giá nào trong 5 giá tầng của SKU mà khách hàng thấy khi họ đăng nhập vào cổng đặt hàng. Khách hàng được gán Cấp giá 3 sẽ thấy Cấp giá 3 trên toàn bộ danh mục.",
+      },
+      { type: "mockup", variant: "customer-price-level" },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Cách hai phía kết nối",
+        text: "Phía SKU (5 giá tầng) và phía khách hàng (Cấp giá 1–5) là 1-1: con số được chọn trên hồ sơ khách hàng quyết định giá tầng nào của SKU mà cổng hiển thị cho mọi sản phẩm. Nếu tầng đó để trống, hệ thống sẽ dùng giá bán cơ sở của SKU.",
+      },
+    ],
+    toc: [
+      { id: "sku-price-levels", text: "Tầng giá trên mọi SKU", level: 2 },
+      {
+        id: "weighed-grades",
+        text: "Cài đặt cấp cho sản phẩm cân",
+        level: 2,
+      },
+      {
+        id: "sale-unit-tiers",
+        text: "Tầng giá cho sản phẩm nhiều đơn vị bán",
+        level: 2,
+      },
+      { id: "customer-price-level", text: "Cấp giá khách hàng", level: 2 },
+    ],
+    prev: {
+      href: "/docs/ordering-portal/catalog",
+      title: "Xây dựng danh mục",
+    },
+    next: { href: "/docs/orders/dashboard", title: "Bảng đơn hàng" },
+  },
+
+  // ----- Orders -----
+  {
+    locale: "vi",
+    slug: "dashboard",
+    category: "orders",
+    href: "/docs/orders/dashboard",
+    title: "Bảng đơn hàng",
+    description:
+      "Hiểu danh sách Đơn bán hàng — năm trạng thái đơn hàng thực, các bộ lọc có sẵn, các cột trên bảng và các hành động khả dụng trên trang chi tiết đơn hàng.",
+    keywords: ["bảng đơn hàng", "đơn hàng bán sỉ", "quản lý đơn hàng B2B"],
+    readingTime: "4 phút đọc",
+    lastUpdated: "2026-07-12",
+    blocks: [
+      {
+        type: "p",
+        text: "Danh sách Đơn bán hàng là nơi đội ngũ vận hành xem xét và xử lý mọi đơn hàng. Trang này giải thích mọi điều khiển trên danh sách, các cột bạn thấy và các hành động khả dụng trên trang chi tiết của từng đơn hàng.",
+      },
+      { type: "mockup", variant: "order" },
+      { type: "h2", id: "filters", text: "Bộ lọc" },
+      {
+        type: "ul",
+        items: [
+          "Tìm kiếm từ khóa — số đơn hàng, tên khách hàng, số PO khách hàng hoặc bất kỳ văn bản nào trên đơn hàng.",
+          "Trạng thái — menu thả đơn chọn: Tất cả, Bản nháp, Đã xác nhận, Đã hủy, Mở lại, Chưa xác nhận.",
+          "Khoảng ngày — cài sẵn Hôm nay / 7 ngày qua / 30 ngày qua, hoặc chọn phạm vi tùy chỉnh trên lịch.",
+          "Kho — bộ lọc kho đa chọn. Trống nghĩa là tất cả kho.",
+          "Trạng thái thanh toán — bộ lọc đa chọn: Chưa thanh toán, Một phần, Đã thanh toán, Thanh toán thừa.",
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Đặt lại bộ lọc",
+        text: "Dùng biểu tượng đặt lại ở bên phải hàng bộ lọc để xóa mọi bộ lọc về mặc định (30 ngày qua, mọi trạng thái, mọi kho, mọi trạng thái thanh toán).",
+      },
+      { type: "h2", id: "table-columns", text: "Cột của bảng" },
+      {
+        type: "p",
+        text: "Mỗi hàng của danh sách hiển thị mười hai cột sau:",
+      },
+      {
+        type: "ol",
+        items: [
+          "# — chỉ số hàng (page × size + n).",
+          "Số đơn — liên kết có thể nhấp mở trang chi tiết đơn hàng trong tab mới.",
+          "Khách hàng — tên người mua.",
+          "Ngày giao dịch — ngày ghi trên đơn hàng.",
+          "Số tiền phải trả — được định dạng theo tiền tệ mặc định của merchant.",
+          "Kho — kho xuất hàng.",
+          "Trạng thái thanh toán — suy ra từ số dư so với số phải trả.",
+          "Trạng thái — trạng thái hiện tại của đơn hàng (xem Trạng thái đơn hàng bên dưới).",
+          "Ngày tạo / Người tạo / Ngày cập nhật / Người cập nhật — trường kiểm tra.",
+        ],
+      },
+      { type: "h2", id: "statuses", text: "Trạng thái đơn hàng" },
+      {
+        type: "p",
+        text: "Mỗi đơn hàng luôn ở một trong năm trạng thái sau. Huy hiệu trạng thái là nhãn thụ động — không thể nhấp để chuyển đơn hàng. Để thay đổi trạng thái, mở trang chi tiết đơn hàng và dùng nút hành động ở đó.",
+      },
+      {
+        type: "table",
+        headers: ["Trạng thái", "Mã", "Ý nghĩa"],
+        rows: [
+          [
+            "Bản nháp",
+            "0",
+            "Đã lưu dưới dạng bản nháp. Chưa gửi cho khách hàng.",
+          ],
+          ["Đã xác nhận", "1", "Đã gửi cho khách hàng / sẵn sàng thực hiện."],
+          [
+            "Đã hủy",
+            "2",
+            "Đã hủy bỏ; đơn hàng được giữ để kiểm tra nhưng không thể thực hiện thêm hành động.",
+          ],
+          ["Mở lại", "3", "Đơn hàng đã hủy trước đó được mở lại để chỉnh sửa."],
+          [
+            "Chưa xác nhận",
+            "4",
+            "Quay lại từ Đã xác nhận về trạng thái giống bản nháp.",
+          ],
+        ],
+      },
+      { type: "h2", id: "actions", text: "Hành động trên đơn hàng" },
+      {
+        type: "p",
+        text: "Nhấp vào số đơn hàng để mở trang chi tiết. Đầu trang chi tiết hiển thị các nút hành động phù hợp với trạng thái hiện tại. Mọi hành động được bảo vệ bởi mã quyền — các nút bạn không có quyền sẽ bị ẩn hoàn toàn.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Lưu — lưu đơn hàng khi đang ở Bản nháp, Mở lại hoặc Chưa xác nhận.",
+          "Xác nhận — chuyển trạng thái dạng bản nháp (Bản nháp / Mở lại / Chưa xác nhận) sang Đã xác nhận.",
+          "Bỏ xác nhận — hoàn tác đơn Đã xác nhận về Chưa xác nhận (sau đó có thể chỉnh sửa và xác nhận lại).",
+          "Hủy — hủy bỏ đơn Đã xác nhận thành Đã hủy.",
+          "Mở lại — đưa đơn Đã hủy trở về Mở lại để chỉnh sửa.",
+          "Xóa — xóa vĩnh viễn đơn hàng. Chỉ khả dụng ở Bản nháp, Chưa xác nhận và Mở lại.",
+          "Trả hàng / Hủy trả — trên dòng chi tiết của đơn Đã xác nhận, xử lý trả hàng một phần hoặc hoàn tác một lần trả.",
+        ],
+      },
+      {
+        type: "h2",
+        id: "inventory-impact",
+        text: "Chuyển trạng thái và tác động tồn kho",
+      },
+      {
+        type: "p",
+        text: "Mọi thay đổi tồn kho được ghi lại thành một dòng trong sổ tồn kho và có thể truy ngược về đơn hàng nguồn. Bảng dưới tóm tắt tác động tồn kho của mỗi hành động:",
+      },
+      {
+        type: "table",
+        headers: [
+          "Hành động",
+          "Thay đổi trạng thái",
+          "Tác động tồn kho",
+          "Ghi chú",
+        ],
+        rows: [
+          [
+            "Xác nhận",
+            "Bản nháp / Mở lại / Chưa xác nhận → Đã xác nhận",
+            "Trừ ( − )",
+            "Xuất kho từ kho của đơn hàng cho mọi dòng chi tiết; giá vốn được ghi lên đơn tại thời điểm xác nhận.",
+          ],
+          [
+            "Bỏ xác nhận",
+            "Đã xác nhận → Chưa xác nhận",
+            "Hoàn trả ( + )",
+            "Hoàn lại phần trừ từ lần Xác nhận gần nhất; các trường giá vốn của đơn được xóa.",
+          ],
+          [
+            "Hủy",
+            "Đã xác nhận → Đã hủy",
+            "Hoàn trả ( + )",
+            "Hoàn lại phần trừ từ lần Xác nhận gần nhất; đơn hàng được giữ để kiểm tra và không thể chuyển tiếp.",
+          ],
+          [
+            "Mở lại",
+            "Đã hủy → Mở lại",
+            "Không thay đổi",
+            "Tồn kho đã được hoàn khi đơn bị hủy. Mở lại chỉ thay đổi trạng thái; Xác nhận tiếp theo sẽ trừ lại.",
+          ],
+          [
+            "Trả hàng",
+            "Đã xác nhận (theo dòng)",
+            "Trả một phần ( + )",
+            "Thêm dòng số lượng âm cho dòng chi tiết của đơn Đã xác nhận và hoàn số lượng đó về tồn kho.",
+          ],
+          [
+            "Hủy trả",
+            "Đã xác nhận (theo dòng)",
+            "Trừ lại ( − )",
+            "Xóa dòng trả đã ghi trước đó và trừ lại số lượng gốc từ tồn kho.",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Cả Hủy và Bỏ xác nhận đều hoàn tồn kho",
+        text: "Hai hành động có cùng tác động tồn kho: cả hai đều hoàn lại phần trừ từ lần Xác nhận gần nhất. Khác biệt là trạng thái kết thúc — Hủy chuyển đơn sang Đã hủy (kết thúc, không thể chuyển tiếp); Bỏ xác nhận chuyển sang Chưa xác nhận (vẫn chỉnh sửa được, Xác nhận mới sẽ trừ tồn kho lần nữa).",
+      },
+      {
+        type: "callout",
+        variant: "warning",
+        title: "Không có thao tác hàng loạt",
+        text: "Danh sách Đơn bán hàng không hỗ trợ chọn hàng hay thao tác hàng loạt. Mỗi đơn phải được mở riêng để xử lý.",
+      },
+    ],
+    toc: [
+      { id: "filters", text: "Bộ lọc", level: 2 },
+      { id: "table-columns", text: "Cột của bảng", level: 2 },
+      { id: "statuses", text: "Trạng thái đơn hàng", level: 2 },
+      { id: "actions", text: "Hành động trên đơn hàng", level: 2 },
+      {
+        id: "inventory-impact",
+        text: "Chuyển trạng thái và tác động tồn kho",
+        level: 2,
+      },
+    ],
+    prev: {
+      href: "/docs/ordering-portal/pricing",
+      title: "Tầng giá và giá khách hàng",
+    },
+    next: { href: "/docs/inventory/stock", title: "Mức tồn kho" },
+  },
+
+  // ----- Inventory -----
+  {
+    locale: "vi",
+    slug: "stock",
+    category: "inventory",
+    href: "/docs/inventory/stock",
+    title: "Mức tồn kho",
+    description:
+      "Theo dõi tồn kho theo vị trí, kho và biến thể sản phẩm. Cấu hình đơn vị tồn kho cơ bản và các quy tắc quy đổi.",
+    keywords: ["quản lý tồn kho", "tồn kho bán sỉ", "đa kho"],
+    readingTime: "5 phút đọc",
+    lastUpdated: "2026-07-03",
+    blocks: [
+      {
+        type: "p",
+        text: "Mô-đun tồn kho của Wholesalify duy trì số đếm thời gian thực cho mỗi biến thể sản phẩm, theo từng kho. Tồn kho được tự động điều chỉnh khi đơn hàng được xác nhận và khi phiếu nhập mua hàng được ghi.",
+      },
+      { type: "mockup", variant: "inventory" },
+      { type: "h2", id: "warehouses", text: "Kho" },
+      {
+        type: "p",
+        text: "Thêm bao nhiêu kho tùy theo bạn vận hành. Mỗi sản phẩm có số đếm tồn kho riêng theo từng kho, cho phép bạn giao đơn từ vị trí gần người mua nhất.",
+      },
+      { type: "h2", id: "stock-units", text: "Đơn vị tồn kho và quy đổi" },
+      {
+        type: "p",
+        text: 'Với sản phẩm nông sản tươi, đặt đơn vị tồn kho là kilogram. Thêm các quy cách đóng gói như "thùng 5 kg" hoặc "sọt 10 kg" với quy đổi tự động để người mua có thể đặt theo các đơn vị đó mà không cần bạn phải quy đổi thủ công.',
+      },
+      {
+        type: "h2",
+        id: "stock-adjustments",
+        text: "Điều chỉnh tồn kho thủ công",
+      },
+      {
+        type: "p",
+        text: "Bị mất vài thùng do hư hỏng? Mở sản phẩm, chọn Điều chỉnh tồn kho và nhập số lượng dương hoặc âm kèm lý do. Các điều chỉnh được ghi vào nhật ký kiểm tra với người dùng, ngày và hình ảnh tùy chọn.",
+      },
+    ],
+    toc: [
+      { id: "warehouses", text: "Kho", level: 2 },
+      { id: "stock-units", text: "Đơn vị tồn kho và quy đổi", level: 2 },
+      {
+        id: "stock-adjustments",
+        text: "Điều chỉnh tồn kho thủ công",
+        level: 2,
+      },
+    ],
+    prev: { href: "/docs/orders/dashboard", title: "Bảng đơn hàng" },
+    next: {
+      href: "/docs/purchasing/purchase-orders",
+      title: "Tạo đơn mua hàng",
+    },
+  },
+
+  // ----- Purchasing -----
+  {
+    locale: "vi",
+    slug: "purchase-orders",
+    category: "purchasing",
+    href: "/docs/purchasing/purchase-orders",
+    title: "Tạo đơn mua hàng",
+    description:
+      "Lập đơn mua hàng với nhà cung cấp, theo dõi lô hàng đang về và ghi phiếu nhập để cập nhật tồn kho tự động.",
+    keywords: ["đơn mua hàng", "quản lý nhà cung cấp", "mua hàng bán sỉ"],
+    readingTime: "6 phút đọc",
+    lastUpdated: "2026-07-02",
+    blocks: [
+      {
+        type: "p",
+        text: "Đơn mua hàng nói cho nhà cung cấp biết cần giao gì, khi nào và với giá nào. Khi hàng đến, việc ghi phiếu nhập cập nhật tồn kho và hồ sơ nhà cung cấp chỉ trong một bước.",
+      },
+      { type: "mockup", variant: "purchase" },
+      { type: "h2", id: "supplier-first", text: "Bước 1 — Thêm nhà cung cấp" },
+      {
+        type: "p",
+        text: "Mở Mua hàng → Nhà cung cấp → Nhà cung cấp mới. Nhập thông tin liên hệ và thời gian giao hàng thường lệ của họ.",
+      },
+      { type: "h2", id: "build-po", text: "Bước 2 — Lập đơn mua hàng" },
+      {
+        type: "p",
+        text: "Nhấp Đơn mua hàng mới, chọn nhà cung cấp và thêm các dòng chi tiết. Đơn giá mặc định theo giá gần nhất của nhà cung cấp nhưng bạn có thể ghi đè từng dòng.",
+      },
+      { type: "h2", id: "receive", text: "Bước 3 — Nhận lô hàng" },
+      {
+        type: "p",
+        text: "Khi hàng đến, nhấp Nhận trên đơn mua hàng. Nhập số lượng thực tế đã giao — hỗ trợ nhận một phần — và xác nhận. Mức tồn kho được cập nhật tự động và một hóa đơn nhà cung cấp được tạo.",
+      },
+      {
+        type: "h2",
+        id: "inventory-impact",
+        text: "Chuyển trạng thái và tác động tồn kho",
+      },
+      {
+        type: "p",
+        text: "Đơn mua hàng và đơn bán hàng dùng chung một sổ tồn kho, nhưng chảy theo hai hướng ngược nhau — xác nhận đơn mua là cộng tồn (+), trong khi xác nhận đơn bán là trừ tồn (−). Bảng dưới tóm tắt bốn hành động chính và tác động tồn kho:",
+      },
+      {
+        type: "table",
+        headers: [
+          "Hành động",
+          "Thay đổi trạng thái",
+          "Tác động tồn kho",
+          "Ghi chú",
+        ],
+        rows: [
+          [
+            "Xác nhận đơn mua",
+            "Bản nháp / Mở lại / Chưa xác nhận → Đã xác nhận",
+            "Nhập kho ( + )",
+            "Hàng được nhập vào kho đích theo từng dòng; chi phí mua hàng được ghi trên đơn.",
+          ],
+          [
+            "Bỏ xác nhận",
+            "Đã xác nhận → Chưa xác nhận",
+            "Xuất kho ( − )",
+            "Đảo ngược phần nhập từ lần Xác nhận đơn mua gần nhất; chi phí mua hàng được xóa.",
+          ],
+          [
+            "Hủy đơn mua",
+            "Đã xác nhận → Đã hủy",
+            "Xuất kho ( − )",
+            "Đảo ngược phần nhập từ lần Xác nhận đơn mua gần nhất; đơn hàng chỉ được giữ để kiểm tra.",
+          ],
+          [
+            "Mở lại",
+            "Đã hủy → Mở lại",
+            "Không thay đổi tồn kho",
+            "Tồn kho đã được đảo ngược khi Hủy; Mở lại chỉ thay đổi trạng thái. Có thể Xác nhận lại để nhập kho lần nữa.",
+          ],
+          [
+            "Trả hàng",
+            "Đã xác nhận (theo dòng)",
+            "Xuất một phần ( − )",
+            "Trả một phần dòng đã xác nhận cho nhà cung cấp — thêm dòng số lượng âm và giảm tồn kho tương ứng.",
+          ],
+          [
+            "Hủy trả",
+            "Đã xác nhận (theo dòng)",
+            "Nhập lại ( + )",
+            "Đảo ngược một lần trả — dòng âm bị xóa và nhập lại tồn kho với số lượng ban đầu.",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Xác nhận đơn mua là nhập kho — không phải xuất kho",
+        text: "Xác nhận đơn mua nghĩa là hàng đã thực sự đến và được cất vào kho, nên tồn kho tăng (+). Điều này ngược với xác nhận đơn bán, vốn giảm (−). Đừng nhầm lẫn hai hướng: Bỏ xác nhận không trả hàng cho nhà cung cấp — nó chỉ đảo ngược phần tồn kho đã nhập khi bạn xác nhận.",
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Hủy và Bỏ xác nhận đều đảo ngược tồn kho",
+        text: "Cả hai hành động có cùng tác động tồn kho — chúng đảo ngược phần nhập từ lần Xác nhận trước. Khác biệt là trạng thái kết thúc: Hủy chuyển đơn sang Đã hủy (kết thúc), trong khi Bỏ xác nhận chuyển sang Chưa xác nhận (vẫn chỉnh sửa được, Xác nhận tiếp theo sẽ nhập kho lại).",
+      },
+    ],
+    toc: [
+      { id: "supplier-first", text: "Bước 1 — Thêm nhà cung cấp", level: 2 },
+      { id: "build-po", text: "Bước 2 — Lập đơn mua hàng", level: 2 },
+      { id: "receive", text: "Bước 3 — Nhận lô hàng", level: 2 },
+      {
+        id: "inventory-impact",
+        text: "Chuyển trạng thái và tác động tồn kho",
+        level: 2,
+      },
+    ],
+    prev: { href: "/docs/inventory/stock", title: "Mức tồn kho" },
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1950,8 +2959,9 @@ const CATEGORY_ORDER = [
 ];
 
 function pickLocale(locale: string): Locale {
-  // Documented locales: en + zh. Other locales will fall back to English content.
+  // Documented locales: en + zh + vi. Other locales will fall back to English content.
   if (locale === "zh") return "zh";
+  if (locale === "vi") return "vi";
   return "en";
 }
 
