@@ -27,6 +27,7 @@ export type DocBlock =
         | "weighed-grades"
         | "customer-price-level"
         | "showroom-private"
+        | "showroom"
         | "product-list"
         | "product-standard"
         | "product-weighed"
@@ -567,6 +568,16 @@ export const articles: DocArticle[] = [
         type: "p",
         text: "Once Enable is on and at least one customer account has access, your storefront URL appears at the top of the Private showroom drawer. Use Open Storefront to verify what your buyers will see before sending invitations.",
       },
+      {
+        type: "h2",
+        id: "showroom-preview",
+        text: "Buyer-facing showroom preview",
+      },
+      {
+        type: "p",
+        text: "Below is the actual storefront a logged-in buyer sees — same branded header, banner, and product grid they navigate on their phone or desktop. Use this preview to confirm catalog visibility, sort order, and the inline add-to-cart experience before sharing the URL.",
+      },
+      { type: "mockup", variant: "showroom" },
     ],
     toc: [
       { id: "merchant", text: "Merchant info", level: 2 },
@@ -580,6 +591,11 @@ export const articles: DocArticle[] = [
       { id: "checkout", text: "Checkout messages", level: 3 },
       { id: "payment", text: "Payment methods and tax", level: 2 },
       { id: "open-storefront", text: "Opening your storefront", level: 2 },
+      {
+        id: "showroom-preview",
+        text: "Buyer-facing showroom preview",
+        level: 2,
+      },
     ],
     prev: { href: "/docs/get-started/concepts", title: "Core concepts" },
     next: {
@@ -1429,6 +1445,12 @@ export const articles: DocArticle[] = [
         type: "p",
         text: "启用开关打开,至少一个客户账号已开通后,「批发商城」抽屉顶部会出现店面访问地址。点击「访问商城」可以直接预览客户登录后看到的样子,确认无误后再发送邀请。",
       },
+      { type: "h2", id: "showroom-preview", text: "买家店面预览" },
+      {
+        type: "p",
+        text: "下面就是客户登录后实际看到的店面:同样的品牌头部、Banner、商品网格——与他们手机或电脑上操作的完全一致。在把链接发给买家之前,可以用这个预览核对目录可见性、排序方式以及「加入购物车」的内联交互。",
+      },
+      { type: "mockup", variant: "showroom" },
     ],
     toc: [
       { id: "merchant", text: "商户信息", level: 2 },
@@ -1438,6 +1460,7 @@ export const articles: DocArticle[] = [
       { id: "checkout", text: "结算文案", level: 3 },
       { id: "payment", text: "支付方式与税方案", level: 2 },
       { id: "open-storefront", text: "上线你的店面", level: 2 },
+      { id: "showroom-preview", text: "买家店面预览", level: 2 },
     ],
     prev: { href: "/docs/get-started/concepts", title: "核心概念" },
     next: { href: "/docs/ordering-portal/catalog", title: "搭建商品目录" },

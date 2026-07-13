@@ -1165,6 +1165,243 @@ function ShowroomPrivateMockup() {
 }
 
 // ---------------------------------------------------------------------------
+// Showroom mockup — buyer-facing storefront (logged-in private showroom)
+// (matches /Users/.../wholesale-showroom/src/app/[locale]/(app)/showroom/page.tsx)
+// TopBar = components/layout/TopBar.tsx (logo / search / location / locale / cart / user)
+// ShowroomGrid = 4-col desktop grid of ProductCard (image 4:3, title, price, stock, +/- cart)
+// ---------------------------------------------------------------------------
+
+function ShowroomMockup() {
+  const products = [
+    {
+      title: "Premium Apples — Grade A",
+      specs: "10kg case",
+      price: "$48.00",
+      unit: "/10kg",
+      stockColor: "green",
+      stockLabel: "In stock",
+      qty: 0,
+      imgFrom: "from-amber-100",
+      imgTo: "to-amber-200",
+    },
+    {
+      title: "Loose Tomato",
+      specs: "Sold by kg",
+      price: "$18.00",
+      unit: "/kg",
+      stockColor: "green",
+      stockLabel: "In stock",
+      qty: 2,
+      imgFrom: "from-red-100",
+      imgTo: "to-red-200",
+    },
+    {
+      title: "Handmade Soap — 100g Lavender",
+      specs: "100g · Lavender",
+      price: "$3.50",
+      unit: "/pc",
+      stockColor: "amber",
+      stockLabel: "Low stock",
+      qty: 0,
+      imgFrom: "from-violet-100",
+      imgTo: "to-violet-200",
+    },
+    {
+      title: "Hass Avocado",
+      specs: "Sold by kg",
+      price: "$11.00",
+      unit: "/kg",
+      stockColor: "red",
+      stockLabel: "Out of stock",
+      qty: 0,
+      imgFrom: "from-emerald-100",
+      imgTo: "to-emerald-200",
+    },
+  ];
+  return (
+    <div className={FRAME_SHELL}>
+      {CHROME_BAR}
+      {/* TopBar (sticky) — 3-col grid: logo / search / right group */}
+      <div className="sticky top-0 z-10 border-b border-slate-200 bg-white">
+        <div className="mx-auto grid h-14 w-full max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-3 px-4">
+          {/* Left: tenant logo (links to /showroom/seller) */}
+          <div className="text-base font-semibold tracking-tight text-slate-900">
+            LSD32
+          </div>
+          {/* Center: search */}
+          <div className="flex w-full max-w-md items-center gap-2 rounded-md border border-slate-200 bg-white px-2">
+            <svg
+              viewBox="0 0 24 24"
+              className="size-4 text-slate-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <div className="h-9 flex-1 text-sm text-slate-400 flex items-center">
+              Search products…
+            </div>
+          </div>
+          {/* Right: location + locale + cart + user */}
+          <div className="flex items-center justify-end gap-1">
+            <div className="mr-1 inline-flex h-9 w-40 items-center justify-between gap-1 rounded-md border border-slate-200 bg-white px-2 text-sm text-slate-700">
+              <span className="truncate">Default Location</span>
+              <span className="text-slate-400">▾</span>
+            </div>
+            <div className="inline-flex h-9 items-center gap-1 rounded-md px-2 text-sm text-slate-700">
+              <span>EN</span>
+              <span className="text-slate-400">▾</span>
+            </div>
+            <div className="relative inline-flex size-9 items-center justify-center rounded-md text-slate-700 hover:bg-slate-100">
+              <svg
+                viewBox="0 0 24 24"
+                className="size-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="9" cy="20" r="1.5" />
+                <circle cx="17" cy="20" r="1.5" />
+                <path d="M3 4h2l2.4 11.2A2 2 0 0 0 9.4 17H17a2 2 0 0 0 2-1.6L21 8H6" />
+              </svg>
+              <span className="absolute -top-0.5 -right-0.5 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-cta px-1 text-[9px] font-semibold text-white">
+                2
+              </span>
+            </div>
+            <div className="inline-flex size-9 items-center justify-center rounded-md text-slate-700 hover:bg-slate-100">
+              <svg
+                viewBox="0 0 24 24"
+                className="size-5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main content: banner + control bar + product grid */}
+      <div className="bg-slate-50">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6">
+          {/* Banner (16:9) */}
+          <div className="block w-full overflow-hidden rounded-lg">
+            <div className="aspect-video w-full bg-gradient-to-br from-emerald-200 via-amber-100 to-rose-200 flex items-center justify-center text-xs font-medium text-slate-600">
+              Mobile banner · 1920×1080
+            </div>
+          </div>
+
+          {/* Control bar: flex-1 + Sort + Layout toggle */}
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="min-w-0 flex-1" />
+            <div className="inline-flex h-9 items-center gap-1 rounded-md border border-slate-200 bg-white px-2.5 text-sm text-slate-700">
+              <span>Recommended</span>
+              <span className="text-slate-400">▾</span>
+            </div>
+            <div className="inline-flex h-9 items-center gap-0.5 rounded-md border border-slate-200 bg-white p-0.5 text-sm">
+              <div className="inline-flex h-7 w-7 items-center justify-center rounded bg-slate-100 text-slate-900">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="size-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="3" y="3" width="7" height="7" rx="1" />
+                  <rect x="14" y="3" width="7" height="7" rx="1" />
+                  <rect x="3" y="14" width="7" height="7" rx="1" />
+                  <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+              </div>
+              <div className="inline-flex h-7 w-7 items-center justify-center rounded text-slate-500">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="size-4"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <line x1="4" y1="6" x2="20" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          {/* Product grid (4 cols desktop) */}
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4">
+            {products.map((p, i) => (
+              <div
+                key={i}
+                className="group/card flex flex-col gap-2 rounded-lg border border-slate-200 bg-white p-3"
+              >
+                {/* 4:3 image */}
+                <div
+                  className={`relative aspect-[4/3] w-full overflow-hidden rounded-md bg-gradient-to-br ${p.imgFrom} ${p.imgTo}`}
+                >
+                  <div className="flex size-full items-center justify-center text-[10px] text-slate-500">
+                    IMG
+                  </div>
+                </div>
+                <div className="flex flex-1 flex-col gap-1.5">
+                  <h3 className="line-clamp-2 text-sm font-medium text-slate-900">
+                    {p.title}
+                  </h3>
+                  {p.specs && (
+                    <p className="text-sm text-slate-600">{p.specs}</p>
+                  )}
+                  <div className="flex items-baseline gap-1 text-base font-semibold text-slate-900">
+                    <span>{p.price}</span>
+                    {p.unit && (
+                      <span className="text-xs font-normal text-slate-500">
+                        {p.unit}
+                      </span>
+                    )}
+                  </div>
+                  <Pill color={p.stockColor}>{p.stockLabel}</Pill>
+                  {/* Inline cart control: - [qty] + */}
+                  {p.qty > 0 ? (
+                    <div className="mt-1 inline-flex h-9 w-full items-center justify-between rounded-md border border-slate-200 bg-white text-sm">
+                      <div className="flex h-full w-9 items-center justify-center text-slate-700 hover:bg-slate-50">
+                        −
+                      </div>
+                      <div className="font-mono text-slate-900">{p.qty}</div>
+                      <div className="flex h-full w-9 items-center justify-center rounded-r-md text-slate-700 hover:bg-slate-50">
+                        +
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="mt-1 inline-flex h-9 w-full items-center justify-center rounded-md border border-slate-200 bg-white text-sm text-slate-700 hover:bg-slate-50">
+                      Add to cart
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Product list mockup — Products catalog list page
 // ---------------------------------------------------------------------------
 
@@ -2155,6 +2392,8 @@ export default function DocsMockup({
       return <CustomerPriceLevelMockup active={active} />;
     case "showroom-private":
       return <ShowroomPrivateMockup />;
+    case "showroom":
+      return <ShowroomMockup />;
     case "product-list":
       return <ProductListMockup active={active} />;
     case "product-standard":

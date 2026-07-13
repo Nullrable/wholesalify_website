@@ -117,7 +117,8 @@
       "Bash(curl -s http://localhost:3000/zh/docs/ordering-portal/catalog)",
       "Bash(curl -s http://localhost:3000/docs/ordering-portal/catalog)",
       "Bash(curl -s http://localhost:3000/en/docs/ordering-portal/catalog)",
-      "Bash(curl -s http://localhost:3000/en/docs/orders/dashboard)"
+      "Bash(curl -s http://localhost:3000/en/docs/orders/dashboard)",
+      "Bash(curl -sS -i \"http://xtyly9u3zcfzp763.localhost:3002/en/showroom\")"
     ]
   }
 }
