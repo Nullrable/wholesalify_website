@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getCategories, getArticles } from "@/lib/docs";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { locales, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 import { generatePageMetadata } from "@/components/SEO";
@@ -25,6 +25,7 @@ export default async function DocsHomePage({
   params: { locale: string };
 }) {
   setRequestLocale(locale);
+  const t = await getTranslations("docs.home");
   const categories = getCategories(locale);
   const allArticles = getArticles(locale);
 
@@ -32,22 +33,20 @@ export default async function DocsHomePage({
     <div className="max-w-4xl">
       <section className="mb-12">
         <div className="text-xs text-cta font-medium uppercase tracking-wider mb-3">
-          Documentation
+          {t("label")}
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-primary leading-tight">
-          Wholesalify documentation
+          {t("title")}
         </h1>
         <p className="mt-4 text-lg text-secondary max-w-2xl">
-          Everything you need to set up, run, and grow your wholesale business
-          on Wholesalify. From your first product to multi-warehouse operations
-          — start here.
+          {t("description")}
         </p>
         <div className="mt-6 flex flex-wrap gap-3 text-sm">
           <Link
             href={`/${locale}/docs/get-started/quickstart`}
             className="inline-flex items-center gap-2 bg-cta text-white px-5 py-2.5 rounded-lg hover:bg-cta/90 transition-colors"
           >
-            Start the quickstart
+            {t("startQuickstart")}
             <svg
               className="w-4 h-4"
               fill="none"
@@ -66,7 +65,7 @@ export default async function DocsHomePage({
             href={`/${locale}/docs/get-started/overview`}
             className="inline-flex items-center gap-2 border border-cta text-cta px-5 py-2.5 rounded-lg hover:bg-cta/10 transition-colors"
           >
-            Read the overview
+            {t("readOverview")}
           </Link>
         </div>
       </section>
@@ -77,7 +76,7 @@ export default async function DocsHomePage({
             <h2 className="text-xl font-bold text-primary">{category.title}</h2>
             <span className="text-[11px] text-gray-500 uppercase tracking-wider">
               {category.articles.length}{" "}
-              {category.articles.length === 1 ? "article" : "articles"}
+              {category.articles.length === 1 ? t("article") : t("articles")}
             </span>
           </div>
           <p className="text-secondary text-sm mb-4">{category.description}</p>

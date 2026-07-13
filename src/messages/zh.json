@@ -1,7 +1,7 @@
 {
   "nav": {
     "features": "功能",
-    "docs": "Docs",
+    "docs": "文档",
     "about": "关于",
     "contact": "联系我们"
   },
@@ -124,7 +124,7 @@
     "tagline": "面向批发商和分销商的现代化 B2B 批发订货平台。",
     "product": "产品",
     "features": "功能",
-    "docs": "Documentation",
+    "docs": "文档",
     "pricing": "价格",
     "about": "关于",
     "company": "公司",
@@ -229,5 +229,16 @@
         ]
       }
     ]
+  },
+  "docs": {
+    "home": {
+      "label": "文档",
+      "title": "Wholesalify 文档",
+      "description": "在 Wholesalify 上搭建、运营并发展你的批发业务所需的一切。从第一个商品到多仓库运营 —— 从这里开始。",
+      "startQuickstart": "开始快速开始",
+      "readOverview": "阅读概览",
+      "article": "篇文章",
+      "articles": "篇文章"
+    }
   }
 }

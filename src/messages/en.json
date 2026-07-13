@@ -229,5 +229,16 @@
         ]
       }
     ]
+  },
+  "docs": {
+    "home": {
+      "label": "Documentation",
+      "title": "Wholesalify documentation",
+      "description": "Everything you need to set up, run, and grow your wholesale business on Wholesalify. From your first product to multi-warehouse operations — start here.",
+      "startQuickstart": "Start the quickstart",
+      "readOverview": "Read the overview",
+      "article": "article",
+      "articles": "articles"
+    }
   }
 }

@@ -1,7 +1,7 @@
 {
   "nav": {
     "features": "Tính năng",
-    "docs": "Docs",
+    "docs": "Tài liệu",
     "about": "Giới thiệu",
     "contact": "Liên hệ"
   },
@@ -124,7 +124,7 @@
     "tagline": "Nền tảng đặt hàng B2B hiện đại cho nhà bán sỉ và nhà phân phối.",
     "product": "Sản phẩm",
     "features": "Tính năng",
-    "docs": "Documentation",
+    "docs": "Tài liệu",
     "pricing": "Giá",
     "about": "Giới thiệu",
     "company": "Công ty",
@@ -229,5 +229,16 @@
         ]
       }
     ]
+  },
+  "docs": {
+    "home": {
+      "label": "Tài liệu",
+      "title": "Tài liệu Wholesalify",
+      "description": "Mọi thứ bạn cần để thiết lập, vận hành và phát triển doanh nghiệp bán sỉ trên Wholesalify. Từ sản phẩm đầu tiên đến vận hành đa kho — bắt đầu từ đây.",
+      "startQuickstart": "Bắt đầu nhanh",
+      "readOverview": "Đọc tổng quan",
+      "article": "bài viết",
+      "articles": "bài viết"
+    }
   }
 }
