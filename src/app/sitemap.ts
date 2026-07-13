@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getArticles } from "@/lib/docs";
 
-const BASE_URL = "https://www.wholesalify.com";
+const BASE_URL = "https://wholesalify.com";
 
 const DOC_LOCALES = ["en", "zh"] as const;
 

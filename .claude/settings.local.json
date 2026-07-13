@@ -119,7 +119,25 @@
       "Bash(curl -s http://localhost:3000/en/docs/ordering-portal/catalog)",
       "Bash(curl -s http://localhost:3000/en/docs/orders/dashboard)",
       "Bash(curl -sS -i \"http://xtyly9u3zcfzp763.localhost:3002/en/showroom\")",
-      "Bash(echo \"EXIT=$?\")"
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(curl -sI \"https://www.wholesalify.com/\")",
+      "Bash(curl -sI \"https://www.wholesalify.com/en\")",
+      "Bash(curl -sIL -H \"User-Agent: Mozilla/5.0 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://wholesalify.com/es-MX\")",
+      "Bash(curl -sIL \"https://wholesalify.com/es-MX\")",
+      "Bash(curl -sIL \"https://www.wholesalify.com/zh\")",
+      "Bash(curl -sIL \"https://www.wholesalify.com/de\")",
+      "Bash(curl -sL \"https://www.wholesalify.com/es-MX\" -o /tmp/es-mx.html)",
+      "Bash(curl -sIL \"https://www.wholesalify.com/es-MX\")",
+      "Bash(npm run:*)",
+      "Bash(npx vercel:*)",
+      "Bash(curl -sI \"https://www.wholesalify.com/es-MX\")",
+      "Bash(curl -sL \"https://www.wholesalify.com/es-MX\")",
+      "Bash(curl -sIL \"https://www.wholesalify.com/tr/privacy\")",
+      "Bash(curl -sIL \"https://wholesalify.com/tr/privacy\")",
+      "Bash(curl -sIL \"https://wholesalify.com/de\")",
+      "Bash(curl -sL \"https://www.wholesalify.com/de\")",
+      "Bash(curl -sL \"https://www.wholesalify.com/tr/privacy\")",
+      "Bash(curl -s \"https://wholesalify.com/sitemap.xml\")"
     ]
   }
 }
