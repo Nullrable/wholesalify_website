@@ -22,7 +22,16 @@ export type DocBlock =
         | "inventory"
         | "purchase"
         | "customer"
-        | "settings";
+        | "settings"
+        | "tier-price"
+        | "weighed-grades"
+        | "customer-price-level"
+        | "showroom-private"
+        | "product-list"
+        | "product-standard"
+        | "product-weighed"
+        | "product-multi-spec";
+      active?: string;
     }
   | { type: "table"; headers: string[]; rows: string[][] };
 
@@ -66,7 +75,6 @@ const CATEGORY_LABELS: Record<Locale, Record<string, string>> = {
     orders: "Order management",
     inventory: "Inventory",
     purchasing: "Purchasing",
-    account: "Account & billing",
   },
   zh: {
     "get-started": "快速开始",
@@ -74,7 +82,6 @@ const CATEGORY_LABELS: Record<Locale, Record<string, string>> = {
     orders: "订单管理",
     inventory: "库存",
     purchasing: "采购",
-    account: "账户与账单",
   },
   vi: {},
   th: {},
@@ -104,8 +111,6 @@ const CATEGORY_DESCRIPTIONS: Record<Locale, Record<string, string>> = {
       "Track stock across warehouses, set reorder thresholds, and reconcile inventory in real time.",
     purchasing:
       "Manage suppliers, build purchase orders, and convert received goods into updated stock.",
-    account:
-      "Invite your team, manage roles, and handle billing for your Wholesalify tenant.",
   },
   zh: {
     "get-started": "搭建租户、配置目录，并在一小时内完成第一笔批发订单。",
@@ -113,7 +118,6 @@ const CATEGORY_DESCRIPTIONS: Record<Locale, Record<string, string>> = {
     orders: "管理从下单到交付的全流程订单，包括状态流转与开票。",
     inventory: "跨仓库跟踪库存、设置补货阈值，并实时核对库存。",
     purchasing: "管理供应商、建立采购订单，并将收货转化为库存更新。",
-    account: "邀请团队成员、管理角色并处理 Wholesalify 租户的账单。",
   },
   vi: {},
   th: {},
@@ -135,12 +139,10 @@ const SECTION_TITLES: Record<Locale, Record<string, string>> = {
   en: {
     fundamentals: "Fundamentals",
     platform: "Platform guides",
-    operations: "Operations",
   },
   zh: {
     fundamentals: "入门基础",
     platform: "平台指南",
-    operations: "运营管理",
   },
   vi: {},
   th: {},
@@ -201,9 +203,8 @@ export const articles: DocArticle[] = [
           "Manage weighted, graded, and multi-specification products side-by-side.",
           "Give every wholesale buyer a self-service ordering portal with order history.",
           "Track orders, payments, and fulfillment from a unified order dashboard.",
-          "Run low-stock alerts, stock reports, and automated replenishment.",
+          "Run stock reports and automated replenishment.",
           "Manage suppliers, purchase orders, and inbound stock.",
-          "Operate the business from anywhere with our iOS and Android apps.",
         ],
       },
       {
@@ -220,7 +221,6 @@ export const articles: DocArticle[] = [
         items: [
           "Ordering portal — a customer-facing storefront for wholesale buyers.",
           "Admin dashboard — the back-office used by your operations team.",
-          "Mobile app — on-the-go management for stock checks, order updates, and approvals.",
         ],
       },
       { type: "mockup", variant: "dashboard" },
@@ -241,7 +241,6 @@ export const articles: DocArticle[] = [
         items: [
           "Read the Quickstart to create your first tenant and place a test order.",
           "Browse the Ordering portal guide to set up your wholesale catalog.",
-          "Jump to the Admin dashboard overview to learn the back-office layout.",
         ],
       },
       {
@@ -546,6 +545,7 @@ export const articles: DocArticle[] = [
           "Restrictions — choose which products and which warehouses (locations) the customer can see. Empty list means no restriction.",
         ],
       },
+      { type: "mockup", variant: "showroom-private" },
       {
         type: "callout",
         variant: "info",
@@ -606,23 +606,33 @@ export const articles: DocArticle[] = [
       { type: "h2", id: "create-product", text: "Create a product" },
       {
         type: "p",
-        text: "Go to Catalog → Products → New product. Choose a product kind to start.",
+        text: "Go to Catalog → Products → New product. Wholesalify offers four product kinds: Standard, Weighed, Non-inventory, and Service.",
       },
+      { type: "mockup", variant: "product-list" },
       { type: "h3", id: "standard", text: "Standard" },
       {
         type: "p",
-        text: "A standard product sells in discrete units. Define a SKU, a base unit (piece / case / pallet), and the price per unit. Add multiple pack sizes by adding variants.",
+        text: "A standard product sells in discrete units (piece / case / pallet). Define a SKU, a stock unit, and a sale price. To offer multiple pack sizes, switch to the Sale units tab and add a row per unit — each row carries its own price, Tax-Included switch, and 5-tier price level.",
       },
+      { type: "mockup", variant: "product-standard" },
       { type: "h3", id: "weighed", text: "Weighed" },
       {
         type: "p",
-        text: "A weighed product has no fixed SKU — buyers can enter any decimal quantity. Set the price per kilogram and a minimum pack size. The system rounds each order to the configured precision.",
+        text: "A weighed product has no fixed SKU — buyers enter any decimal quantity at checkout. Set the base unit (kg / lb) and a per-unit sale price; the system rounds each order line to the configured precision.",
       },
+      { type: "mockup", variant: "product-weighed" },
       { type: "h3", id: "multi-spec", text: "Multi-specification" },
       {
         type: "p",
-        text: "A multi-spec product has a parent record plus child SKUs. Each child represents one combination of attributes — for example Size × Color × Flavor. Add attribute options in Catalog → Attributes first.",
+        text: "On a Standard product, flip the Multi-spec mode switch on to define multiple attributes (e.g. Size × Scent). The system generates one SKU per combination. Define attribute options in Catalog → Attributes first.",
       },
+      { type: "mockup", variant: "product-multi-spec" },
+      { type: "h3", id: "multi-grade", text: "Multi-grade" },
+      {
+        type: "p",
+        text: "On a Weighed product, the SKU editor adds a Product grade tab. Add up to 10 grade rows for the same SKU (e.g. Premium / Grade A / Grade B). Each row carries its own sale price, Tax-Included switch, and 5-tier price level. Buyers pick a specific grade at checkout; the order total uses that grade's price.",
+      },
+      { type: "mockup", variant: "weighed-grades" },
       { type: "h2", id: "categories", text: "Categories and tags" },
       {
         type: "p",
@@ -631,13 +641,7 @@ export const articles: DocArticle[] = [
       { type: "h2", id: "images", text: "Images and translations" },
       {
         type: "p",
-        text: "Upload up to eight images per product. The first image is the storefront hero. If you operate in multiple regions, add translated names and descriptions from the product edit page — these propagate automatically to the corresponding locale.",
-      },
-      {
-        type: "callout",
-        variant: "success",
-        title: "Bulk import",
-        text: "Need to load thousands of products? Use Catalog → Import to upload a CSV. The importer validates every row and surfaces errors before you commit.",
+        text: "Upload up to one image per product — it becomes the storefront hero. If you operate in multiple regions, add translated names and descriptions from the product edit page — these propagate automatically to the corresponding locale.",
       },
     ],
     toc: [
@@ -645,6 +649,7 @@ export const articles: DocArticle[] = [
       { id: "standard", text: "Standard", level: 3 },
       { id: "weighed", text: "Weighed", level: 3 },
       { id: "multi-spec", text: "Multi-specification", level: 3 },
+      { id: "multi-grade", text: "Multi-grade", level: 3 },
       { id: "categories", text: "Categories and tags", level: 2 },
       { id: "images", text: "Images and translations", level: 2 },
     ],
@@ -664,50 +669,97 @@ export const articles: DocArticle[] = [
     href: "/docs/ordering-portal/pricing",
     title: "Price tiers and customer pricing",
     description:
-      "Set up tiered pricing, volume discounts, and graded fruit pricing. Assign customers to tiers and apply per-customer overrides.",
-    keywords: ["price tier", "wholesale pricing", "fruit grading"],
+      "Configure 5 price tiers per SKU, set up graded prices for weighed products, and assign each customer to a price level that decides which tier they see in the ordering portal.",
+    keywords: [
+      "price tier",
+      "wholesale pricing",
+      "fruit grading",
+      "customer price level",
+    ],
     readingTime: "6 min read",
-    lastUpdated: "2026-07-07",
+    lastUpdated: "2026-07-12",
     blocks: [
       {
         type: "p",
-        text: "Wholesale buyers expect pricing that reflects their volume. Wholesalify supports several pricing strategies that can be combined on the same product.",
-      },
-      { type: "h2", id: "price-tiers", text: "Price tiers" },
-      {
-        type: "p",
-        text: "A price tier is a group of buyers who see the same prices. Examples: VIP, Standard wholesale, Reseller. Each product can have one price per tier, plus a fallback base price.",
-      },
-      { type: "h2", id: "volume-discounts", text: "Volume discounts" },
-      {
-        type: "p",
-        text: "On a standard or multi-spec product, add quantity breaks — for example, 10+ units at 5% off, 50+ units at 10% off. The discount applies automatically in the cart.",
+        text: "Wholesalify pricing is built around two ideas: every SKU carries 5 price tiers (Price Level 1–5), and each customer is assigned to one of those 5 tiers in their profile. The two sides are mapped 1-to-1 and configured in two places: SKU tiers in Product → SKU editor, customer level in Customer → Edit customer.",
       },
       {
         type: "h2",
-        id: "graded-pricing",
-        text: "Graded pricing for fruit and produce",
+        id: "sku-price-levels",
+        text: "Price tiers on every SKU",
       },
       {
         type: "p",
-        text: "Graded products let you charge a different price per grade (A / B / Premium). Each grade is a child record with its own price and stock. Buyers select the grade in the product page.",
+        text: "On any SKU's Basic info tab, the Sale price input has a sliders icon on its right side. Click it to open the Price Level dialog, where you can fill in 5 separate prices (Price Level 1 through Price Level 5) and toggle Tax-Included for each one independently.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The 5 tiers map to the 5 customer price levels (set on the customer profile — see below).",
+          "A small dot on the icon indicates that at least one tier price has been set (>0); the dot is informational only.",
+          "A single SKU carries one set of 5 tier prices; the actual amount displayed also depends on base unit / sale unit, tax scheme, and currency.",
+          "The price a logged-out visitor sees is driven by Settings → Showroom → Sales Price Level; the strikethrough comparison price is driven by Compare At Price Level.",
+        ],
+      },
+      { type: "mockup", variant: "tier-price" },
+      {
+        type: "h2",
+        id: "weighed-grades",
+        text: "Grade settings for weighed products",
+      },
+      {
+        type: "p",
+        text: "When a product's mode is Weighed, the SKU editor shows an extra Product grade tab. There you can add up to 10 grade rows for the same SKU (e.g. Premium / Grade A / Grade B). Each row has a grade name, a sale price (suffix fixed to /{baseUnit}, e.g. /kg), a tax-included switch, and the same sliders icon on the price input — clicking it opens the same 5-tier Price Level dialog so that specific grade can carry its own 5 prices.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Up to 10 grade rows; removing the last row leaves a blank one rather than deleting the section.",
+          "The price suffix is always /{baseUnit} (e.g. /kg) to match the weighed sales convention.",
+          "Buyers pick the specific grade when ordering; the order total is calculated using that grade's price.",
+        ],
+      },
+      { type: "mockup", variant: "weighed-grades" },
+      {
+        type: "h2",
+        id: "sale-unit-tiers",
+        text: "Price tiers for multi-sale-unit products",
+      },
+      {
+        type: "p",
+        text: "Non-weighed products can have multiple sale units (e.g. Case / Piece / Set) configured on the Sale units tab. Each sale-unit row also has its own sale price input with the sliders icon, opening the same 5-tier Price Level dialog so the unit can carry its own 5 prices plus tax switches.",
       },
       { type: "mockup", variant: "order" },
-      { type: "h2", id: "customer-overrides", text: "Per-customer overrides" },
+      {
+        type: "h2",
+        id: "customer-price-level",
+        text: "Customer price level",
+      },
       {
         type: "p",
-        text: "Need to offer a special price to a single buyer? Open the customer record, switch to the Pricing tab, and set a custom unit price for one or more products. Custom overrides take precedence over tier pricing.",
+        text: "Open any customer in Customer management — the basic info area has a Price Level dropdown with five options (Price Level 1 through Price Level 5). The level you assign here determines which of the SKU's 5 tier prices that customer sees when they log in to the ordering portal. A customer assigned to Price Level 3 will see Price Level 3 across the whole catalog.",
+      },
+      { type: "mockup", variant: "customer-price-level" },
+      {
+        type: "callout",
+        variant: "info",
+        title: "How the two sides connect",
+        text: "The SKU side (5 tier prices) and the customer side (Price Level 1–5) are 1-to-1: the number chosen on the customer profile decides which tier price the portal displays for every product. If that tier is left blank, the system falls back to the SKU's base sale price.",
       },
     ],
     toc: [
-      { id: "price-tiers", text: "Price tiers", level: 2 },
-      { id: "volume-discounts", text: "Volume discounts", level: 2 },
+      { id: "sku-price-levels", text: "Price tiers on every SKU", level: 2 },
       {
-        id: "graded-pricing",
-        text: "Graded pricing for fruit and produce",
+        id: "weighed-grades",
+        text: "Grade settings for weighed products",
         level: 2,
       },
-      { id: "customer-overrides", text: "Per-customer overrides", level: 2 },
+      {
+        id: "sale-unit-tiers",
+        text: "Price tiers for multi-sale-unit products",
+        level: 2,
+      },
+      { id: "customer-price-level", text: "Customer price level", level: 2 },
     ],
     prev: {
       href: "/docs/ordering-portal/catalog",
@@ -782,14 +834,14 @@ export const articles: DocArticle[] = [
           ["Draft", "0", "Saved as a draft. Not yet sent to the customer."],
           ["Confirmed", "1", "Sent to the customer / ready to fulfil."],
           [
-            "Canceled",
+            "Cancelled",
             "2",
             "Voided; the order is kept for audit but no further actions are possible.",
           ],
           [
             "Reopened",
             "3",
-            "A previously confirmed order reopened for editing.",
+            "A previously cancelled order reopened for editing.",
           ],
           [
             "Unconfirmed",
@@ -801,19 +853,76 @@ export const articles: DocArticle[] = [
       { type: "h2", id: "actions", text: "Order actions" },
       {
         type: "p",
-        text: "Click an order number to open the detail page. The detail page exposes the actions appropriate to the current state:",
+        text: "Click an order number to open the detail page. The detail page header shows the action buttons appropriate to the current state. Every action is gated by a permission code — buttons you don't have access to are hidden entirely.",
       },
       {
         type: "ul",
         items: [
           "Save — save the order while it is in Draft, Reopened, or Unconfirmed.",
-          "Confirm — move a draft into Confirmed.",
-          "Unconfirm — revert a Confirmed order to Unconfirmed.",
-          "Reopen — open a previously confirmed order for editing.",
-          "Cancel — void the order (only available on Draft, Confirmed, and Unconfirmed).",
+          "Confirm — move a draft-like state (Draft / Reopened / Unconfirmed) into Confirmed.",
+          "Unconfirm — revert a Confirmed order to Unconfirmed (can then be edited and re-confirmed).",
+          "Cancel — void a Confirmed order into Cancelled.",
+          "Reopen — bring a Cancelled order back to Reopened for editing.",
           "Delete — permanently remove the order. Only available on Draft, Unconfirmed, and Reopened.",
-          "Return / Cancel return — process a customer return or undo one.",
+          "Return / Cancel return — on a Confirmed order's line items, process a partial customer return or undo one.",
         ],
+      },
+      {
+        type: "h2",
+        id: "inventory-impact",
+        text: "State transitions and stock impact",
+      },
+      {
+        type: "p",
+        text: "Every stock change is recorded as a single line in the stock ledger and can be traced back to its source order. The table below summarises the inventory impact of each action:",
+      },
+      {
+        type: "table",
+        headers: ["Action", "State change", "Stock impact", "Notes"],
+        rows: [
+          [
+            "Confirm",
+            "Draft / Reopened / Unconfirmed → Confirmed",
+            "Deduct ( − )",
+            "Outbound from the order's warehouse for every line item; cost is written onto the order at confirm time.",
+          ],
+          [
+            "Unconfirm",
+            "Confirmed → Unconfirmed",
+            "Return ( + )",
+            "Rolls back the deduction from the most recent Confirm; the order's cost fields are cleared.",
+          ],
+          [
+            "Cancel",
+            "Confirmed → Cancelled",
+            "Return ( + )",
+            "Rolls back the deduction from the most recent Confirm; the order is kept for audit and cannot be advanced further.",
+          ],
+          [
+            "Reopen",
+            "Cancelled → Reopened",
+            "No change",
+            "Stock was already returned when the order was cancelled. Reopen only changes state; a subsequent Confirm will deduct again.",
+          ],
+          [
+            "Return",
+            "Confirmed (per line)",
+            "Partial return ( + )",
+            "Adds a negative-quantity line for a Confirmed order's line item and returns that quantity to stock.",
+          ],
+          [
+            "Cancel return",
+            "Confirmed (per line)",
+            "Deduct again ( − )",
+            "Removes a previously-recorded return line and re-deducts the original quantity from stock.",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Both Cancel and Unconfirm return stock",
+        text: "The two actions have the same inventory effect: they both roll back the deduction from the most recent Confirm. The difference is the terminal state — Cancel moves the order to Cancelled (terminal, no further state changes possible); Unconfirm moves it to Unconfirmed (still editable, a fresh Confirm will deduct stock again).",
       },
       {
         type: "callout",
@@ -827,6 +936,11 @@ export const articles: DocArticle[] = [
       { id: "table-columns", text: "Table columns", level: 2 },
       { id: "statuses", text: "Order statuses", level: 2 },
       { id: "actions", text: "Order actions", level: 2 },
+      {
+        id: "inventory-impact",
+        text: "State transitions and stock impact",
+        level: 2,
+      },
     ],
     prev: {
       href: "/docs/ordering-portal/pricing",
@@ -875,40 +989,6 @@ export const articles: DocArticle[] = [
       { id: "stock-adjustments", text: "Manual stock adjustments", level: 2 },
     ],
     prev: { href: "/docs/orders/dashboard", title: "Order dashboard" },
-    next: { href: "/docs/inventory/alerts", title: "Low-stock alerts" },
-  },
-  {
-    locale: "en",
-    slug: "alerts",
-    category: "inventory",
-    href: "/docs/inventory/alerts",
-    title: "Low-stock alerts",
-    description:
-      "Configure per-product reorder thresholds so your team gets a heads-up before stock runs out.",
-    keywords: ["low stock alerts", "reorder threshold", "wholesale alerts"],
-    readingTime: "3 min read",
-    lastUpdated: "2026-07-03",
-    blocks: [
-      {
-        type: "p",
-        text: "Low-stock alerts notify the right person the moment a product drops below its reorder threshold. Alerts can be sent by email, push notification on the mobile app, or webhook.",
-      },
-      { type: "h2", id: "set-threshold", text: "Set a threshold" },
-      {
-        type: "p",
-        text: "Each product has a Reorder threshold and a Target level field. The threshold is the trigger; the target is the amount of stock you want to keep on hand after replenishment.",
-      },
-      { type: "h2", id: "channels", text: "Notification channels" },
-      {
-        type: "p",
-        text: "Configure alerts in Settings → Notifications. You can route different product categories to different roles — for example, produce alerts to the procurement manager, packaging alerts to the warehouse supervisor.",
-      },
-    ],
-    toc: [
-      { id: "set-threshold", text: "Set a threshold", level: 2 },
-      { id: "channels", text: "Notification channels", level: 2 },
-    ],
-    prev: { href: "/docs/inventory/stock", title: "Stock levels" },
     next: {
       href: "/docs/purchasing/purchase-orders",
       title: "Create purchase orders",
@@ -936,7 +1016,7 @@ export const articles: DocArticle[] = [
       { type: "h2", id: "supplier-first", text: "Step 1 — Add the supplier" },
       {
         type: "p",
-        text: "Open Purchasing → Suppliers → New supplier. Enter contact details, default currency, and the lead time they typically deliver within.",
+        text: "Open Purchasing → Suppliers → New supplier. Enter contact details, and the lead time they typically deliver within.",
       },
       { type: "h2", id: "build-po", text: "Step 2 — Build the PO" },
       {
@@ -948,198 +1028,81 @@ export const articles: DocArticle[] = [
         type: "p",
         text: "When goods arrive, click Receive on the PO. Enter the actual delivered quantities — partial receipts are supported — and confirm. Stock levels update automatically and a supplier invoice is created.",
       },
+      {
+        type: "h2",
+        id: "inventory-impact",
+        text: "State transitions and stock impact",
+      },
+      {
+        type: "p",
+        text: "Purchase orders and sales orders share the same stock ledger, but flow in opposite directions — confirming a purchase order adds stock (+), while confirming a sales order removes it (−). The table below summarizes the four main actions and their impact on stock:",
+      },
+      {
+        type: "table",
+        headers: ["Action", "State change", "Stock impact", "Notes"],
+        rows: [
+          [
+            "Confirm PO",
+            "Draft / Reopened / Unconfirmed → Confirmed",
+            "Stock in ( + )",
+            "Goods are received into the destination warehouse per line; purchase cost is recorded on the order.",
+          ],
+          [
+            "Unconfirm",
+            "Confirmed → Unconfirmed",
+            "Stock out ( − )",
+            "Reverses the stock that was added when the PO was confirmed; purchase cost is cleared.",
+          ],
+          [
+            "Cancel PO",
+            "Confirmed → Cancelled",
+            "Stock out ( − )",
+            "Reverses the stock that was added when the PO was confirmed; the order is retained for audit only.",
+          ],
+          [
+            "Reopen",
+            "Cancelled → Reopened",
+            "No stock change",
+            "Stock has already been reversed by Cancel; Reopen only changes state. The order can be Confirmed again to re-add stock.",
+          ],
+          [
+            "Return",
+            "Confirmed (per line)",
+            "Partial stock out ( − )",
+            "Return part of a confirmed line to the supplier — a negative-quantity line is added and stock is reduced accordingly.",
+          ],
+          [
+            "Cancel return",
+            "Confirmed (per line)",
+            "Re-add stock ( + )",
+            "Reverse a return — the negative line is removed and stock is re-added at the original quantity.",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Confirming a PO adds stock — it does not remove it",
+        text: "Confirming a purchase order means goods have physically arrived and been put away, so stock goes up (+). This is the opposite of confirming a sales order, which goes down (−). Don't confuse the two: Unconfirm does not return goods to the supplier — it simply reverses the stock that was added when you confirmed.",
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "Cancel and Unconfirm both reverse stock",
+        text: "Both actions have the same effect on stock — they undo the stock that was added by the previous Confirm. The difference is the end state: Cancel moves the order to Cancelled (terminal), while Unconfirm moves it to Unconfirmed (still editable, and a subsequent Confirm will re-add stock).",
+      },
     ],
     toc: [
       { id: "supplier-first", text: "Step 1 — Add the supplier", level: 2 },
       { id: "build-po", text: "Step 2 — Build the PO", level: 2 },
       { id: "receive", text: "Step 3 — Receive the shipment", level: 2 },
-    ],
-    prev: { href: "/docs/inventory/alerts", title: "Low-stock alerts" },
-    next: { href: "/docs/admin/dashboard", title: "Admin dashboard" },
-  },
-
-  // ----- Admin -----
-  {
-    locale: "en",
-    slug: "dashboard",
-    category: "admin",
-    href: "/docs/admin/dashboard",
-    title: "Admin dashboard",
-    description:
-      "Get an at-a-glance view of orders, revenue, low-stock items, and pending purchase orders.",
-    keywords: ["admin dashboard", "wholesale KPIs", "revenue analytics"],
-    readingTime: "4 min read",
-    lastUpdated: "2026-07-01",
-    blocks: [
       {
-        type: "p",
-        text: "The admin dashboard is the home page for your operations team. It surfaces the numbers that matter today, alongside a short list of items that need attention.",
-      },
-      { type: "mockup", variant: "dashboard" },
-      { type: "h2", id: "widgets", text: "Widgets" },
-      {
-        type: "ul",
-        items: [
-          "Today's orders and revenue, with week-over-week change.",
-          "Orders by status — see where every order is in the lifecycle.",
-          "Low-stock list — products at or below their reorder threshold.",
-          "Open purchase orders — count and total value of POs awaiting receipt.",
-          "Top customers by revenue, this month.",
-        ],
-      },
-      { type: "h2", id: "widgets-customize", text: "Customize the dashboard" },
-      {
-        type: "p",
-        text: "Click and drag the widget header to rearrange tiles. Use the + button to add extra widgets (revenue chart, fulfillment SLA, payment aging) and the × to remove ones you don't need.",
+        id: "inventory-impact",
+        text: "State transitions and stock impact",
+        level: 2,
       },
     ],
-    toc: [
-      { id: "widgets", text: "Widgets", level: 2 },
-      { id: "widgets-customize", text: "Customize the dashboard", level: 2 },
-    ],
-    prev: {
-      href: "/docs/purchasing/purchase-orders",
-      title: "Create purchase orders",
-    },
-    next: { href: "/docs/admin/mobile", title: "Mobile app" },
-  },
-  {
-    locale: "en",
-    slug: "mobile",
-    category: "admin",
-    href: "/docs/admin/mobile",
-    title: "Mobile app for iOS and Android",
-    description:
-      "Install the Wholesalify mobile app, sign in, and check orders, stock, or approve a purchase order from anywhere.",
-    keywords: ["mobile app", "Wholesalify iOS", "Wholesalify Android"],
-    readingTime: "3 min read",
-    lastUpdated: "2026-06-28",
-    blocks: [
-      {
-        type: "p",
-        text: "The Wholesalify mobile app keeps the back office in your pocket. Use it on a warehouse floor, in the market, or on the road.",
-      },
-      { type: "h2", id: "install", text: "Install the app" },
-      {
-        type: "ul",
-        items: [
-          'iOS — search "Wholesalify" on the App Store. Requires iOS 16 or later.',
-          'Android — search "Wholesalify" on Google Play. Requires Android 10 or later.',
-        ],
-      },
-      { type: "h2", id: "sign-in", text: "Sign in" },
-      {
-        type: "p",
-        text: "Open the app, enter your tenant slug and email, then approve the push-notification prompt. Biometric login is supported after the first sign-in.",
-      },
-      { type: "h2", id: "on-the-go", text: "What you can do on the go" },
-      {
-        type: "ul",
-        items: [
-          "Confirm or cancel incoming orders.",
-          "Check live stock for any product, including a quick barcode scan.",
-          "Approve a purchase order that needs your sign-off.",
-          "Record a stock count or a manual adjustment with a photo.",
-        ],
-      },
-    ],
-    toc: [
-      { id: "install", text: "Install the app", level: 2 },
-      { id: "sign-in", text: "Sign in", level: 2 },
-      { id: "on-the-go", text: "What you can do on the go", level: 2 },
-    ],
-    prev: { href: "/docs/admin/dashboard", title: "Admin dashboard" },
-    next: { href: "/docs/account/team", title: "Invite your team" },
-  },
-
-  // ----- Account -----
-  {
-    locale: "en",
-    slug: "team",
-    category: "account",
-    href: "/docs/account/team",
-    title: "Invite your team",
-    description:
-      "Add teammates, assign roles, and configure who can approve orders and purchase orders.",
-    keywords: ["team management", "roles", "permissions"],
-    readingTime: "3 min read",
-    lastUpdated: "2026-06-25",
-    blocks: [
-      {
-        type: "p",
-        text: "Wholesalify supports Owner, Admin, and Operator roles. Each role has a default permission set; you can override individual permissions under Settings → Roles.",
-      },
-      { type: "h2", id: "invite", text: "Send an invite" },
-      {
-        type: "p",
-        text: "Head to Settings → Team → Invite. Enter the user's email and pick a role. They will receive an activation link valid for 14 days.",
-      },
-      {
-        type: "h2",
-        id: "two-factor",
-        text: "Require two-factor authentication",
-      },
-      {
-        type: "p",
-        text: 'Under Settings → Security, toggle "Require 2FA for all admins". Operators and other roles are not required to enable 2FA.',
-      },
-    ],
-    toc: [
-      { id: "invite", text: "Send an invite", level: 2 },
-      { id: "two-factor", text: "Require two-factor authentication", level: 2 },
-    ],
-    prev: { href: "/docs/admin/mobile", title: "Mobile app" },
-    next: { href: "/docs/account/billing", title: "Billing and subscription" },
-  },
-  {
-    locale: "en",
-    slug: "billing",
-    category: "account",
-    href: "/docs/account/billing",
-    title: "Billing and subscription",
-    description:
-      "Manage your Wholesalify subscription, view invoices, and update payment details.",
-    keywords: ["billing", "subscription", "invoice"],
-    readingTime: "3 min read",
-    lastUpdated: "2026-06-24",
-    blocks: [
-      {
-        type: "p",
-        text: "Wholesalify offers a free tier for businesses just getting started and paid plans that scale with the number of orders you process each month.",
-      },
-      { type: "h2", id: "plans", text: "Plans" },
-      {
-        type: "table",
-        headers: ["Plan", "Best for", "Includes"],
-        rows: [
-          [
-            "Free",
-            "Up to 100 orders / month",
-            "Catalog, ordering portal, single warehouse, email support.",
-          ],
-          [
-            "Pro",
-            "Growing wholesale",
-            "Multi-warehouse, low-stock alerts, mobile app, priority support.",
-          ],
-          [
-            "Scale",
-            "High-volume distribution",
-            "Multi-tenant ops, custom roles, dedicated success manager.",
-          ],
-        ],
-      },
-      { type: "h2", id: "invoices", text: "Invoices and receipts" },
-      {
-        type: "p",
-        text: "Every charge generates a downloadable PDF invoice under Settings → Billing → Invoices. Update your billing email or VAT number from the same page.",
-      },
-    ],
-    toc: [
-      { id: "plans", text: "Plans", level: 2 },
-      { id: "invoices", text: "Invoices and receipts", level: 2 },
-    ],
-    prev: { href: "/docs/account/team", title: "Invite your team" },
+    prev: { href: "/docs/inventory/stock", title: "Stock levels" },
   },
 
   // ===================================================================
@@ -1176,9 +1139,8 @@ export const articles: DocArticle[] = [
           "并列管理称重商品、分级商品和多规格商品。",
           "为每位批发客户提供带历史订单的自助订货门户。",
           "在统一的订单工作台中跟踪订单、收款与履约状态。",
-          "设置库存预警、生成库存报表，并自动触发补货。",
+          "生成库存报表，并自动触发补货。",
           "管理供应商、采购订单与到货入库。",
-          "通过 iOS 与 Android 应用随时随地处理业务。",
         ],
       },
       { type: "h2", id: "how-it-fits-together", text: "平台如何衔接" },
@@ -1188,7 +1150,6 @@ export const articles: DocArticle[] = [
         items: [
           "订货门户 —— 面向批发客户的客户端店面。",
           "管理后台 —— 运营团队使用的后台工作台。",
-          "移动应用 —— 在外也能查看库存、更新订单或审批。",
         ],
       },
       { type: "mockup", variant: "dashboard" },
@@ -1209,7 +1170,6 @@ export const articles: DocArticle[] = [
         items: [
           "阅读《快速开始》，创建你的第一个租户并下一笔测试订单。",
           "查阅《订货门户》指南，搭建你的批发目录。",
-          "直接跳到《管理后台》了解后台布局。",
         ],
       },
       {
@@ -1447,6 +1407,7 @@ export const articles: DocArticle[] = [
           "可见范围 — 选择客户可访问的商品与仓库(Location)。空列表表示不限制。",
         ],
       },
+      { type: "mockup", variant: "showroom-private" },
       {
         type: "callout",
         variant: "info",
@@ -1500,23 +1461,33 @@ export const articles: DocArticle[] = [
       { type: "h2", id: "create-product", text: "创建商品" },
       {
         type: "p",
-        text: "进入「目录 → 商品 → 新建商品」，先选择商品类型再开始配置。",
+        text: "进入「目录 → 商品 → 新建商品」，先选择商品类型再开始配置。商品类型有 4 种可选：标准商品、称重商品、非库存商品、服务商品。",
       },
+      { type: "mockup", variant: "product-list" },
       { type: "h3", id: "standard", text: "标准商品" },
       {
         type: "p",
-        text: "标准商品以离散单位销售。设置 SKU、基本单位（件 / 箱 / 托）和单价。如需多种包装规格，可继续添加变体。",
+        text: "标准商品以离散单位销售（件 / 箱 / 托）。设置 SKU、库存单位以及销售单价；如需多种销售规格，切换到「销售单位」Tab 追加，每行可独立维护价格、含税开关与 5 档价格等级。",
       },
+      { type: "mockup", variant: "product-standard" },
       { type: "h3", id: "weighed", text: "称重商品" },
       {
         type: "p",
-        text: "称重商品没有固定 SKU，客户可以输入任意小数数量。设置每公斤价格与最小包装规格，系统会按你配置的精度自动取整。",
+        text: "称重商品没有固定 SKU，客户可以在订货门户输入任意小数数量。设置基本单位（kg / lb）与每基本单位的销售单价，系统会按你配置的精度自动取整。",
       },
+      { type: "mockup", variant: "product-weighed" },
       { type: "h3", id: "multi-spec", text: "多规格商品" },
       {
         type: "p",
-        text: "多规格商品具有父记录与若干子 SKU。每个子 SKU 代表一组属性组合（如尺寸 × 颜色 × 口味）。请先在「目录 → 属性」中创建属性选项。",
+        text: "在标准商品基础上开启「多规格模式」开关后，可以定义多个规格（如 Size × Scent），系统自动按笛卡尔积生成 SKU 矩阵。请先在「目录 → 属性」中创建规格名与规格值。",
       },
+      { type: "mockup", variant: "product-multi-spec" },
+      { type: "h3", id: "multi-grade", text: "多等级商品" },
+      {
+        type: "p",
+        text: "在称重商品基础上，每个 SKU 可以额外维护「商品等级」Tab：为同一商品添加多行等级（例如「特级 / 一级 / 二级」），每行有独立等级名称、销售价、含税开关以及 5 档价格等级。客户在订货门户下单时需先选择具体等级，按所选等级价格结算。最多支持 10 个等级。",
+      },
+      { type: "mockup", variant: "weighed-grades" },
       { type: "h2", id: "categories", text: "分类与标签" },
       {
         type: "p",
@@ -1533,8 +1504,9 @@ export const articles: DocArticle[] = [
       { id: "standard", text: "标准商品", level: 3 },
       { id: "weighed", text: "称重商品", level: 3 },
       { id: "multi-spec", text: "多规格商品", level: 3 },
-      { id: "categories", text: "分类与标签", level: 2 },
-      { id: "images", text: "图片与多语言文案", level: 2 },
+      { id: "multi-grade", text: "多等级商品", level: 3 },
+      { id: "categories", text: "商品分类", level: 2 },
+      { id: "images", text: "图片", level: 2 },
     ],
     prev: { href: "/docs/ordering-portal/setup", title: "配置订货门户" },
     next: {
@@ -1549,42 +1521,87 @@ export const articles: DocArticle[] = [
     href: "/docs/ordering-portal/pricing",
     title: "价格层级与客户定价",
     description:
-      "设置分层定价、批量折扣与水果分级定价，将客户分配到层级并支持单客户价格覆盖。",
-    keywords: ["价格层级", "批发定价", "水果分级"],
+      "为每个 SKU 配置 5 档价格等级,为称重商品维护多行等级价格,并在客户档案中指定其所属的价格等级。",
+    keywords: ["价格等级", "批发定价", "水果分级", "客户等级"],
     readingTime: "阅读约 6 分钟",
-    lastUpdated: "2026-07-07",
+    lastUpdated: "2026-07-12",
     blocks: [
       {
         type: "p",
-        text: "批发客户都期望价格能够反映采购量。Wholesalify 在同一商品上支持组合使用多种定价策略。",
+        text: "Wholesalify 的定价围绕两个核心概念展开:商品侧的「价格等级」(同一商品对不同客户展示 5 档价格),以及客户档案上的「价格等级」字段(决定该客户登录订货门户后看到哪一档)。两边通过 1~5 五个等级一一对应,在「商品管理 → SKU 编辑」与「客户管理 → 编辑客户」两处分别配置。",
       },
-      { type: "h2", id: "price-tiers", text: "价格层级" },
+      {
+        type: "h2",
+        id: "sku-price-levels",
+        text: "所有商品类型的价格等级设置",
+      },
       {
         type: "p",
-        text: "价格层级是一组共享相同价格的客户群体，例如 VIP、标准批发、分销商。每个商品可以为不同层级分别设置价格，并保留一个兜底的基础价。",
+        text: "在任意一个 SKU 的「基本信息」标签页,找到「销售价」输入框,框右侧有一个滑杆图标。点击该图标会弹出「价格等级」窗口,可分别为该 SKU 填写「价格等级 1 ~ 5」共 5 档价格,并独立设置每一档的「含税」开关。",
       },
-      { type: "h2", id: "volume-discounts", text: "批量折扣" },
+      {
+        type: "ul",
+        items: [
+          "5 档价格对应客户的 5 个价格等级(在客户档案中指定,见下文)。",
+          "图标右上角的小圆点表示已设置过任意一档价格(>0);圆点仅作状态提示。",
+          "同一 SKU 只能维护一套 5 档价格;具体应收金额还会与基本单位 / 销售单位、税率、币种组合计算。",
+        ],
+      },
+      { type: "mockup", variant: "tier-price" },
+      {
+        type: "h2",
+        id: "weighed-grades",
+        text: "称重商品的等级设置",
+      },
       {
         type: "p",
-        text: "在标准或多规格商品上添加数量阶梯，例如 10 件以上 95 折、50 件以上 9 折。系统在购物车中自动应用折扣。",
+        text: "商品类型为「称重」时,SKU 编辑页会多出一个「商品等级」标签页。在该标签页中可以为同一 SKU 维护多行等级(例如「特级 / 一级 / 二级」),每行包含:等级名称、销售价(单位固定为基本单位,如 /kg)、含税开关,以及销售价右侧的滑杆图标 —— 点击同样弹出 5 档价格等级窗口,可针对该等级单独配置 5 档价格与含税开关。",
       },
-      { type: "h2", id: "graded-pricing", text: "水果与农产品的分级定价" },
+      {
+        type: "ul",
+        items: [
+          "最多可添加 10 行等级;删除到最后一行时会保留一行空记录,不会整体删除该区块。",
+          "销售价后缀固定为「/{基本单位}」(如 /kg),与称重商品按重量计价的口径一致。",
+          "客户在订货门户下单时需要先选择具体等级,系统按所选等级的价格计算应收。",
+        ],
+      },
+      { type: "mockup", variant: "weighed-grades" },
+      {
+        type: "h2",
+        id: "sale-unit-tiers",
+        text: "多销售单位的价格等级",
+      },
       {
         type: "p",
-        text: "分级商品可为每个等级（A 级 / B 级 / 特级）单独定价并维护统一库存。客户在商品页中选择所需等级。",
+        text: "非称重类商品可以在「销售单位」标签页中追加多个销售单位(例如「箱 / 件 / 套」)。每个销售单位行同样有独立的销售价输入框,框右侧的滑杆图标也会弹出 5 档价格等级窗口,可针对该单位单独维护 5 档价格与含税开关。",
       },
       { type: "mockup", variant: "order" },
-      { type: "h2", id: "customer-overrides", text: "针对单客户的价格覆盖" },
+      {
+        type: "h2",
+        id: "customer-price-level",
+        text: "客户的价格等级",
+      },
       {
         type: "p",
-        text: "如果需要向单一客户提供特别价格，请打开该客户记录，切换到「价格等级」下拉框，为特定商品设置自定义单价。",
+        text: "在「客户管理」中打开任意一个客户档案,基本资料区有一个「价格等级」下拉框,可选择「价格等级 1 ~ 5」五个选项。该字段决定该客户登录订货门户后看到的销售价档位:例如客户被指定为「价格等级 3」,则门户上所有商品都按该 SKU 的「价格等级 3」价格展示。",
+      },
+      { type: "mockup", variant: "customer-price-level" },
+      {
+        type: "callout",
+        variant: "info",
+        title: "商品侧与客户侧的对应关系",
+        text: "商品侧(5 档价格等级)与客户侧(价格等级 1~5)是一一对应的:客户档案中指定的等级 N,门户自动展示该商品「价格等级 N」的价格;若该档未填写,则按兜底销售价(salePrice)展示。",
       },
     ],
     toc: [
-      { id: "price-tiers", text: "价格层级", level: 2 },
-      { id: "volume-discounts", text: "批量折扣", level: 2 },
-      { id: "graded-pricing", text: "水果与农产品的分级定价", level: 2 },
-      { id: "customer-overrides", text: "针对单客户的价格覆盖", level: 2 },
+      {
+        id: "sku-price-levels",
+        text: "所有商品类型的价格等级设置",
+        level: 2,
+      },
+      { id: "weighed-grades", text: "称重商品的等级设置", level: 2 },
+      { id: "sale-unit-tiers", text: "多销售单位的价格等级", level: 2 },
+      { id: "customer-price-level", text: "客户的价格等级", level: 2 },
     ],
     prev: { href: "/docs/ordering-portal/catalog", title: "搭建商品目录" },
     next: { href: "/docs/orders/dashboard", title: "订单工作台" },
@@ -1656,26 +1673,79 @@ export const articles: DocArticle[] = [
           ["草稿", "0", "已保存为草稿,尚未发送至客户。"],
           ["已确认", "1", "已发送至客户,可进入履约流程。"],
           ["已取消", "2", "已作废;订单仅留作审计,后续不可再操作。"],
-          ["重新打开", "3", "之前已确认的订单被重新打开以供修改。"],
+          ["重新打开", "3", "之前已取消的订单被重新打开以供修改。"],
           ["撤销确认", "4", "从「已确认」回到类似草稿的可改状态。"],
         ],
       },
       { type: "h2", id: "actions", text: "订单操作" },
       {
         type: "p",
-        text: "点击订单号打开详情页。详情页根据当前状态显示对应的动作按钮:",
+        text: "点击订单号打开详情页。详情页顶部会根据当前状态显示对应的动作按钮,所有动作都按权限码控制,无权时按钮直接隐藏。",
       },
       {
         type: "ul",
         items: [
           "保存 —— 在草稿 / 重新打开 / 撤销确认 状态下保存当前修改。",
           "确认销售单 —— 将草稿推进为「已确认」。",
-          "撤销确认 —— 把「已确认」回退到「撤销确认」。",
-          "Reopen —— 重新打开已确认订单以便修改。",
-          "作废销售单 —— 作废订单(仅在草稿 / 已确认 / 撤销确认状态下可用)。",
-          "删除 —— 永久删除订单。仅在草稿 / 撤销确认 / 重新打开状态下可用。",
-          "退货 / 取消退货 —— 处理客户退货,或撤销一次退货操作。",
+          "撤销确认 —— 把「已确认」回退到「撤销确认」(可再编辑后再次确认)。",
+          "作废销售单 —— 把「已确认」的订单作废为「已取消」。",
+          "Reopen —— 把「已取消」的订单重新打开为「重新打开」状态,允许再次编辑。",
+          "删除 —— 永久删除订单。仅在草稿 / 撤销确认 / 重新打开 状态下可用。",
+          "退货 / 取消退货 —— 在「已确认」订单的明细行上处理客户退货(部分退货);取消退货可撤销一次退货。",
         ],
+      },
+      { type: "h2", id: "inventory-impact", text: "状态转换与库存联动" },
+      {
+        type: "p",
+        text: "所有库存变动都通过统一流水记录,可随时在「库存流水」中按单据号追溯。下表展示了 4 个主要动作对库存的影响:",
+      },
+      {
+        type: "table",
+        headers: ["动作", "状态变化", "库存影响", "说明"],
+        rows: [
+          [
+            "确认销售单",
+            "草稿 / 重新打开 / 撤销确认 → 已确认",
+            "扣减库存 ( − )",
+            "按订单明细数量,从对应仓库出库;扣减后成本写入订单。",
+          ],
+          [
+            "撤销确认",
+            "已确认 → 撤销确认",
+            "返还库存 ( + )",
+            "把上一次「确认销售单」扣减的库存全部返还;订单成本清零。",
+          ],
+          [
+            "作废销售单",
+            "已确认 → 已取消",
+            "返还库存 ( + )",
+            "把上一次「确认销售单」扣减的库存全部返还;订单仅留作审计。",
+          ],
+          [
+            "Reopen",
+            "已取消 → 重新打开",
+            "不动库存",
+            "库存已在「作废销售单」时返还,Reopen 只改状态;可直接再次「确认销售单」再次扣减。",
+          ],
+          [
+            "退货",
+            "已确认 (行级)",
+            "部分返还 ( + )",
+            "对已确认订单的某一行做部分退货,新增一条负数量明细,按该数量返还库存。",
+          ],
+          [
+            "取消退货",
+            "已确认 (行级)",
+            "再次扣减 ( − )",
+            "撤销一次退货,删除负数量明细并按原数量重新扣减库存。",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "「作废销售单」和「撤销确认」都会返还库存",
+        text: "两个动作的库存效果相同 —— 都是把上一次「确认销售单」扣减的库存全部回滚。区别在于终态:作废后订单进入「已取消」(终态,不可再推进),撤销确认后订单进入「撤销确认」(可继续编辑,再次确认会再次扣减库存)。",
       },
       {
         type: "callout",
@@ -1689,6 +1759,7 @@ export const articles: DocArticle[] = [
       { id: "table-columns", text: "表格列", level: 2 },
       { id: "statuses", text: "单据状态", level: 2 },
       { id: "actions", text: "订单操作", level: 2 },
+      { id: "inventory-impact", text: "状态转换与库存联动", level: 2 },
     ],
     prev: {
       href: "/docs/ordering-portal/pricing",
@@ -1737,39 +1808,6 @@ export const articles: DocArticle[] = [
       { id: "stock-adjustments", text: "手动调整库存", level: 2 },
     ],
     prev: { href: "/docs/orders/dashboard", title: "订单工作台" },
-    next: { href: "/docs/inventory/alerts", title: "库存预警" },
-  },
-  {
-    locale: "zh",
-    slug: "alerts",
-    category: "inventory",
-    href: "/docs/inventory/alerts",
-    title: "库存预警",
-    description: "为每个商品设置补货阈值，让团队在库存见底之前收到提醒。",
-    keywords: ["库存预警", "补货阈值", "批发提醒"],
-    readingTime: "阅读约 3 分钟",
-    lastUpdated: "2026-07-03",
-    blocks: [
-      {
-        type: "p",
-        text: "库存预警会在商品库存降至补货阈值时通知对应人员。支持邮件、移动应用推送与 Webhook 三种渠道。",
-      },
-      { type: "h2", id: "set-threshold", text: "设置阈值" },
-      {
-        type: "p",
-        text: "每个商品都有「补货阈值」与「目标水位」两个字段。阈值用来触发提醒，目标水位则是补货后期望的库存水平。",
-      },
-      { type: "h2", id: "channels", text: "通知渠道" },
-      {
-        type: "p",
-        text: "在「设置 → 通知」中配置预警。你可以根据商品品类将预警路由给不同角色，例如生鲜预警发给采购经理，包装预警发给仓库主管。",
-      },
-    ],
-    toc: [
-      { id: "set-threshold", text: "设置阈值", level: 2 },
-      { id: "channels", text: "通知渠道", level: 2 },
-    ],
-    prev: { href: "/docs/inventory/stock", title: "库存水位" },
     next: { href: "/docs/purchasing/purchase-orders", title: "创建采购订单" },
   },
 
@@ -1794,7 +1832,7 @@ export const articles: DocArticle[] = [
       { type: "h2", id: "supplier-first", text: "步骤一 —— 添加供应商" },
       {
         type: "p",
-        text: "进入「采购 → 供应商 → 新建供应商」，填写联系方式、默认币种以及他们通常需要的交货周期。",
+        text: "进入「采购 → 供应商 → 新建供应商」，填写联系方式、以及他们通常需要的交货周期。",
       },
       { type: "h2", id: "build-po", text: "步骤二 —— 建立采购订单" },
       {
@@ -1806,179 +1844,73 @@ export const articles: DocArticle[] = [
         type: "p",
         text: "货物到达后在采购订单上点击「确认」。录入每行实际到货数量并确认，库存会自动更新。",
       },
+      { type: "h2", id: "inventory-impact", text: "状态转换与库存联动" },
+      {
+        type: "p",
+        text: "采购单与销售单共用一套库存流水,但方向相反 —— 采购的「确认」是入库 (+),而销售的「确认」是出库 (−)。下表展示了 4 个主要动作对库存的影响:",
+      },
+      {
+        type: "table",
+        headers: ["动作", "状态变化", "库存影响", "说明"],
+        rows: [
+          [
+            "确认采购单",
+            "草稿 / 重新打开 / 撤销确认 → 已确认",
+            "入库 ( + )",
+            "按订单明细数量入到对应仓库;采购成本写入订单。",
+          ],
+          [
+            "撤销确认",
+            "已确认 → 撤销确认",
+            "出库 ( − )",
+            "把上一次「确认采购单」入库的库存全部扣回;采购成本清零。",
+          ],
+          [
+            "作废采购单",
+            "已确认 → 已取消",
+            "出库 ( − )",
+            "把上一次「确认采购单」入库的库存全部扣回;订单仅留作审计。",
+          ],
+          [
+            "Reopen",
+            "已取消 → 重新打开",
+            "不动库存",
+            "库存已在「作废采购单」时扣回,Reopen 只改状态;可直接再次「确认采购单」再次入库。",
+          ],
+          [
+            "退货",
+            "已确认 (行级)",
+            "部分出库 ( − )",
+            "对已确认订单的某一行做部分退货(向供应商退回部分货物),新增一条负数量明细,按该数量扣回库存。",
+          ],
+          [
+            "取消退货",
+            "已确认 (行级)",
+            "再次入库 ( + )",
+            "撤销一次退货,删除负数量明细并按原数量重新入库。",
+          ],
+        ],
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "「确认采购单」是入库,而不是出库",
+        text: "采购单的「确认」代表货物已实际到达并入库,所以是 +;这与销售单「确认」是出货 − 的方向完全相反。操作时请特别注意方向,避免误以为「撤销确认会归还库存给供应商」——撤销确认只是把已经入库的库存再扣回去。",
+      },
+      {
+        type: "callout",
+        variant: "info",
+        title: "「作废采购单」和「撤销确认」都会扣回库存",
+        text: "两个动作的库存效果相同 —— 都是把上一次「确认采购单」入库的库存全部扣回。区别在于终态:作废后订单进入「已取消」(终态,不可再推进),撤销确认后订单进入「撤销确认」(可继续编辑,再次确认会再次入库)。",
+      },
     ],
     toc: [
       { id: "supplier-first", text: "步骤一 —— 添加供应商", level: 2 },
       { id: "build-po", text: "步骤二 —— 建立采购订单", level: 2 },
       { id: "receive", text: "步骤三 —— 收货过账", level: 2 },
+      { id: "inventory-impact", text: "状态转换与库存联动", level: 2 },
     ],
-    prev: { href: "/docs/inventory/alerts", title: "库存预警" },
-    next: { href: "/docs/admin/dashboard", title: "管理后台" },
-  },
-
-  // ----- Admin -----
-  {
-    locale: "zh",
-    slug: "dashboard",
-    category: "admin",
-    href: "/docs/admin/dashboard",
-    title: "管理后台",
-    description: "一眼掌握订单、营收、库存预警与待处理采购订单的整体情况。",
-    keywords: ["管理后台", "批发 KPI", "营收分析"],
-    readingTime: "阅读约 4 分钟",
-    lastUpdated: "2026-07-01",
-    blocks: [
-      {
-        type: "p",
-        text: "管理后台是运营团队的主页，集中展示今日核心数据以及需要立即关注的待办事项。",
-      },
-      { type: "mockup", variant: "dashboard" },
-      { type: "h2", id: "widgets", text: "组件" },
-      {
-        type: "ul",
-        items: [
-          "今日订单数与营收，并显示同比上周变化。",
-          "按状态分组的订单概览，直观了解订单流转进度。",
-          "库存预警清单 —— 已达到或低于补货阈值的商品。",
-          "待处理采购订单 —— 等待收货的订单数量与总金额。",
-          "本月营收排名前几名的客户。",
-        ],
-      },
-      { type: "h2", id: "widgets-customize", text: "自定义工作台" },
-      {
-        type: "p",
-        text: "点击并拖拽组件头部即可重新排列，使用 + 按钮可添加其他组件（如营收曲线、履约 SLA、应收账龄），用 × 可移除不需要的组件。",
-      },
-    ],
-    toc: [
-      { id: "widgets", text: "组件", level: 2 },
-      { id: "widgets-customize", text: "自定义工作台", level: 2 },
-    ],
-    prev: { href: "/docs/purchasing/purchase-orders", title: "创建采购订单" },
-    next: { href: "/docs/admin/mobile", title: "移动应用" },
-  },
-  {
-    locale: "zh",
-    slug: "mobile",
-    category: "admin",
-    href: "/docs/admin/mobile",
-    title: "iOS 与 Android 移动应用",
-    description:
-      "安装 Wholesalify 移动应用并登录，随时查看订单、库存或审批采购订单。",
-    keywords: ["移动应用", "Wholesalify iOS", "Wholesalify Android"],
-    readingTime: "阅读约 3 分钟",
-    lastUpdated: "2026-06-28",
-    blocks: [
-      {
-        type: "p",
-        text: "Wholesalify 移动应用把后台装进口袋。无论在仓库、市场还是出差的路上，都能快速处理业务。",
-      },
-      { type: "h2", id: "install", text: "安装应用" },
-      {
-        type: "ul",
-        items: [
-          "iOS —— 在 App Store 搜索「Wholesalify」，需 iOS 16 及以上。",
-          "Android —— 在 Google Play 搜索「Wholesalify」，需 Android 10 及以上。",
-        ],
-      },
-      { type: "h2", id: "sign-in", text: "登录" },
-      {
-        type: "p",
-        text: "打开应用，输入租户标识与邮箱，并授权推送通知。首次登录后可启用指纹或面容识别。",
-      },
-      { type: "h2", id: "on-the-go", text: "在路上可以做的事" },
-      {
-        type: "ul",
-        items: [
-          "确认或取消新订单。",
-          "实时查看任意商品的库存，支持扫码快速查找。",
-          "审批需要签字的采购订单。",
-          "录入盘点结果或手动调整库存，并附上照片。",
-        ],
-      },
-    ],
-    toc: [
-      { id: "install", text: "安装应用", level: 2 },
-      { id: "sign-in", text: "登录", level: 2 },
-      { id: "on-the-go", text: "在路上可以做的事", level: 2 },
-    ],
-    prev: { href: "/docs/admin/dashboard", title: "管理后台" },
-    next: { href: "/docs/account/team", title: "邀请团队" },
-  },
-
-  // ----- Account -----
-  {
-    locale: "zh",
-    slug: "team",
-    category: "account",
-    href: "/docs/account/team",
-    title: "邀请团队",
-    description: "添加团队成员、分配角色并配置哪些成员可以审批订单与采购订单。",
-    keywords: ["团队管理", "角色", "权限"],
-    readingTime: "阅读约 3 分钟",
-    lastUpdated: "2026-06-25",
-    blocks: [
-      {
-        type: "p",
-        text: "Wholesalify 提供所有者、管理员与操作员三类角色。每一类角色都带有默认权限，你可以在「设置 → 角色」中按需调整单个权限。",
-      },
-      { type: "h2", id: "invite", text: "创建用户" },
-      {
-        type: "p",
-        text: "进入「设置 → 团队 → 创建用户」。填写邮箱并指定角色，对方将收到一封含密码的邮件。",
-      },
-    ],
-    toc: [
-      { id: "invite", text: "发送邀请", level: 2 },
-      { id: "two-factor", text: "强制启用两步验证", level: 2 },
-    ],
-    prev: { href: "/docs/admin/mobile", title: "移动应用" },
-    next: { href: "/docs/account/billing", title: "账单与订阅" },
-  },
-  {
-    locale: "zh",
-    slug: "billing",
-    category: "account",
-    href: "/docs/account/billing",
-    title: "账单与订阅",
-    description: "管理 Wholesalify 订阅、查看发票以及更新付款信息。",
-    keywords: ["账单", "订阅", "发票"],
-    readingTime: "阅读约 3 分钟",
-    lastUpdated: "2026-06-24",
-    blocks: [
-      {
-        type: "p",
-        text: "Wholesalify 为刚起步的商家提供免费套餐，并提供按订单量平滑扩展的付费套餐。",
-      },
-      { type: "h2", id: "plans", text: "套餐" },
-      {
-        type: "table",
-        headers: ["套餐", "适合", "包含"],
-        rows: [
-          ["免费", "每月最多 20 单", "仅支持一个团队成员"],
-          [
-            "专业版",
-            "每月最多 200 单",
-            "仅支持5个团队成员。",
-          ],
-          [
-            "规模版",
-            "无限",
-            "无限个团队成员",
-          ],
-        ],
-      },
-      { type: "h2", id: "invoices", text: "发票与回执" },
-      {
-        type: "p",
-        text: "每次扣费都会在「设置 → 账单 → 发票」中生成可下载的 PDF 发票。你也可以在同一页面更新账单邮箱或增值税号。",
-      },
-    ],
-    toc: [
-      { id: "plans", text: "套餐", level: 2 },
-      { id: "invoices", text: "发票与回执", level: 2 },
-    ],
-    prev: { href: "/docs/account/team", title: "邀请团队" },
+    prev: { href: "/docs/inventory/stock", title: "库存水位" },
   },
 ];
 
@@ -1992,7 +1924,6 @@ const CATEGORY_ORDER = [
   "orders",
   "inventory",
   "purchasing",
-  "account",
 ];
 
 function pickLocale(locale: string): Locale {
@@ -2066,10 +1997,6 @@ export function getSections(locale: string): DocSection[] {
           c.slug,
         ),
       ),
-    },
-    {
-      title: sectionLabels.operations,
-      categories: cats.filter((c) => ["account"].includes(c.slug)),
     },
   ];
 }

@@ -28,41 +28,53 @@ function CategoryItem({
   onNavigate?: () => void;
 }) {
   const categoryActive = pathname.startsWith(category.href);
-  const [open, setOpen] = useState(categoryActive);
+  // Always render expanded by default so users can see the full catalog.
+  // The chevron allows collapsing it.
+  const [open, setOpen] = useState(true);
+
+  const toggle = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setOpen((v) => !v);
+  };
 
   return (
     <li key={category.slug}>
-      <Link
-        href={category.href}
-        onClick={(e) => {
-          if (categoryActive) {
-            e.preventDefault();
-            setOpen((v) => !v);
-          } else {
-            onNavigate?.();
-          }
-        }}
+      <div
         className={`flex items-center justify-between rounded-md px-3 py-1.5 transition-colors ${
           categoryActive
             ? "bg-cta/10 text-cta font-semibold"
             : "text-secondary hover:bg-gray-100 hover:text-primary"
         }`}
       >
-        <span>{category.title}</span>
-        <svg
-          className={`w-3 h-3 transition-transform ${open ? "rotate-90" : ""}`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+        <Link
+          href={category.href}
+          onClick={() => onNavigate?.()}
+          className="flex-1 truncate"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-      </Link>
+          {category.title}
+        </Link>
+        <button
+          type="button"
+          onClick={toggle}
+          aria-label={open ? "Collapse" : "Expand"}
+          className="ml-2 p-0.5 rounded hover:bg-black/5"
+        >
+          <svg
+            className={`w-3 h-3 transition-transform ${open ? "rotate-90" : ""}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
       {open && (
         <ul className="mt-1 ml-2 border-l border-gray-200 pl-2 space-y-0.5">
           {category.articles.map((article) => {

@@ -2,7 +2,7 @@ import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { setRequestLocale } from "next-intl/server";
 import { locales, type Locale } from "@/lib/i18n";
-import { getArticleByPath, getCategories } from "@/lib/docs";
+import { getArticleByPath, getCategories, getCategoryBySlug } from "@/lib/docs";
 import DocsArticle from "@/components/DocsArticle";
 import DocsToc from "@/components/DocsToc";
 import { breadcrumbSchema, generatePageMetadata } from "@/components/SEO";
@@ -85,6 +85,11 @@ export default async function DocsPathPage({ params }: PageProps) {
   const breadcrumbItems = [
     { name: "Home", url: `/${locale}` },
     { name: "Documentation", url: `/${locale}/docs` },
+    {
+      name:
+        getCategoryBySlug(article.category, locale)?.title ?? article.category,
+      url: `/${locale}${`/docs/${article.category}`}`,
+    },
     { name: article.title, url: article.href },
   ];
 
@@ -132,9 +137,10 @@ export default async function DocsPathPage({ params }: PageProps) {
             <span className="mx-2">/</span>
             <Link
               href={`/${locale}/docs/${article.category}`}
-              className="hover:text-primary capitalize"
+              className="hover:text-primary"
             >
-              {article.category.replace(/-/g, " ")}
+              {getCategoryBySlug(article.category, locale)?.title ??
+                article.category}
             </Link>
             <span className="mx-2">/</span>
             <span className="text-primary font-medium">{article.title}</span>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { DocArticle } from "@/lib/docs";
+import { getCategoryBySlug } from "@/lib/docs";
 import DocsCallout from "./DocsCallout";
 import DocsMockup from "./DocsMockup";
 
@@ -23,7 +24,8 @@ export default function DocsArticle({ article }: { article: DocArticle }) {
     <article className="prose-doc">
       <header className="mb-8 pb-6 border-b border-gray-100">
         <div className="text-xs text-cta font-medium uppercase tracking-wider mb-3">
-          {article.category.replace(/-/g, " ")}
+          {getCategoryBySlug(article.category, article.locale)?.title ??
+            article.category}
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
           {article.title}
@@ -111,7 +113,13 @@ export default function DocsArticle({ article }: { article: DocArticle }) {
                 </div>
               );
             case "mockup":
-              return <DocsMockup key={i} variant={block.variant} />;
+              return (
+                <DocsMockup
+                  key={i}
+                  variant={block.variant}
+                  active={block.active}
+                />
+              );
             case "table":
               return (
                 <div
