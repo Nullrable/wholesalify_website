@@ -102,11 +102,11 @@ export default async function DocsPathPage({ params }: PageProps) {
     keywords: article.keywords.join(", "),
     datePublished: article.lastUpdated,
     dateModified: article.lastUpdated,
-    image: "https://www.wholesalify.com/og-image.png",
+    image: "https://wholesalify.com/og-image.png",
     publisher: {
       "@type": "Organization",
       name: "Wholesalify",
-      url: "https://www.wholesalify.com",
+      url: "https://wholesalify.com",
     },
   };
 
