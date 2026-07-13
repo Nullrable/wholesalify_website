@@ -18,6 +18,11 @@ const nextConfig = {
         destination: "https://wholesalify.com/:path*",
         permanent: true,
       },
+      {
+        source: "/",
+        destination: "/en",
+        permanent: true,
+      },
     ];
   },
 };

@@ -137,7 +137,20 @@
       "Bash(curl -sIL \"https://wholesalify.com/de\")",
       "Bash(curl -sL \"https://www.wholesalify.com/de\")",
       "Bash(curl -sL \"https://www.wholesalify.com/tr/privacy\")",
-      "Bash(curl -s \"https://wholesalify.com/sitemap.xml\")"
+      "Bash(curl -s \"https://wholesalify.com/sitemap.xml\")",
+      "Bash(curl -sIL -H \"User-Agent: Mozilla/5.0 \\(Linux; Android 6.0.1; Nexus 5X Build/MMB29P\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.6099.71 Mobile Safari/537.36 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://www.wholesalify.com/de\")",
+      "Bash(curl -sIL -H \"User-Agent: Mozilla/5.0 \\(Linux; Android 6.0.1; Nexus 5X Build/MMB29P\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.6099.71 Mobile Safari/537.36 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://wholesalify.com/de\")",
+      "Bash(curl -sL -H \"User-Agent: Mozilla/5.0 \\(Linux; Android 6.0.1; Nexus 5X Build/MMB29P\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.6099.71 Mobile Safari/537.36 \\(compatible; Googlebot/2.1; +http://www.google.com/bot.html\\)\" \"https://www.wholesalify.com/de\")",
+      "Bash(curl -sI -H \"Host: www.wholesalify.com\" \"https://wholesalify.com/de\")",
+      "Bash(curl:*)",
+      "Bash(dig www.wholesalify.com CNAME +short)",
+      "Bash(dig wholesalify.com CNAME +short)",
+      "Bash(dig:*)",
+      "Bash(for url:*)",
+      "Bash(echo \"=== $url ===\")",
+      "Bash(find /Users/lusudong/Documents/fronted-work/wholease_website/node_modules/next-intl/dist -name *.d.ts)",
+      "Bash(find /Users/lusudong/Documents/fronted-work/wholease_website/node_modules/next-intl -name README*)",
+      "WebSearch"
     ]
   }
 }
