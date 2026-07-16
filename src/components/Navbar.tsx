@@ -58,12 +58,6 @@ export default function Navbar() {
           >
             {t("about")}
           </Link>
-          <Link
-            href={getLocalizedPath("/contact")}
-            className="text-secondary hover:text-primary transition-colors cursor-pointer"
-          >
-            {t("contact")}
-          </Link>
         </div>
 
         {/* Desktop Language & CTA */}
@@ -167,13 +161,6 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {t("about")}
-              </Link>
-              <Link
-                href={getLocalizedPath("/contact")}
-                className="text-secondary hover:text-primary transition-colors py-1"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {t("contact")}
               </Link>
             </div>
 
