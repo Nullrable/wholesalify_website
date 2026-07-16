@@ -160,7 +160,10 @@
       "Bash(find /Users/lusudong/Documents/nhsoft-work/wholesale-admin-web -name *.json -not -path */node_modules/* -not -path */.next/*)",
       "Bash(awk 'NR==182 || NR==183' /Users/lusudong/Documents/fronted-work/wholease_website/src/messages/id.json)",
       "Bash(do node:*)",
-      "Bash(echo \"$f: OK\")"
+      "Bash(echo \"$f: OK\")",
+      "Bash(vercel --version)",
+      "Bash(vercel link:*)",
+      "Bash(git status:*)"
     ]
   }
 }
