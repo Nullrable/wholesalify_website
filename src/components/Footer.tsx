@@ -32,6 +32,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href={getLocalizedPath("/price")}
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  {t("pricing")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={getLocalizedPath("/docs/get-started/overview")}
                   className="hover:text-white transition-colors cursor-pointer"
                 >
