@@ -150,7 +150,17 @@
       "Bash(echo \"=== $url ===\")",
       "Bash(find /Users/lusudong/Documents/fronted-work/wholease_website/node_modules/next-intl/dist -name *.d.ts)",
       "Bash(find /Users/lusudong/Documents/fronted-work/wholease_website/node_modules/next-intl -name README*)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:localhost)",
+      "Bash(find /Users/lusudong -type d -name wholesale*)",
+      "Bash(find /Users/lusudong/Documents/nhsoft-work/wholesale-admin-web/src -name *.json -path *messages*)",
+      "Bash(find /Users/lusudong/Documents/nhsoft-work/wholesale-admin-web/src -name *.json)",
+      "Bash(find /Users/lusudong/Documents/nhsoft-work/wholesale-admin-web -name en.json -not -path */node_modules/*)",
+      "Bash(find /Users/lusudong/Documents/nhsoft-work/wholesale-admin-web -name en* -type d -not -path */node_modules/*)",
+      "Bash(find /Users/lusudong/Documents/nhsoft-work/wholesale-admin-web -name *.json -not -path */node_modules/* -not -path */.next/*)",
+      "Bash(awk 'NR==182 || NR==183' /Users/lusudong/Documents/fronted-work/wholease_website/src/messages/id.json)",
+      "Bash(do node:*)",
+      "Bash(echo \"$f: OK\")"
     ]
   }
 }
