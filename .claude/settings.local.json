@@ -163,7 +163,10 @@
       "Bash(echo \"$f: OK\")",
       "Bash(vercel --version)",
       "Bash(vercel link:*)",
-      "Bash(git status:*)"
+      "Bash(git status:*)",
+      "WebFetch(domain:wholesalify.com)",
+      "Bash(find /Users/lusudong/Documents/fronted-work/wholease_website/node_modules/next -path *metadata* -name *.d.ts)",
+      "Bash(find .next -name sitemap.xml*)"
     ]
   }
 }
