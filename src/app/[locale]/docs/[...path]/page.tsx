@@ -88,9 +88,9 @@ export default async function DocsPathPage({ params }: PageProps) {
     {
       name:
         getCategoryBySlug(article.category, locale)?.title ?? article.category,
-      url: `/${locale}${`/docs/${article.category}`}`,
+      url: `/${locale}/docs/${article.category}`,
     },
-    { name: article.title, url: article.href },
+    { name: article.title, url: `/${locale}${article.href}` },
   ];
 
   const articleLd = {
@@ -119,9 +119,7 @@ export default async function DocsPathPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbSchema(locale as Locale, breadcrumbItems),
-          ),
+          __html: JSON.stringify(breadcrumbSchema(breadcrumbItems)),
         }}
       />
       <div className="flex gap-10">
