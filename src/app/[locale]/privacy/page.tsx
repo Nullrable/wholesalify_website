@@ -4,6 +4,8 @@ import { generateTranslatedPageMetadata } from "@/components/SEO";
 import { locales, type Locale } from "@/lib/i18n";
 import type { Metadata } from "next";
 
+const SECTION_COUNT = 11;
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -16,42 +18,66 @@ export async function generateMetadata({
   return generateTranslatedPageMetadata(locale as Locale, {
     namespace: "privacy",
     titleKey: "title",
-    descriptionKey: "section2Desc",
+    descriptionKey: "intro",
     pathname: "/privacy",
   });
 }
 
 export default async function PrivacyPage({
-  params: { locale }
+  params: { locale },
 }: {
-  params: { locale: string }
+  params: { locale: string };
 }) {
-  setRequestLocale(locale)
-  const t = await getTranslations('privacy')
+  setRequestLocale(locale);
+  const t = await getTranslations("privacy");
 
   return (
     <main className="min-h-screen">
       <div className="pt-32 pb-20 px-6">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl font-bold text-primary mb-8">{t('title')}</h1>
+          <h1 className="text-4xl font-bold text-primary mb-8">{t("title")}</h1>
           <div className="prose prose-lg max-w-none text-secondary">
-            <p>{t('lastUpdated', { date: new Date().toLocaleDateString() })}</p>
-            <h2 className="text-2xl font-bold text-primary mt-8 mb-4">{t('section1Title')}</h2>
-            <p>{t('section1Desc')}</p>
-            <h2 className="text-2xl font-bold text-primary mt-8 mb-4">{t('section2Title')}</h2>
-            <p>{t('section2Desc')}</p>
-            <h2 className="text-2xl font-bold text-primary mt-8 mb-4">{t('section3Title')}</h2>
-            <p>{t('section3Desc')}</p>
-            <h2 className="text-2xl font-bold text-primary mt-8 mb-4">{t('section4Title')}</h2>
-            <p>
-              {t('section4Desc')}{' '}
-              <a href="mailto:wholesalify@hotmail.com" className="text-cta hover:underline">
-                wholesalify@hotmail.com
-              </a>
+            <p className="text-sm text-gray-500 not-prose">
+              {t("lastUpdated", { date: new Date().toLocaleDateString() })}
             </p>
+            <p>{t("intro")}</p>
+
+            {Array.from({ length: SECTION_COUNT }, (_, i) => i + 1).map((n) => {
+              const titleKey = `section${n}Title`;
+              const descKey = `section${n}Desc`;
+              const itemsKey = `section${n}Items`;
+              const hasItems = t.has(itemsKey as never);
+              const isLast = n === SECTION_COUNT;
+
+              return (
+                <section key={n}>
+                  <h2 className="text-2xl font-bold text-primary mt-8 mb-4">
+                    {t(titleKey as never)}
+                  </h2>
+                  <p>
+                    {t(descKey as never)}{" "}
+                    {isLast && (
+                      <a
+                        href="mailto:wholesalify@hotmail.com"
+                        className="text-cta hover:underline"
+                      >
+                        wholesalify@hotmail.com
+                      </a>
+                    )}
+                  </p>
+                  {hasItems && (
+                    <ul>
+                      {(t.raw(itemsKey as never) as string[]).map((item, j) => (
+                        <li key={j}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              );
+            })}
           </div>
         </div>
       </div>
     </main>
-  )
+  );
 }

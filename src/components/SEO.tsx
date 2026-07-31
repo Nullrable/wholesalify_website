@@ -242,15 +242,15 @@ const SEO_KEYWORDS: Record<string, string[]> = {
   ],
   "pt-BR": [
     "plataforma de pedidos por atacado",
-    "commerce électronique B2B",
-    "gestion des stocks",
-    "gestion des commandes",
-    "logiciel de gros",
-    "logiciel de gros pour petites entreprises",
-    "logiciel de gros de fruits",
-    "logiciel de gros de produits frais",
-    "logiciel de gros de fruits de mer",
-    "trouver un logiciel de gros de fruits",
+    "comércio eletrônico B2B",
+    "gestão de estoque",
+    "gestão de pedidos",
+    "software de atacado",
+    "software de atacado para pequenas empresas",
+    "software de atacado para frutas",
+    "software de atacado para produtos frescos",
+    "software de atacado para frutos do mar",
+    "encontrar software de atacado para frutas",
   ],
 };
 
@@ -327,7 +327,7 @@ export const organizationSchema = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
-    email: "support@wholesalify.com",
+    email: "wholesalify@hotmail.com",
   },
 };
 

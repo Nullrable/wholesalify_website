@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import { locales } from "@/lib/i18n";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import CookieBanner from "@/components/CookieBanner";
+import ConsentAwareAnalytics from "@/components/ConsentAwareAnalytics";
 import {
   generateTranslatedPageMetadata,
   organizationSchema,
@@ -73,8 +73,8 @@ export default async function LocaleLayout({
         <Navbar />
         {children}
         <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <ConsentAwareAnalytics />
+        <CookieBanner />
       </NextIntlClientProvider>
     </div>
   );
